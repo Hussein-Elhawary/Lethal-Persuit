@@ -176,8 +176,13 @@ int our::Application::run(int run_for_frames) {
         return -1;
     }
     glfwMakeContextCurrent(window);         // Tell GLFW to make the context of our window the main context on the current thread.
-
     gladLoadGL(glfwGetProcAddress);         // Load the OpenGL functions from the driver
+    
+    float colorR = ((1200799 /   1) % 16) / 16.0 ;
+    float colorG = ((1200799 /  16) % 16) / 16.0 ;
+    float colorB = ((1200799 / 256) % 16) / 16.0 ;
+    float colorA = 1.0;
+    glClearColor(colorR, colorG, colorB, colorA); 
 
     // Print information about the OpenGL context
     std::cout << "VENDOR          : " << glGetString(GL_VENDOR) << std::endl;
@@ -239,6 +244,8 @@ int our::Application::run(int run_for_frames) {
     double last_frame_time = glfwGetTime();
     int current_frame = 0;
 
+    glClear(GL_COLOR_BUFFER_BIT); 
+    glfwSwapBuffers(window); 
     //Game loop
     while(!glfwWindowShouldClose(window)){
         if(run_for_frames != 0 && current_frame >= run_for_frames) break;
