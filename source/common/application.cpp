@@ -244,8 +244,7 @@ int our::Application::run(int run_for_frames) {
     double last_frame_time = glfwGetTime();
     int current_frame = 0;
 
-    glClear(GL_COLOR_BUFFER_BIT); 
-    glfwSwapBuffers(window); 
+
     //Game loop
     while(!glfwWindowShouldClose(window)){
         if(run_for_frames != 0 && current_frame >= run_for_frames) break;
