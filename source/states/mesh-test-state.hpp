@@ -37,6 +37,7 @@ class MeshTestState: public our::State {
                 { { 0, -1,  0}, { 64, 255, 128, 255}, {0.00, 0.00}, { 0,  1,  0} },
                 { { 0,  0, -1}, {128,  64, 255, 255}, {1.00, 0.00}, { 0,  0,  1} },
             };
+            printf("Number of vertices: %zu\n", vertices.size());
             std::vector<unsigned int> elements = {
                 0, 1, 2,
                 2, 1, 3,
