@@ -15,6 +15,8 @@ out Varyings {
 // The default value for "translation" is (0.0, 0.0) and for "scale" is (1.0, 1.0).
 
 //TODO: (Req 1) Finish this shader
+uniform vec2 translation = vec2(0.0,0.0);
+uniform vec2 scale = vec2(1.0,1.0);
 
 void main(){
 
@@ -32,11 +34,11 @@ void main(){
         vec3(0.0, 0.0, 1.0)  // Color for Vertex 3 (Blue)
     );
 
-    // Default translation vector
-    vec2 translation = vec2(0.0, 0.0);
+    // // Default translation vector
+    // vec2 translation = vec2(0.0, 0.0);
 
-    // Default scale vector
-    vec2 scale = vec2(1.0, 1.0);
+    // // Default scale vector
+    // vec2 scale = vec2(1.0, 1.0);
 
     // Apply the transformation to the vertex
     vec3 transformedVertex = vec3(scale * vertices[gl_VertexID].xy + translation, vertices[gl_VertexID].z);
