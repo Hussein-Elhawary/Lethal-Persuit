@@ -64,9 +64,11 @@ namespace our {
         // we use unit 0 here
         glActiveTexture(GL_TEXTURE0);
         // bind the 2D texture to the active texture unit
-        texture->bind();
+        if (texture)
+            texture->bind();
         // bind the sampler to the active texture unit
-        sampler->bind(0);
+        if (sampler)
+            sampler->bind(0);
         // set the uniform variable "tex" to the active texture unit
         shader->set("tex", 0);
     }
