@@ -27,8 +27,8 @@ namespace our {
             PipelineState skyPipelineState{};
 
             skyPipelineState.depthTesting.enabled = true;
-            // skyPipelineState.depthTesting.function = GL_LEQUAL;
-            skyPipelineState.depthTesting.function = GL_GEQUAL;
+            skyPipelineState.depthTesting.function = GL_LEQUAL;
+            // skyPipelineState.depthTesting.function = GL_GEQUAL;
 
             skyPipelineState.faceCulling.enabled = true;
             skyPipelineState.faceCulling.culledFace = GL_FRONT;
