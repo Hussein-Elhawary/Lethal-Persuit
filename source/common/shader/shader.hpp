@@ -78,6 +78,7 @@ namespace our {
         // that should not be duplicated. Copying could lead to resource leaks or other issues.
 
         //Question: Why do we delete the copy constructor and assignment operator?
+        //Because if we didn't there will be more than one shader program and we want to use the same one
     };
 }
 
