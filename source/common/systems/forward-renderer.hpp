@@ -45,7 +45,7 @@ namespace our
         // windowSize is the width & height of the window (in pixels).
         void initialize(glm::ivec2 windowSize, const nlohmann::json& config);
         // Clean up the renderer
-        void destroy();
+        void destroy() const;
         // This function should be called every frame to draw the given world
         void render(World* world);
 
