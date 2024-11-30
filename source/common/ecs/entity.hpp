@@ -35,7 +35,10 @@ namespace our {
             static_assert(std::is_base_of<Component, T>::value, "T must inherit from Component");
             //TODO: (Req 8) Create an component of type T, set its "owner" to be this entity, then push it into the component's list
             // Don't forget to return a pointer to the new component
-            return nullptr;
+            T* component = new T();
+            component->owner = this;
+            components.push_back(component);
+            return component;
         }
 
         // This template method searhes for a component of type T and returns a pointer to it
@@ -44,7 +47,14 @@ namespace our {
         T* getComponent(){
             //TODO: (Req 8) Go through the components list and find the first component that can be dynamically cast to "T*".
             // Return the component you found, or return null of nothing was found.
-            return nullptr;
+            T* targetComponent = nullptr; 
+            for(auto component:components){
+                targetComponent = dynamic_cast<T*>(component);
+                if(targetComponent != nullptr){
+                    return targetComponent;
+                }
+            }
+            return targetComponent;
         }
 
         // This template method dynami and returns a pointer to it
@@ -63,6 +73,14 @@ namespace our {
         void deleteComponent(){
             //TODO: (Req 8) Go through the components list and find the first component that can be dynamically cast to "T*".
             // If found, delete the found component and remove it from the components list
+            T* targetComponent = nullptr; 
+            for(auto component:components){
+                targetComponent = dynamic_cast<T*>(component);
+                if(targetComponent != nullptr){
+                    delete targetComponent;
+                    return;
+                }
+            }
         }
 
         // This template method searhes for a component of type T and deletes it
@@ -80,11 +98,21 @@ namespace our {
         void deleteComponent(T const* component){
             //TODO: (Req 8) Go through the components list and find the given component "component".
             // If found, delete the found component and remove it from the components list
+            for(auto currComponent:components){
+                if(currComponent == component){
+                    components.remove(currComponent);
+                    delete currComponent;
+                    return;
+                }
+            }
         }
 
         // Since the entity owns its components, they should be deleted alongside the entity
         ~Entity(){
             //TODO: (Req 8) Delete all the components in "components".
+            for(auto component:components){
+                delete component;
+            }
         }
 
         // Entities should not be copyable

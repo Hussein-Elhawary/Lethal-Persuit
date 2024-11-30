@@ -35,7 +35,23 @@ namespace our {
         // - the center position which is the point (0,0,-1) but after being transformed by M
         // - the up direction which is the vector (0,1,0) but after being transformed by M
         // then you can use glm::lookAt
-        return glm::mat4(1.0f);
+
+
+        // eye and center are coordinates thus homogenous component is equal to 1
+        // up is a vector thus homogenous component is equal to 0
+        // we have M which is transformation matrix from camera space to world space
+        // we want camera coordinates in world space
+        // so we multiply M with camera coordinates in camera space to get camera coordinates in world space
+        glm::vec4 eye4d = M*glm::vec4({0,0,0,1});
+        glm::vec4 center4d = M*glm::vec4({0,0,-1,1});
+        glm::vec4 up4d = M*glm::vec4({0,1,0,0});
+
+        glm::vec3 eye = glm::vec3(eye4d.x, eye4d.y, eye4d.z);
+        glm::vec3 center = glm::vec3(center4d.x, center4d.y, center4d.z);
+        glm::vec3 up = glm::vec3(up4d.x, up4d.y, up4d.z);
+
+        glm::mat4 res = glm::lookAt(eye,center,up);
+        return res;
     }
 
     // Creates and returns the camera projection matrix
@@ -46,6 +62,16 @@ namespace our {
         // It takes left, right, bottom, top. Bottom is -orthoHeight/2 and Top is orthoHeight/2.
         // Left and Right are the same but after being multiplied by the aspect ratio
         // For the perspective camera, you can use glm::perspective
-        return glm::mat4(1.0f);
+        glm::mat4 res(1.0f);
+        if(cameraType == CameraType::ORTHOGRAPHIC){
+            float aspectRatio = static_cast<float>(viewportSize.x)/viewportSize.y;
+            float halfHeight = orthoHeight/2;
+            float halfWidth = aspectRatio*halfHeight;
+            //args: left, right, bottom, top, near, far
+            res = glm::ortho(-halfWidth, halfWidth, -halfHeight, halfHeight, near, far);
+        } else {
+            res = glm::perspective(fovY, static_cast<float>(viewportSize.x)/viewportSize.y, near, far);
+        }
+        return res;
     }
 }

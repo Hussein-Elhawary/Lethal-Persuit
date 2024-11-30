@@ -3,11 +3,28 @@
 #include "../asset-loader.hpp"
 #include "deserialize-utils.hpp"
 
+// The goal of requirement 7 is to specify the material that object can have
+// Where a material means: 
+// 1. what options to be enabled for the object and this is achieved from pipelineState
+// 2. what ate the shaders of the object so we activate the program that contains the correct shaders
+// 3. if the material is just a single color you can just supply the fragment shader
+// with a factor to multiply the color with the the number
+// 4. if the material is a texture so we bind the texture and sampler to unit 0
+// and set a uniform with the unit 0 to pass the unit number to the fragment shader
+// to be used in sampling process
+
 namespace our {
 
     // This function should setup the pipeline state and set the shader to be used
     void Material::setup() const {
         //TODO: (Req 7) Write this function
+
+        // we setup the pipeline state which will set the required options for a material
+        // like backface culling, depth testing, blending and so on
+        pipelineState.setup();
+        // use the shader program where a shader program contains the fragment and
+        // vertex shader that will be used to render the object
+        shader->use();
     }
 
     // This function read the material data from a json object
@@ -25,6 +42,8 @@ namespace our {
     // set the "tint" uniform to the value in the member variable tint 
     void TintedMaterial::setup() const {
         //TODO: (Req 7) Write this function
+        Material::setup();
+        shader->set("tint",tint);
     }
 
     // This function read the material data from a json object
@@ -39,6 +58,18 @@ namespace our {
     // Then it should bind the texture and sampler to a texture unit and send the unit number to the uniform variable "tex" 
     void TexturedMaterial::setup() const {
         //TODO: (Req 7) Write this function
+        TintedMaterial::setup();
+        shader->set("alphaThreshold",alphaThreshold);
+        // we have only one texture per object so we set the active unit to 0 and keep it active for the rest of the frame
+        // we have multiple texture units, so we need to specify which unit we are using
+        // we use unit 0 here
+        glActiveTexture(GL_TEXTURE0);
+        // bind the 2D texture to the active texture unit
+        texture->bind();
+        // bind the sampler to the active texture unit
+        sampler->bind(0);
+        // set the uniform variable "tex" to the active texture unit
+        shader->set("tex",0);
     }
 
     // This function read the material data from a json object
