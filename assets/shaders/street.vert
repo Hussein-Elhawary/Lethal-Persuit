@@ -10,9 +10,8 @@ out Varyings {
 } vs_out;
 
 uniform mat4 transform;
-uniform sampler2D floorTexture1;
-uniform sampler2D floorTexture2;
-uniform sampler2D blendMap;
+uniform sampler2D Texture_0;
+uniform sampler2D Texture_1;
 
 void main(){
     //TODO: (Req 7) Change the next line to apply the transformation matrix
