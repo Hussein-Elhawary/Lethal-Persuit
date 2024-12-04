@@ -7,6 +7,7 @@
 
 #include <glm/vec4.hpp>
 #include <json/json.hpp>
+#include <vector>
 
 namespace our {
 
@@ -53,13 +54,25 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
+    class NTexturedMaterial : public TintedMaterial {
+    public:
+        std::vector<Texture2D*> textures;
+        std::vector<Sampler*> samplers;
+        float alphaThreshold;
+        
+        void setup() const override;
+        void deserialize(const nlohmann::json& data) override;
+    };
+
     // This function returns a new material instance based on the given type
     inline Material* createMaterialFromType(const std::string& type){
         if(type == "tinted"){
             return new TintedMaterial();
         } else if(type == "textured"){
             return new TexturedMaterial();
-        } else {
+        } else if(type == "Ntextured"){
+            return new NTexturedMaterial();
+        }else {
             return new Material();
         }
     }

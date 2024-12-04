@@ -2,7 +2,7 @@
 
 #include "../asset-loader.hpp"
 #include "deserialize-utils.hpp"
-
+#include <iostream>
 // The goal of requirement 7 is to specify the material that object can have
 // Where a material means: 
 // 1. what options to be enabled for the object and this is achieved from pipelineState
@@ -81,4 +81,51 @@ namespace our {
         texture = AssetLoader<Texture2D>::get(data.value("texture", ""));
         sampler = AssetLoader<Sampler>::get(data.value("sampler", ""));
     }
+
+    void NTexturedMaterial::setup() const {
+        //TODO: (Req 7) Write this function
+        TintedMaterial::setup();
+        shader->set("alphaThreshold", alphaThreshold);
+        // we have only one texture per object so we set the active unit to 0 and keep it active for the rest of the frame
+        // we have multiple texture units, so we need to specify which unit we are using
+        // we use unit 0 here
+        Texture2D* texture;
+        Sampler* sampler;
+        uint64_t activeTexture = GL_TEXTURE0;
+        for (int i = 0; i < textures.size(); i++)
+        {
+            texture = textures[i];
+            sampler = samplers[i];
+            glActiveTexture(activeTexture);
+            // bind the 2D texture to the active texture unit
+            if (texture)
+                texture->bind();
+            // bind the sampler to the active texture unit
+            if (sampler)
+                sampler->bind(i);
+            // set the uniform variable "tex" to the active texture unit
+            shader->set("Texture_"+std::to_string(i), i);
+            activeTexture++;
+        }
+    }
+    
+    // This function read the material data from a json object
+    void NTexturedMaterial::deserialize(const nlohmann::json &data) {
+        TintedMaterial::deserialize(data);
+        if (!data.is_object()) return;
+        alphaThreshold = data.value("alphaThreshold", 0.0f);
+        const nlohmann::json texturesData = data["textures"];
+        const nlohmann::json samplersData = data["samplers"];
+        if(!texturesData.is_array() || !samplersData.is_array()){
+            return;
+        }
+        for(auto const &textureData: texturesData){
+            textures.push_back(AssetLoader<Texture2D>::get(textureData.get<std::string>()));
+        }
+        for(auto const &samplerData: samplersData) {
+            samplers.push_back(AssetLoader<Sampler>::get(samplerData.get<std::string>()));
+        }
+
+    }
+    
 }

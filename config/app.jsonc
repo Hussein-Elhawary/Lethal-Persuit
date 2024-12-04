@@ -23,6 +23,10 @@
                 "textured":{
                     "vs":"assets/shaders/textured.vert",
                     "fs":"assets/shaders/textured.frag"
+                },
+                "street":{
+                    "vs":"assets/shaders/street.vert",
+                    "fs":"assets/shaders/street.frag"
                 }
             },
             "textures":{
@@ -31,7 +35,7 @@
                 "wood": "assets/textures/wood.jpg",
                 "glass": "assets/textures/glass-panels.png",
                 "monkey": "assets/textures/monkey.png",
-                "tornCity": "assets/textures/TornCity.jpg"
+                "tornCity": "assets/textures/brick_pavement_02_diff_1k.jpg"
             },
             "meshes":{
                 "cube": "assets/models/cube.obj",
@@ -127,7 +131,7 @@
                     "sampler": "default"
                 },
                 "tornCity": {
-                    "type": "textured",
+                    "type": "Ntextured",
                     "shader": "textured",
                     "pipelineState": {
                         "faceCulling": {
@@ -143,8 +147,8 @@
                         1,
                         1
                     ],
-                    "texture": "tornCity",
-                    "sampler": "default"
+                    "textures": ["tornCity"],
+                    "samplers": ["default"]
                 }
             }
         },
@@ -192,7 +196,7 @@
             {
                 "position": [0, -1, 0],
                 "rotation": [-90, 0, 0],
-                "scale": [10, 10, 1],
+                "scale": [100, 100, 1],
                 "components": [
                     {
                         "type": "Mesh Renderer",
