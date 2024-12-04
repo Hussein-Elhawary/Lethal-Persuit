@@ -35,7 +35,13 @@
                 "wood": "assets/textures/wood.jpg",
                 "glass": "assets/textures/glass-panels.png",
                 "monkey": "assets/textures/monkey.png",
-                "tornCity": "assets/textures/brick_pavement_02_diff_1k.jpg"
+                "street1": "assets/textures/street/street_diff.jpg",
+                "street2": "assets/textures/street/street_disp.png",
+                "pavement1": "assets/textures/street/pavement_diff.jpg",
+                "pavement2": "assets/textures/street/pavement_disp.png",
+                "separator1": "assets/textures/street/separator_diff.jpg",
+                "separator2": "assets/textures/street/separator_disp.png",
+                "streetMap": "assets/textures/street/street_map.png"
             },
             "meshes":{
                 "cube": "assets/models/cube.obj",
@@ -47,7 +53,12 @@
                 "default":{},
                 "pixelated":{
                     "MAG_FILTER": "GL_NEAREST"
+                },
+                "repeating":{
+                    "WRAP_S":"GL_REPEAT",
+                    "WRAP_T":"GL_REPEAT"
                 }
+
             },
             "materials":{
                 "metal":{
@@ -130,9 +141,9 @@
                     "texture": "moon",
                     "sampler": "default"
                 },
-                "tornCity": {
+                "street": {
                     "type": "Ntextured",
-                    "shader": "textured",
+                    "shader": "street",
                     "pipelineState": {
                         "faceCulling": {
                             "enabled": false
@@ -147,14 +158,14 @@
                         1,
                         1
                     ],
-                    "textures": ["tornCity"],
-                    "samplers": ["default"]
+                    "textures": ["street1","street2","pavement1","pavement2","separator1","separator2","streetMap"],
+                    "samplers": ["default","default","default","default","default","default","default"]
                 }
             }
         },
         "world":[
             {
-                "position": [0, 0, 10],
+                "position": [80, 0, 98],
                 "components": [
                     {
                         "type": "Camera"
@@ -201,7 +212,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "tornCity"
+                        "material": "street"
                     }
                 ]
             },
@@ -213,7 +224,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "tornCity"
+                        "material": "street"
                     }
                 ]
             },
@@ -225,7 +236,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "tornCity"
+                        "material": "street"
                     }
                 ]
             },
@@ -237,7 +248,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "tornCity"
+                        "material": "street"
                     }
                 ]
             },
@@ -249,7 +260,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "tornCity"
+                        "material": "street"
                     }
                 ]
             },
