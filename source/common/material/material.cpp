@@ -94,7 +94,6 @@ namespace our {
         uint64_t activeTexture = GL_TEXTURE0;
         for (int i = 0; i < textures.size(); i++)
         {
-            
             texture = textures[i];
             sampler = samplers[i];
             glActiveTexture(activeTexture);
@@ -116,25 +115,16 @@ namespace our {
         if (!data.is_object()) return;
         alphaThreshold = data.value("alphaThreshold", 0.0f);
         const nlohmann::json texturesData = data["textures"];
-        const nlohmann::json samplersData = data["textures"];
-        if(!texturesData.array() || !samplersData.array()){
+        const nlohmann::json samplersData = data["samplers"];
+        if(!texturesData.is_array() || !samplersData.is_array()){
             return;
         }
-        for(const &textureData: texturesData){
-            std::cout<<textureData<<std::endl;
+        for(auto const &textureData: texturesData){
+            textures.push_back(AssetLoader<Texture2D>::get(textureData.get<std::string>()));
         }
-        for(const &samplerData: samplersData){
-            std::cout<<samplerData<<std::endl;
+        for(auto const &samplerData: samplersData) {
+            samplers.push_back(AssetLoader<Sampler>::get(samplerData.get<std::string>()));
         }
-        // for(auto& [name, desc] : data["textures"]){
-        //     std::string texture = desc.get<std::string>();
-        //     textures.push_back(AssetLoader<Texture2D>::get(data.value("texture", "")));
-        // }
-
-        // for(auto& [name, desc] : data["samplers"].items()){
-        //     std::string sampler = desc.get<std::string>();
-        //     textures.push_back(AssetLoader<Sampler>::get(data.value("texture", "")));
-        // }
 
     }
     
