@@ -3,8 +3,9 @@
 #include "../ecs/world.hpp"
 #include "../components/camera.hpp"
 #include "../components/free-camera-controller.hpp"
-
+#include "../components/collision.hpp"
 #include "../application.hpp"
+#include "../components/mesh-renderer.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
@@ -34,6 +35,7 @@ namespace our
             CameraComponent* camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
             for(auto entity : world->getEntities()){
+                //printf("Entity: %s\n", entity->name.c_str());
                 camera = entity->getComponent<CameraComponent>();
                 controller = entity->getComponent<FreeCameraControllerComponent>();
                 if(camera && controller) break;
@@ -42,6 +44,7 @@ namespace our
             if(!(camera && controller)) return;
             // Get the entity that we found via getOwner of camera (we could use controller->getOwner())
             Entity* entity = camera->getOwner();
+            //printf("Entity: %s\n", entity->name.c_str());
 
             // If the left mouse button is pressed, we lock and hide the mouse. This common in First Person Games.
             if(app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked){
@@ -90,6 +93,39 @@ namespace our
 
             // We change the camera position based on the keys WASD/QE
             // S & W moves the player back and forth
+            
+            // CollisionComponent* collisionComponent = entity->getComponent<CollisionComponent>();
+            // if(collisionComponent) {
+            //     printf("CollisionComponent found\n");
+            //     printf("collision ID: %s\n", collisionComponent->getID().c_str());
+            //     glm::vec3 box = collisionComponent->boundingBox;
+            //     printf("box: x = %f, y = %f, z = %f\n", box.x, box.y, box.z);
+            // }
+
+            // Print information about each entity in the world
+            for(auto entity : world->getEntities()){
+                printf("Entity: %s\n", entity->name.c_str());
+                glm::vec3 position = entity->localTransform.position;
+                printf("Position: x = %f, y = %f, z = %f\n", position.x, position.y, position.z);
+
+                // Print components
+                if(auto cameraComponent = entity->getComponent<CameraComponent>()) {
+                    printf("Component: Camera\n");
+                }
+                if(auto controllerComponent = entity->getComponent<FreeCameraControllerComponent>()) {
+                    printf("Component: Free Camera Controller\n");
+                }
+                if(auto meshRendererComponent = entity->getComponent<MeshRendererComponent>()) {
+                    printf("Component: Mesh Renderer\n");
+                }
+                if(auto collisionComponent = entity->getComponent<CollisionComponent>()) {
+                    printf("Component: Collision\n");
+                    glm::vec3 box = collisionComponent->boundingBox;
+                    printf("Bounding Box: x = %f, y = %f, z = %f\n", box.x, box.y, box.z);
+                }
+            }            
+            glm::vec3 old_postion = position;
+
             if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
             if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z);
             // Q & E moves the player up and down
@@ -98,6 +134,9 @@ namespace our
             // A & D moves the player left or right 
             if(app->getKeyboard().isPressed(GLFW_KEY_D)) position += right * (deltaTime * current_sensitivity.x);
             if(app->getKeyboard().isPressed(GLFW_KEY_A)) position -= right * (deltaTime * current_sensitivity.x);
+
+            if(position.y < 0) position.y = old_postion.y;
+            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

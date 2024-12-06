@@ -184,6 +184,11 @@
                                 "type": "Mesh Renderer",
                                 "mesh": "cube",
                                 "material": "metal"
+                            },
+                            {
+                                "type": "Collision",
+                                //"shape": "box",
+                                "size": [10, 10, 10]
                             }
                         ]
                     }
