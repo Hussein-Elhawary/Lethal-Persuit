@@ -6,6 +6,7 @@
 #include "../components/collision.hpp"
 #include "../application.hpp"
 #include "../components/mesh-renderer.hpp"
+#include "../components/movement.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
@@ -63,7 +64,8 @@ namespace our
                             if(collisionComponent1->checkForCollision(*collisionComponent2))
                             {
                                 printf("Collision Detected\n");
-                                printf("Entity 1: %s\n", entity1->name.c_str());
+                                MovementComponent* movement1 = entity1->getComponent<MovementComponent>();
+                                //movement1->linearVelocity = glm::vec3(0, 0, 0);
                             }
                         }
                     }

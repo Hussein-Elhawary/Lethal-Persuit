@@ -177,14 +177,13 @@
                     {
                         "type": "Collision",
                         "center": [0, 0, 0],
-                        "size": [2, 3, 3]
+                        "size": [1, 1, 1]
                     }
                 ],
                 "children": [
                     {
-                        "name": "Cube",
+                        "name": "Weapon",
                         "position": [1, -1, -1],
-                        //"position": [80, 0, 90],
                         "rotation": [45, 45, 0],
                         "scale": [0.1, 0.1, 1.0],
                         "components": [
@@ -192,12 +191,12 @@
                                 "type": "Mesh Renderer",
                                 "mesh": "cube",
                                 "material": "metal"
-                            },
-                            {
-                                "type": "Collision",
-                                "center": [0, 0, 0],
-                                "size": [10, 10, 10]
                             }
+                            // ,{
+                            //     "type": "Collision",
+                            //     "center": [0, 0, 0],
+                            //     "size": [5, 5, 5]
+                            // }
                         ]
                     }
                 ]
@@ -230,6 +229,7 @@
                 ]
             },
             {
+                "name": "Front Cube Face",
                 "position": [0, 1, 2],
                 "rotation": [0, 0, 0],
                 "scale": [2, 2, 2],
@@ -238,6 +238,11 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [0, 0, 0],
+                        "size": [2, 2, 2]
                     }
                 ]
             },
