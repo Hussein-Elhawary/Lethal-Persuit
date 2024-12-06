@@ -41,7 +41,7 @@ namespace our
         if (type == CollisionComponent::getID())
         {
             printf("CollisionComponent added\n");
-            printf("box: x = %f, y = %f, z = %f\n", entity->getComponent<CollisionComponent>()->boundingBox.x, entity->getComponent<CollisionComponent>()->boundingBox.y, entity->getComponent<CollisionComponent>()->boundingBox.z);
+            printf("box: x = %f, y = %f, z = %f\n", entity->getComponent<CollisionComponent>()->boundingBoxSize.x, entity->getComponent<CollisionComponent>()->boundingBoxSize.y, entity->getComponent<CollisionComponent>()->boundingBoxSize.z);
         }
     }
 

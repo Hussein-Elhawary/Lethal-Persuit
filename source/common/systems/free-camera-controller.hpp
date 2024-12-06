@@ -93,37 +93,7 @@ namespace our
 
             // We change the camera position based on the keys WASD/QE
             // S & W moves the player back and forth
-            
-            // CollisionComponent* collisionComponent = entity->getComponent<CollisionComponent>();
-            // if(collisionComponent) {
-            //     printf("CollisionComponent found\n");
-            //     printf("collision ID: %s\n", collisionComponent->getID().c_str());
-            //     glm::vec3 box = collisionComponent->boundingBox;
-            //     printf("box: x = %f, y = %f, z = %f\n", box.x, box.y, box.z);
-            // }
-
-            // Print information about each entity in the world
-            for(auto entity : world->getEntities()){
-                printf("Entity: %s\n", entity->name.c_str());
-                glm::vec3 position = entity->localTransform.position;
-                printf("Position: x = %f, y = %f, z = %f\n", position.x, position.y, position.z);
-
-                // Print components
-                if(auto cameraComponent = entity->getComponent<CameraComponent>()) {
-                    printf("Component: Camera\n");
-                }
-                if(auto controllerComponent = entity->getComponent<FreeCameraControllerComponent>()) {
-                    printf("Component: Free Camera Controller\n");
-                }
-                if(auto meshRendererComponent = entity->getComponent<MeshRendererComponent>()) {
-                    printf("Component: Mesh Renderer\n");
-                }
-                if(auto collisionComponent = entity->getComponent<CollisionComponent>()) {
-                    printf("Component: Collision\n");
-                    glm::vec3 box = collisionComponent->boundingBox;
-                    printf("Bounding Box: x = %f, y = %f, z = %f\n", box.x, box.y, box.z);
-                }
-            }            
+                    
             glm::vec3 old_postion = position;
 
             if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
@@ -136,7 +106,7 @@ namespace our
             if(app->getKeyboard().isPressed(GLFW_KEY_A)) position -= right * (deltaTime * current_sensitivity.x);
 
             if(position.y < 0) position.y = old_postion.y;
-            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked
