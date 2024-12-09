@@ -54,6 +54,23 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
+    class LitMaterial: public TexturedMaterial {
+    public:
+        //Diffuse: release of light absorbed by a material in all directions with same amount
+        //in all directions.
+        //It depends on angle of incidence on the pixel
+        //Specular: reflection of light by material in multiple directions but intensity
+        //according to the angle with eye
+        //Ambient: light emitted by default even if no source
+        //Shininess: Related to specular, it is related to roughness of the surface
+        //more rough material thus less concentrated rays reflected
+        glm::vec3 diffuse, specular, ambient;
+        float shininess;
+
+        void setup() const override;
+        void deserialize(const nlohmann::json& data) override;
+    };
+
     class NTexturedMaterial : public TintedMaterial {
     public:
         std::vector<Texture2D*> textures;
@@ -72,7 +89,9 @@ namespace our {
             return new TexturedMaterial();
         } else if(type == "Ntextured"){
             return new NTexturedMaterial();
-        }else {
+        }else if(type == "LitMaterial") {
+            return new LitMaterial();
+        }else{
             return new Material();
         }
     }
