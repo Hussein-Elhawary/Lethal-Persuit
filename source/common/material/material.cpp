@@ -2,6 +2,7 @@
 
 #include "../asset-loader.hpp"
 #include "deserialize-utils.hpp"
+#include "glm/gtx/string_cast.hpp"
 #include <iostream>
 // The goal of requirement 7 is to specify the material that object can have
 // Where a material means: 
@@ -80,6 +81,19 @@ namespace our {
         alphaThreshold = data.value("alphaThreshold", 0.0f);
         texture = AssetLoader<Texture2D>::get(data.value("texture", ""));
         sampler = AssetLoader<Sampler>::get(data.value("sampler", ""));
+    }
+
+    void LitMaterial::setup() const{
+        TintedMaterial::setup();
+    }
+
+    void LitMaterial::deserialize(const nlohmann::json &data) {
+        TintedMaterial::deserialize(data);
+        diffuse = data.value("diffuse", glm::vec3(0.0f, 0.0f, 0.0f));
+        specular = data.value("specular", glm::vec3(0.0f, 0.0f, 0.0f));
+        ambient = data.value("ambient", glm::vec3(0.0f, 0.0f, 0.0f));
+        shininess = data.value("shininess",1.0f);
+        //printf("Diffuse %s Specular %s Ambient %s\n",glm::to_string(diffuse).c_str(),glm::to_string(specular).c_str(),glm::to_string(ambient).c_str());
     }
 
     void NTexturedMaterial::setup() const {

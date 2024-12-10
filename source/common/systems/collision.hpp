@@ -46,7 +46,7 @@ namespace our
                     glm::vec3 box = collisionComponent->boundingBoxWorldSize;
                     // printf("Bounding Box: x = %f, y = %f, z = %f\n", box.x, box.y, box.z);
                     glm::vec3 boxCenter = collisionComponent->boundingBoxWorldCenter;
-                    printf("Bounding Box Center: x = %f, y = %f, z = %f with size x = %f, y = %f, z = %f\n", boxCenter.x, boxCenter.y, boxCenter.z, box.x, box.y, box.z);
+                    //printf("Bounding Box Center: x = %f, y = %f, z = %f with size x = %f, y = %f, z = %f\n", boxCenter.x, boxCenter.y, boxCenter.z, box.x, box.y, box.z);
 
                     collidingEntities.push_back(entity);
                 }

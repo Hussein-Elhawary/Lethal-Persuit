@@ -115,6 +115,8 @@ set(STATES_SOURCES
         source/states/material-test-state.hpp
         source/states/entity-test-state.hpp
         source/states/renderer-test-state.hpp
+        source/common/components/light.cpp
+        source/common/components/light.hpp
 )
 
 # For each example, we add an executable target
