@@ -21,6 +21,8 @@ namespace our
     class FreeCameraControllerSystem {
         Application* app; // The application in which the state runs
         bool mouse_locked = true; // Is the mouse locked
+        bool tp_set = false;
+        glm::vec3 tp = glm::vec3(0, 0, 0);
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
@@ -100,11 +102,26 @@ namespace our
             if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
             if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z);
             // Q & E moves the player up and down
-            if(app->getKeyboard().isPressed(GLFW_KEY_Q)) position += up * (deltaTime * current_sensitivity.y);
-            if(app->getKeyboard().isPressed(GLFW_KEY_E)) position -= up * (deltaTime * current_sensitivity.y);
+            //if(app->getKeyboard().isPressed(GLFW_KEY_Q)) position += up * (deltaTime * current_sensitivity.y);
+            //if(app->getKeyboard().isPressed(GLFW_KEY_E)) position -= up * (deltaTime * current_sensitivity.y);
             // A & D moves the player left or right 
             if(app->getKeyboard().isPressed(GLFW_KEY_D)) position += right * (deltaTime * current_sensitivity.x);
             if(app->getKeyboard().isPressed(GLFW_KEY_A)) position -= right * (deltaTime * current_sensitivity.x);
+            // Tp ability
+            if(app->getKeyboard().justPressed(GLFW_KEY_Q))
+            {
+                if(!tp_set)
+                {
+                    tp = position;
+                    tp_set = true;
+                }
+                else
+                {
+                    position = tp;
+                    tp_set = false;
+                }
+            }
+            
 
             if(position.y < 0) position.y = old_postion.y;
             //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
