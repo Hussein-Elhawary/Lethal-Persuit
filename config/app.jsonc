@@ -27,6 +27,10 @@
                 "street":{
                     "vs":"assets/shaders/street.vert",
                     "fs":"assets/shaders/street.frag"
+                },
+                "wall":{
+                    "vs":"assets/shaders/wall.vert",
+                    "fs":"assets/shaders/wall.frag"
                 }
             },
             "textures":{
@@ -41,7 +45,14 @@
                 "pavement2": "assets/textures/street/pavement_disp.png",
                 "separator1": "assets/textures/street/separator_diff.jpg",
                 "separator2": "assets/textures/street/separator_disp.png",
-                "streetMap": "assets/textures/street/street_map.png"
+                "streetMap": "assets/textures/street/street_map.png",
+                "plainWall1": "assets/textures/house/polystyrene_diff.jpg",
+                "plainWall2": "assets/textures/house/polystyrene_disp.png",
+                "redhousecolor": "assets/textures/house/red_house_color.png",
+                "window1": "assets/textures/house/window1.png",
+                "door": "assets/textures/house/door.jpg",
+                "oakwood1": "assets/textures/house/oak_diff.jpg",
+                "oakwood2": "assets/textures/house/oak_ao.jpg"
             },
             "meshes":{
                 "cube": "assets/models/cube.obj",
@@ -159,6 +170,26 @@
                         1
                     ],
                     "textures": ["street1","street2","pavement1","pavement2","separator1","separator2","streetMap"],
+                    "samplers": ["default","default","default","default","default","default","default"]
+                },
+                "redwall": {
+                    "type": "Ntextured",
+                    "shader": "wall",
+                    "pipelineState": {
+                        "faceCulling": {
+                            "enabled": false
+                        },
+                        "depthTesting": {
+                            "enabled": true
+                        }
+                    },
+                    "tint": [
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "textures": ["plainWall1","plainWall2","redhousecolor","window1","door","oakwood1","oakwood2"],
                     "samplers": ["default","default","default","default","default","default","default"]
                 }
             }
@@ -309,7 +340,25 @@
                         "angularVelocity": [0, 90, 0]
                     }
                 ]
+            },
+            {
+                "name": "wallLeft",
+                "position": [71, 10, 80],
+                "rotation": [0, 90, 0],
+                "scale": [22, 11, 16],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "redwall"
+                    },
+                    {
+                        "type": "Movement",
+                        "angularVelocity": [0, 0, 0]
+                    }
+                ]
             }
+
         ]
     }
 }
