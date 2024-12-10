@@ -21,8 +21,7 @@ namespace our
     class FreeCameraControllerSystem {
         Application* app; // The application in which the state runs
         bool mouse_locked = true; // Is the mouse locked
-        bool tp_set = false;
-        glm::vec3 tp = glm::vec3(0, 0, 0);
+
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
@@ -110,15 +109,15 @@ namespace our
             // Tp ability
             if(app->getKeyboard().justPressed(GLFW_KEY_Q))
             {
-                if(!tp_set)
+                if(!controller->tp_set)
                 {
-                    tp = position;
-                    tp_set = true;
+                    controller->tp = position;
+                    controller->tp_set = true;
                 }
                 else
                 {
-                    position = tp;
-                    tp_set = false;
+                    position = controller->tp;
+                    controller->tp_set = false;
                 }
             }
             
