@@ -197,6 +197,27 @@
                         "material": "grass"
                     }
                 ]
+            },
+            {
+                "position": [0, 5, 0],
+                "components": [
+                    {
+                        "type": "Light",
+                        "lightType": "spot",
+                        "diffuse": [0.96, 0.9, 0.64],
+                        "specular": [0.4, 0.4, 0.4],
+                        "ambient": [0.96, 0.9, 0.64],
+                        "attenuation": {
+                            "constant": 10,
+                            "linear": 10,
+                            "quadratic": 20
+                        },
+                        "angle": {
+                            "inner": 30,
+                            "outer": 50
+                        }
+                    }
+                ]
             }
         ]
     }
