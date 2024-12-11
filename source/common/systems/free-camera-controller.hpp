@@ -97,7 +97,19 @@ namespace our
             // S & W moves the player back and forth
                     
             glm::vec3 old_postion = position;
+            if (controller->inDash)
+            {
+                position += (controller->dashDirection * (deltaTime * 100.0f))*glm::vec3(1, 0, 1);
+                if (std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now() - controller->lastDashTime).count() > 200)
+                {
+                    controller->inDash = false;
+                    fov = camera->fovY - controller->dashfov;
 
+                }
+                fov = glm::clamp(fov, glm::pi<float>() * 0.01f, glm::pi<float>() * 0.99f); // We keep the fov in the range 0.01*PI to 0.99*PI
+                camera->fovY = fov;
+            }
+            
             if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
             if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z);
             // Q & E moves the player up and down
@@ -121,7 +133,19 @@ namespace our
                 }
             }
             
-
+            // Dash ability
+            if(app->getKeyboard().justPressed(GLFW_KEY_F))
+            {
+                if (std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - controller->lastDashTime).count() > controller->dashCoolDown)
+                {
+                    controller->lastDashTime = std::chrono::system_clock::now();
+                    controller->inDash = true;
+                    controller->dashDirection = front;
+                    fov = camera->fovY + controller->dashfov;
+                    fov = glm::clamp(fov, glm::pi<float>() * 0.01f, glm::pi<float>() * 0.99f); // We keep the fov in the range 0.01*PI to 0.99*PI
+                    camera->fovY = fov;
+                }
+            }
             if(position.y < 0) position.y = old_postion.y;
             //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }

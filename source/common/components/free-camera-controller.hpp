@@ -3,6 +3,7 @@
 #include "../ecs/component.hpp"
 
 #include <glm/glm.hpp> 
+#include <chrono>
 
 namespace our {
 
@@ -18,10 +19,13 @@ namespace our {
         float fovSensitivity = 0.3f; // The fov angle change per unit of mouse wheel scrolling
         glm::vec3 positionSensitivity = {6.0f, 6.0f, 6.0f}; // The unity per second of camera movement if WASD is pressed
         float speedupFactor = 0.50f; // A multiplier for the positionSensitivity if "Left Shift" is held.
-        bool tpSet = false;//check if tp is set
-        glm::vec3 tp = glm::vec3(0, 0, 0);//tp position
-        int dashCoolDown = 5;//dash cool down
-
+        bool tpSet = false; //check if tp is set
+        glm::vec3 tp = glm::vec3(0, 0, 0); //tp position
+        int dashCoolDown = 5; //dash cool down
+        std::chrono::time_point<std::chrono::system_clock> lastDashTime = std::chrono::system_clock::now(); //last dash time
+        bool inDash = false; //check if in dash
+        glm::vec3 dashDirection = glm::vec3(0, 0, 0); //dash direction
+        float dashfov = 1.f; //dash fov
         
         // The ID of this component type is "Free Camera Controller"
         static std::string getID() { return "Free Camera Controller"; }
