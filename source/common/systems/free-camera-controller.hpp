@@ -109,15 +109,15 @@ namespace our
             // Tp ability
             if(app->getKeyboard().justPressed(GLFW_KEY_Q))
             {
-                if(!controller->tp_set)
+                if(!controller->tpSet)
                 {
                     controller->tp = position;
-                    controller->tp_set = true;
+                    controller->tpSet = true;
                 }
                 else
                 {
                     position = controller->tp;
-                    controller->tp_set = false;
+                    controller->tpSet = false;
                 }
             }
             
