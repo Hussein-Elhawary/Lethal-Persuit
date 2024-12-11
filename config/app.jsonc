@@ -69,7 +69,13 @@
                 "repeating":{
                     "WRAP_S":"GL_REPEAT",
                     "WRAP_T":"GL_REPEAT"
+                },
+                "anisotropic":{
+                    "MAG_FILTER": "GL_LINEAR",
+                    "MIN_FILTER": "GL_LINEAR_MIPMAP_LINEAR",
+                    "TEXTURE_MAX_ANISOTROPY_EXT": 16
                 }
+                
 
             },
             "materials":{
@@ -171,7 +177,7 @@
                         1
                     ],
                     "textures": ["street1","street2","pavement1","pavement2","separator1","separator2","streetMap"],
-                    "samplers": ["default","default","default","default","default","default","default"]
+                    "samplers": ["anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic"]
                 },
                 "redwall": {
                     "type": "Ntextured",
