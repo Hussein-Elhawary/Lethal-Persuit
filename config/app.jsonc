@@ -58,7 +58,8 @@
                 "cube": "assets/models/cube.obj",
                 "monkey": "assets/models/monkey.obj",
                 "plane": "assets/models/plane.obj",
-                "sphere": "assets/models/sphere.obj"
+                "sphere": "assets/models/sphere.obj",
+                "ak-47": "assets/models/ak-47s/ak-47s.obj"
             },
             "samplers":{
                 "default":{},
@@ -214,14 +215,14 @@
                 "children": [
                     {
                         "name": "Weapon",
-                        "position": [1, -1, -1],
-                        "rotation": [45, 45, 0],
-                        "scale": [0.1, 0.1, 1.0],
+                        "rotation": [-8, 190, 0],
+                        "scale": [0.00015, 0.00015, 0.00015],
+                        "position": [0.045, -0.035, -0.05],
                         "components": [
                             {
                                 "type": "Mesh Renderer",
-                                "mesh": "cube",
-                                "material": "metal"
+                                "mesh": "ak-47",
+                                "material": "glass"
                             }
                             // ,{
                             //     "type": "Collision",
