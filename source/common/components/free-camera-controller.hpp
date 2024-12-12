@@ -18,6 +18,7 @@ namespace our {
         float rotationSensitivity = 0.002f; // The angle change per pixel of mouse movement
         float fovSensitivity = 0.3f; // The fov angle change per unit of mouse wheel scrolling
         glm::vec3 positionSensitivity = {6.0f, 6.0f, 6.0f}; // The unity per second of camera movement if WASD is pressed
+        glm::vec3 originalSpeed = {6.0f, 6.0f, 6.0f}; // The original speed of the camera
         float speedupFactor = 0.50f; // A multiplier for the positionSensitivity if "Left Shift" is held.
         bool tpSet = false; //check if tp is set
         glm::vec3 tp = glm::vec3(0, 0, 0); //tp position
@@ -26,7 +27,9 @@ namespace our {
         bool inDash = false; //check if in dash
         glm::vec3 dashDirection = glm::vec3(0, 0, 0); //dash direction
         float dashfov = 1.f; //dash fov
-        
+        float gravity = 23.0f; //gravity
+        float upSpeed = 0.0f; //up speed
+        float jumpSpeed = 10.0f; //jump speed
         // The ID of this component type is "Free Camera Controller"
         static std::string getID() { return "Free Camera Controller"; }
 

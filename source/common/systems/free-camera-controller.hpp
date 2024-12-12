@@ -110,8 +110,8 @@ namespace our
                 camera->fovY = fov;
             }
             
-            if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
-            if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z);
+            if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z)*glm::vec3(1, 0, 1);
+            if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z)*glm::vec3(1, 0, 1);
             // Q & E moves the player up and down
             //if(app->getKeyboard().isPressed(GLFW_KEY_Q)) position += up * (deltaTime * current_sensitivity.y);
             //if(app->getKeyboard().isPressed(GLFW_KEY_E)) position -= up * (deltaTime * current_sensitivity.y);
@@ -146,8 +146,27 @@ namespace our
                     camera->fovY = fov;
                 }
             }
-            if(position.y < 0) position.y = old_postion.y;
-            //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            // jump ability TODO: change this to coloision with the ground
+            if(app->getKeyboard().justPressed(GLFW_KEY_SPACE)&& position.y < 0.1f)
+            {
+                controller->upSpeed = controller->jumpSpeed;
+            }
+
+            // TODO: change this to check if collision with the ground
+            if (position.y > 0)
+            {
+                controller->upSpeed -= deltaTime * controller->gravity;
+            }
+              
+            position.y += controller->upSpeed * deltaTime;
+            if(position.y < 0) 
+            {
+                position.y = old_postion.y;
+                controller->upSpeed = 0;
+            }
+            
+            // updates Y position
+            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked
