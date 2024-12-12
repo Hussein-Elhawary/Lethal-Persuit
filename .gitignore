@@ -1,4 +1,3 @@
-
 # build directories
 cmake-build-*/
 build/
@@ -10,7 +9,6 @@ imgui.ini
 
 # Since ".obj" are ignored by default, we force them to be added
 !assets/models/**/*.obj
-
 # Visual Studio specific files
 CMakeSettings.json
 .vs/
@@ -26,3 +24,6 @@ screenshots/
 
 # errors
 errors/
+
+# needs fixing
+assets/models/city/town4new.obj

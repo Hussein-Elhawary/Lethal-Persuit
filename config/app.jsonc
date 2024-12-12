@@ -59,7 +59,8 @@
                 "monkey": "assets/models/monkey.obj",
                 "plane": "assets/models/plane.obj",
                 "sphere": "assets/models/sphere.obj",
-                "ak-47": "assets/models/ak-47s/ak-47s.obj"
+                "ak-47": "assets/models/ak-47s/ak-47s.obj",
+                "city": "assets/models/city/town4new.obj"
             },
             "samplers":{
                 "default":{},
