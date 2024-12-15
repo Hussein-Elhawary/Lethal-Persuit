@@ -163,7 +163,6 @@ namespace our
             position.y += controller->upSpeed * deltaTime;
             if(position.y < 0) 
             {
-                position.y = old_position.y;
                 controller->upSpeed = 0;
             }
 

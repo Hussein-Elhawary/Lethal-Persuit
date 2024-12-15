@@ -229,6 +229,28 @@
                         }
                     }
                 ]
+            },
+            {
+                "position": [5, 0, 0],
+                "components": [
+                    {
+                        "type": "Light",
+                        "lightType": "point",
+                        "diffuse": [1, 1, 1],
+                        "specular": [1, 1, 1],
+                        "ambient": [0.1,0.1,0.1],
+                        "attenuation": {
+                            "constant": 1,
+                            "linear": 0.25,
+                            "quadratic": 0
+                        },
+                        "direction": [-1,-1,-1],
+                        "angle": {
+                            "inner": 20,
+                            "outer": 50
+                        }
+                    }
+                ]
             }
         ]
     }

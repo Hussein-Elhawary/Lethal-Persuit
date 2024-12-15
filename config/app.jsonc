@@ -216,7 +216,7 @@
                     {
                         "type": "Collision",
                         "center": [0, 0, 0],
-                        "size": [1, 1, 1]
+                        "size": [0.4, 1, 0.4]
                     }
                 ],
                 "children": [
@@ -231,11 +231,6 @@
                                 "mesh": "ak-47",
                                 "material": "glass"
                             }
-                            // ,{
-                            //     "type": "Collision",
-                            //     "center": [0, 0, 0],
-                            //     "size": [5, 5, 5]
-                            // }
                         ]
                     }
                 ]
@@ -272,6 +267,11 @@
                         "type": "Mesh Renderer",
                         "mesh": "city",
                         "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [0, -1, 0],
+                        "size": [10, 10, 1]
                     }
                 ]
             },
@@ -285,11 +285,6 @@
                         "type": "Mesh Renderer",
                         "mesh": "plane",
                         "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [0, 0, 0],
-                        "size": [2, 2, 2]
                     }
                 ]
             },

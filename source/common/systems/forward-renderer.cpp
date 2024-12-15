@@ -270,8 +270,18 @@ namespace our {
         // Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
         for (auto &[localToWorld, center, mesh, material]: transparentCommands) {
             material->setup();
-            //set the transform uniform to be equal the model-view-projection matrix
-            material->shader->set("transform", VP * localToWorld);
+            const glm::mat4 transformation = VP * localToWorld;
+            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
+            //To Edit violates open closed principle
+            if(litMaterial){
+                const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
+                litMaterial->shader->set("object_to_world", localToWorld);
+                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+            }else{
+                //set the transform uniform to be equal the model-view-projection matrix
+                material->shader->set("transform", transformation);
+            }
+
             //draw the mesh
             for (const auto oneMesh: *mesh) {
                 oneMesh->draw();
