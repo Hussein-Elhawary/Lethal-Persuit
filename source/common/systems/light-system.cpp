@@ -30,11 +30,15 @@ namespace our{
             lightShader->set("light.ambient", light->ambient);
             lightShader->set("light.diffuse", light->diffuse);
             lightShader->set("light.specular", light->specular);
+
+            lightShader->set("light.attenuation_constant", light->attenuation.constant);
+            lightShader->set("light.attenuation_linear", light->attenuation.linear);
+            lightShader->set("light.attenuation_quadratic", light->attenuation.quadratic);
+
         }
     }
 
     void LightSystem::sendCameraPositionToLightShaders(const glm::vec3 &cameraPosition) {
-        printf("Camera Position 1: %f %f %f\n", cameraPosition.x, cameraPosition.y, cameraPosition.z);
         lightShader->set("camera_position", cameraPosition);
     }
 
@@ -46,7 +50,6 @@ namespace our{
     }
 
     void LightSystem::sendViewMatrixToLightShaders(const glm::mat4 &viewMatrix) {
-        printf("View Matrix: %s\n", glm::to_string(viewMatrix).c_str());
         lightShader->set("view_projection", viewMatrix);
     }
 

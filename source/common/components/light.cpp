@@ -2,6 +2,8 @@
 #include "deserialize-utils.hpp"
 #include "glm/gtx/string_cast.hpp"
 #include "light.hpp"
+#include "ecs/transform.hpp"
+#include "ecs/entity.hpp"
 #include <glm/glm.hpp>
 
 namespace our {
@@ -50,6 +52,10 @@ namespace our {
         specular = data.value("specular", glm::vec3(0.0f, 0.0f, 0.0f));
         ambient = data.value("ambient", glm::vec3(0.0f, 0.0f, 0.0f));
         direction = data.value("direction", glm::vec3(1.0f, 0.0f, 0.0f));
+        Entity* entity = this->getOwner();
+        if(entity){
+            position = entity->getLocalToWorldMatrix() * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
+        }
     }
 
     void LightComponent::deserialize(const nlohmann::json &data) {
@@ -62,10 +68,6 @@ namespace our {
         }else if(type == LightType::SPOT){
             deserializeSpotLight(data);
         }
-
-        printf("Diffuse %s Specular %s Ambient %s\n",glm::to_string(diffuse).c_str(),glm::to_string(specular).c_str(),glm::to_string(ambient).c_str());
-        printf("Atten %f %f %f\n",attenuation.constant,attenuation.linear,attenuation.quadratic);
-        printf("Angle %f %f \n",spotAngle.inner,spotAngle.outer);
 
     }
 }

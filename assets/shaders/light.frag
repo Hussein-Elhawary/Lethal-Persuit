@@ -59,7 +59,7 @@ void main() {
     vec3 ambient = material.ambient * light.ambient;
 
     // Then we combine the light component additively.
-    frag_color = fsin.color * vec4(diffuse + specular + ambient, 1.0f);
+    frag_color = fsin.color * vec4(ambient+specular+diffuse, 1.0f);
     //extract first row of object_to_world_inv_transpose in vec3
     //frag_color = vec4(object_to_world_inv_transpose[1][0],object_to_world_inv_transpose[1][1],object_to_world_inv_transpose[1][2], 1.0f);
 }
