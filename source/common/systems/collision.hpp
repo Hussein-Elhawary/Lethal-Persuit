@@ -51,7 +51,7 @@ namespace our
                 // }
                 if (auto collisionComponent = entity->getComponent<CollisionComponent>())
                 {
-                    printf("Component: Collision\n");
+                    //printf("Component: Collision\n");
                     // printf("Entity: %s\n", entity->name.c_str());
                     collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
                     glm::vec3 box = collisionComponent->boundingBoxWorldSize;
@@ -105,11 +105,13 @@ namespace our
             {
                 if (auto collisionComponent = entity->getComponent<CollisionComponent>())
                 {
-                    printf("Component: Collision\n");
+                    //printf("Component: Collision\n");
                     collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
                     glm::vec3 box = collisionComponent->boundingBoxWorldSize;
                     glm::vec3 boxCenter = collisionComponent->boundingBoxWorldCenter;
                     if(entity->name == "Player") continue;
+                    if(entity->name == "Ground")continue;
+
                     
                     collidingEntities.push_back(entity);
                 }
@@ -118,6 +120,80 @@ namespace our
             {
                 if (auto collisionComponent1 = player->getComponent<CollisionComponent>())
                 {
+                    if (auto collisionComponent2 = entity->getComponent<CollisionComponent>())
+                    {
+                        if (collisionComponent1->checkForCollision(*collisionComponent2))
+                        {
+                            printf("Collision Detected\n");
+
+                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            return true;
+                        }
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        Entity* playerCollisionEntity(World *world, float deltaTime, glm::vec3 old_position)
+        {
+            std::vector<Entity *> collidingEntities;
+            for (auto entity : world->getEntities())
+            {
+                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
+                {
+                    //printf("Component: Collision\n");
+                    collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
+                    glm::vec3 box = collisionComponent->boundingBoxWorldSize;
+                    glm::vec3 boxCenter = collisionComponent->boundingBoxWorldCenter;
+                    if(entity->name == "Player") continue;
+                    if(entity->name == "Ground")continue;
+
+                    
+                    collidingEntities.push_back(entity);
+                }
+            }
+            for (auto entity : collidingEntities)
+            {
+                if (auto collisionComponent1 = player->getComponent<CollisionComponent>())
+                {
+                    if (auto collisionComponent2 = entity->getComponent<CollisionComponent>())
+                    {
+                        if (collisionComponent1->checkForCollision(*collisionComponent2))
+                        {
+                            printf("Collision Detected\n");
+
+                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            return entity;
+                        }
+                    }
+                }
+            }
+
+            return nullptr;
+        }
+
+        bool playerGroundCollision(World *world, float deltaTime, glm::vec3 old_position)
+        {
+            std::vector<Entity *> collidingEntities;
+            for (auto entity : world->getEntities())
+            {
+                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
+                {
+                    //printf("Component: Collision\n");
+                    collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
+                    if(entity->name == "Player") continue;
+                    if(entity->name != "Ground")continue;
+
+                    collidingEntities.push_back(entity);
+                }
+            }
+            for (auto entity : collidingEntities)
+            {
+                if (auto collisionComponent1 = player->getComponent<CollisionComponent>())
+                {
+
                     if (auto collisionComponent2 = entity->getComponent<CollisionComponent>())
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))

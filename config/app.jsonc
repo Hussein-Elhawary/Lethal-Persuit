@@ -205,7 +205,7 @@
         "world":[
             {
                 "name": "Player",
-                "position": [80, 0, 98],
+                "position": [80, 2, 98],
                 "components": [
                     {
                         "type": "Camera"
@@ -251,6 +251,7 @@
                 ]
             },
             {
+                "name": "Ground",
                 "position": [0, -1, 0],
                 "rotation": [-90, 0, 0],
                 "scale": [100, 100, 1],
@@ -262,8 +263,8 @@
                     },
                     {
                         "type": "Collision",
-                        "center": [0, -1, 0],
-                        "size": [10, 10, 1]
+                        "center": [0, 0, 0],
+                        "size": [1, 0.01, 100]
                     }
                 ]
             },
@@ -361,8 +362,8 @@
                     },
                     {
                         "type": "Collision",
-                        "center": [0, 0, 0],
-                        "size": [0.001, 1, 1.35]
+                        "center": [0, 0, -0.15],
+                        "size": [0.1, 1, 1.35]
                     }
                 ]
             }
