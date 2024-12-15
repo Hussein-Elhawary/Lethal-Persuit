@@ -27,6 +27,7 @@ namespace our{
         for (const auto light: lights) {
             lightShader->set("light.position", light->position);
             lightShader->set("light.direction", light->direction);
+
             lightShader->set("light.ambient", light->ambient);
             lightShader->set("light.diffuse", light->diffuse);
             lightShader->set("light.specular", light->specular);
@@ -34,7 +35,9 @@ namespace our{
             lightShader->set("light.attenuation_constant", light->attenuation.constant);
             lightShader->set("light.attenuation_linear", light->attenuation.linear);
             lightShader->set("light.attenuation_quadratic", light->attenuation.quadratic);
-
+            //convert angles to radian
+            lightShader->set("light.inner_angle", light->spotAngle.inner*glm::pi<float>()/180);
+            lightShader->set("light.outer_angle", light->spotAngle.outer*glm::pi<float>()/180);
         }
     }
 

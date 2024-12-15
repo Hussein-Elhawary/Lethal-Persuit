@@ -11,7 +11,7 @@
     },
     "scene": {
         "renderer":{
-            "sky": "assets/textures/black.jpg",
+            "sky": "assets/textures/sky.jpg",
             "postprocess": "assets/shaders/postprocess/vignette.frag"
         },
         "assets":{
@@ -26,7 +26,7 @@
                 },
                 "lighted":{
                     "vs":"assets/shaders/light.vert",
-                    "fs":"assets/shaders/light-point.frag"
+                    "fs":"assets/shaders/light-spot.frag"
                 }
             },
             "textures":{
@@ -209,7 +209,7 @@
                 ]
             },
             {
-                "position": [0, 4, 0],
+                "position": [0, 0, 5],
                 "components": [
                     {
                         "type": "Light",
@@ -222,9 +222,9 @@
                             "linear": 0.25,
                             "quadratic": 0
                         },
-                        "direction": [0,-1,0],
+                        "direction": [0,0,-1],
                         "angle": {
-                            "inner": 30,
+                            "inner": 20,
                             "outer": 50
                         }
                     }
