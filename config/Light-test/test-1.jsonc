@@ -23,6 +23,10 @@
                 "textured":{
                     "vs":"assets/shaders/textured.vert",
                     "fs":"assets/shaders/textured.frag"
+                },
+                "lighted":{
+                    "vs":"assets/shaders/light.vert",
+                    "fs":"assets/shaders/light.frag"
                 }
             },
             "textures":{
@@ -127,7 +131,7 @@
                 },
                 "lightedMetal":{
                     "type": "LitMaterial",
-                    "shader": "tinted",
+                    "shader": "lighted",
                     "pipelineState": {
                         "faceCulling":{
                             "enabled": false
@@ -165,7 +169,7 @@
                             {
                                 "type": "Mesh Renderer",
                                 "mesh": "cube",
-                                "material": "metal"
+                                "material": "lightedMetal"
                             }
                         ]
                     }
@@ -177,13 +181,14 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "monkey",
-                        "material": "monkey"
-                    },
-                    {
-                        "type": "Movement",
-                        "linearVelocity": [0, 0.1, 0],
-                        "angularVelocity": [0, 45, 0]
+                        "material": "lightedMetal"
                     }
+//                ,
+//                    {
+//                        "type": "Movement",
+//                        "linearVelocity": [0, 0.1, 0],
+//                        "angularVelocity": [0, 45, 0]
+//                    }
                 ]
             },
             {

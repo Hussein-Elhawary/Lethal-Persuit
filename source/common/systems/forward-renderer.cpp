@@ -102,6 +102,7 @@ namespace our {
             // so it is more performant to disable the depth mask
             postprocessMaterial->pipelineState.depthMask = false;
         }
+        lightSystem.initialize();
     }
 
     void ForwardRenderer::destroy() const {
@@ -126,6 +127,7 @@ namespace our {
     }
 
     void ForwardRenderer::render(World *world) {
+        lightSystem.addLightData(world);
         // First of all, we search for a camera and for all the mesh renderers
         const CameraComponent *camera = nullptr;
         opaqueCommands.clear();
@@ -218,8 +220,17 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: opaqueCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            //set the transform uniform to be equal the model-view-projection matrix
-            material->shader->set("transform", transformation);
+            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
+            //To Edit violates open closed principle
+            if(litMaterial){
+                const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
+                litMaterial->shader->set("object_to_world", localToWorld);
+                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+            }else{
+                //set the transform uniform to be equal the model-view-projection matrix
+                material->shader->set("transform", transformation);
+            }
+
             //draw the mesh
             mesh->draw();
         }

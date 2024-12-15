@@ -80,12 +80,17 @@ set(COMMON_SOURCES
         source/common/components/component-deserializer.hpp
         source/common/components/collision.hpp
         source/common/components/collision.cpp
+        source/common/components/light.cpp
+        source/common/components/light.hpp
 
         source/common/systems/forward-renderer.hpp
         source/common/systems/forward-renderer.cpp
         source/common/systems/free-camera-controller.hpp
         source/common/systems/movement.hpp
         source/common/systems/collision.hpp
+        source/common/systems/light-system.cpp
+        source/common/systems/light-system.hpp
+
 )
 
 # Define the directories in which to search for the included headers
@@ -115,8 +120,6 @@ set(STATES_SOURCES
         source/states/material-test-state.hpp
         source/states/entity-test-state.hpp
         source/states/renderer-test-state.hpp
-        source/common/components/light.cpp
-        source/common/components/light.hpp
 )
 
 # For each example, we add an executable target

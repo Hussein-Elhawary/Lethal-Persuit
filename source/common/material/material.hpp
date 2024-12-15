@@ -54,7 +54,7 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
-    class LitMaterial: public TexturedMaterial {
+    class LitMaterial: public Material {
     public:
         //Diffuse: release of light absorbed by a material in all directions with same amount
         //in all directions.
