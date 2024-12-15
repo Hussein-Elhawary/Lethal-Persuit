@@ -21,8 +21,8 @@ namespace our {
     void LightComponent::deserializeAttenuation(const nlohmann::json &data) {
         auto attenuationIt = data.find("attenuation");
         if(attenuationIt != data.end()){
-            attenuation.constant = attenuationIt->value("constant",0.0f);
-            attenuation.linear = attenuationIt->value("constant",1.0f);
+            attenuation.constant = attenuationIt->value("constant",1.0f);
+            attenuation.linear = attenuationIt->value("linear",0.0f);
             attenuation.quadratic = attenuationIt->value("quadratic",0.0f);
 
         }
