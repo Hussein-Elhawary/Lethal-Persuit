@@ -5,6 +5,7 @@
 #include "../mesh/mesh-utils.hpp"
 #include "../texture/texture-utils.hpp"
 #include "glm/gtx/string_cast.hpp"
+
 namespace our {
     void ForwardRenderer::initialize(const glm::ivec2 windowSize, const nlohmann::json &config) {
         // First, we store the window size for later use
@@ -222,17 +223,19 @@ namespace our {
             const glm::mat4 transformation = VP * localToWorld;
             LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
             //To Edit violates open closed principle
-            if(litMaterial){
+            if (litMaterial) {
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
                 litMaterial->shader->set("object_to_world", localToWorld);
                 litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
-            }else{
+            } else {
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);
             }
 
             //draw the mesh
-            mesh->draw();
+            for (const auto oneMesh: *mesh) {
+                oneMesh->draw();
+            }
         }
 
         // If there is a sky material, draw the sky
@@ -270,7 +273,9 @@ namespace our {
             //set the transform uniform to be equal the model-view-projection matrix
             material->shader->set("transform", VP * localToWorld);
             //draw the mesh
-            mesh->draw();
+            for (const auto oneMesh: *mesh) {
+                oneMesh->draw();
+            }
         }
 
         // If there is a postprocess material, apply postprocessing

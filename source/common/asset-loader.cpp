@@ -64,10 +64,10 @@ namespace our {
     // data must be in the form:
     //    { mesh_name : "path/to/3d-model-file", ... }
     template<>
-    void AssetLoader<Mesh>::deserialize(const nlohmann::json& data) {
+    void AssetLoader<std::vector<Mesh *> >::deserialize(const nlohmann::json &data) {
         if(data.is_object()){
-            for(auto& [name, desc] : data.items()){
-                std::string path = desc.get<std::string>();
+            for(auto& [name, desc] : data.items()) {
+                auto path = desc.get<std::string>();
                 assets[name] = mesh_utils::loadOBJ(path);
             }
         }
@@ -106,7 +106,7 @@ namespace our {
         if(assetData.contains("samplers"))
             AssetLoader<Sampler>::deserialize(assetData["samplers"]);
         if(assetData.contains("meshes"))
-            AssetLoader<Mesh>::deserialize(assetData["meshes"]);
+            AssetLoader<std::vector<Mesh *> >::deserialize(assetData["meshes"]);
         if(assetData.contains("materials"))
             AssetLoader<Material>::deserialize(assetData["materials"]);
     }
