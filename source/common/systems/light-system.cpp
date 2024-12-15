@@ -1,9 +1,10 @@
 #include "light-system.hpp"
-
+#include "glm/gtx/string_cast.hpp"
 namespace our{
 
-    void LightSystem::initialize() {
+    void LightSystem::initialize(const glm::ivec2 windowSize) {
         extractLightShaderFromAssets();
+        this->windowSize = windowSize;
     }
 
     void LightSystem::extractLightShaderFromAssets() {
@@ -33,6 +34,7 @@ namespace our{
     }
 
     void LightSystem::sendCameraPositionToLightShaders(const glm::vec3 &cameraPosition) {
+        printf("Camera Position 1: %f %f %f\n", cameraPosition.x, cameraPosition.y, cameraPosition.z);
         lightShader->set("camera_position", cameraPosition);
     }
 
@@ -44,6 +46,7 @@ namespace our{
     }
 
     void LightSystem::sendViewMatrixToLightShaders(const glm::mat4 &viewMatrix) {
+        printf("View Matrix: %s\n", glm::to_string(viewMatrix).c_str());
         lightShader->set("view_projection", viewMatrix);
     }
 
@@ -62,8 +65,8 @@ namespace our{
             glm::vec3 cameraPosition = calculateCameraPositionInWorld(camera);
             sendCameraPositionToLightShaders(cameraPosition);
 
-            glm::mat4 viewMatrix = camera->getViewMatrix();
-            sendViewMatrixToLightShaders(viewMatrix);
+            glm::mat4 viewProjectionMatrix = camera->getProjectionMatrix(windowSize) * camera->getViewMatrix();
+            sendViewMatrixToLightShaders(viewProjectionMatrix);
         }
 
     }
