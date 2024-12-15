@@ -225,6 +225,7 @@ namespace our {
             if(litMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
                 litMaterial->shader->set("object_to_world", localToWorld);
+                //litMaterial->shader->set("camera_position",  glm::vec3(0,0,10));
                 litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
                 printf("View Matrix 1: %s\n", glm::to_string(VP).c_str());
                 //litMaterial->shader->set("view_projection", VP);
