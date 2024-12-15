@@ -5,6 +5,7 @@
 #include "../components/free-camera-controller.hpp"
 #include "../components/collision.hpp"
 #include "../application.hpp"
+#include "collision.hpp"
 #include "../components/mesh-renderer.hpp"
 
 #include <glm/glm.hpp>
@@ -21,7 +22,7 @@ namespace our
     class FreeCameraControllerSystem {
         Application* app; // The application in which the state runs
         bool mouse_locked = true; // Is the mouse locked
-
+        CollisionSystem collisionSystem;
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
@@ -47,7 +48,8 @@ namespace our
             // Get the entity that we found via getOwner of camera (we could use controller->getOwner())
             Entity* entity = camera->getOwner();
             //printf("Entity: %s\n", entity->name.c_str());
-
+            collisionSystem.setPlayer(entity);
+            
             // If the left mouse button is pressed, we lock and hide the mouse. This common in First Person Games.
             //if(app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked){
             //    app->getMouse().lockMouse(app->getWindow());
@@ -96,7 +98,7 @@ namespace our
             // We change the camera position based on the keys WASD/QE
             // S & W moves the player back and forth
                     
-            glm::vec3 old_postion = position;
+            glm::vec3 old_position = position;
             if (controller->inDash)
             {
                 position += (controller->dashDirection * (deltaTime * 100.0f))*glm::vec3(1, 0, 1);
@@ -161,8 +163,28 @@ namespace our
             position.y += controller->upSpeed * deltaTime;
             if(position.y < 0) 
             {
-                position.y = old_postion.y;
+                position.y = old_position.y;
                 controller->upSpeed = 0;
+            }
+
+            glm::vec3 direction = position - old_position;
+            bool isCollide = collisionSystem.playerCollisionUpdate(world, deltaTime, position);
+            printf("Collision detected: %d\n", isCollide);
+            if(isCollide){
+                bool isCollideXPos = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0.1,0,0));
+                bool isCollideXNeg = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(-0.1,0,0));
+                if(direction.x != 0)
+                {
+                    if(isCollideXPos || isCollideXNeg)
+                        position.x = old_position.x;
+                }
+                bool isCollideZPos = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0,0,0.1));
+                bool isCollideZNeg = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0,0,-0.1));
+                if(direction.z != 0)
+                {
+                    if(isCollideZPos || isCollideZNeg)
+                        position.z = old_position.z;
+                }
             }
             
             // updates Y position
