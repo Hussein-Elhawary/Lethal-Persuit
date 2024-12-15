@@ -346,7 +346,7 @@
                 ]
             },
             {
-                "name": "wallLeft",
+                "name": "WallLeft",
                 "position": [71, 10, 80],
                 "rotation": [0, 90, 0],
                 "scale": [22, 11, 16],

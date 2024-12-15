@@ -150,13 +150,13 @@ namespace our
             }
             // // jump ability TODO: change this to colision with the ground
             bool isCollidedWithGround = collisionSystem.playerGroundCollision(world, deltaTime, position);
-            fprintf(stderr, "Collision detected with ground: %s\n", isCollidedWithGround ? "true" : "false");
-            printf("jump pressed: %s\n", app->getKeyboard().justPressed(GLFW_KEY_SPACE) ? "true" : "false"); 
+            //fprintf(stderr, "Collision detected with ground: %s\n", isCollidedWithGround ? "true" : "false");
+            //printf("jump pressed: %s\n", app->getKeyboard().justPressed(GLFW_KEY_SPACE) ? "true" : "false"); 
             bool jumpInCurrentFrame = false;
             if(isCollidedWithGround && app->getKeyboard().justPressed(GLFW_KEY_SPACE) )
             {
                 controller->upSpeed = controller->jumpSpeed;
-                printf("Jumping\n");
+                //printf("Jumping\n");
                 jumpInCurrentFrame = true;
             }
 
@@ -175,8 +175,20 @@ namespace our
 
             glm::vec3 direction = position - old_position;
             bool isCollide = collisionSystem.playerCollisionUpdate(world, deltaTime, position);
+            Entity* collidedEntity = collisionSystem.playerCollisionEntity(world, deltaTime, position);
             //printf("Collision detected: %d\n", isCollide);
             if(isCollide){
+                //wall jump
+                if (collidedEntity->name.substr(0,4) == "Wall")
+                {
+                    if(app->getKeyboard().justPressed(GLFW_KEY_SPACE))
+                    {
+                        controller->upSpeed = controller->jumpSpeed;
+                        position.y += controller->upSpeed * deltaTime;
+                        position += direction * deltaTime;
+                    }
+                }
+                
                 //position.y = old_position.y;
                 bool isCollideXPos = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0.1,0,0));
                 bool isCollideXNeg = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(-0.1,0,0));
