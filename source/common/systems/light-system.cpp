@@ -24,20 +24,27 @@ namespace our{
     }
 
     void LightSystem::sendLightComponentDataToLightShaders(const std::vector<LightComponent*>& lights) {
-        for (const auto light: lights) {
-            lightShader->set("light.position", light->position);
-            lightShader->set("light.direction", light->direction);
+        int count = lights.size();
+        lightShader->set("light_count", count);
+        for (int i = 0;i<count;i++){
+            auto const light = lights[i];
+            std::string lightIdx = std::to_string(i);
+            std::string lightPrefix = "lights["+lightIdx+"].";
+            lightShader->set(lightPrefix+"type", static_cast<int>(light->type));
 
-            lightShader->set("light.ambient", light->ambient);
-            lightShader->set("light.diffuse", light->diffuse);
-            lightShader->set("light.specular", light->specular);
+            lightShader->set(lightPrefix+"position", light->position);
+            lightShader->set(lightPrefix+"direction", light->direction);
 
-            lightShader->set("light.attenuation_constant", light->attenuation.constant);
-            lightShader->set("light.attenuation_linear", light->attenuation.linear);
-            lightShader->set("light.attenuation_quadratic", light->attenuation.quadratic);
+            lightShader->set(lightPrefix+"ambient", light->ambient);
+            lightShader->set(lightPrefix+"diffuse", light->diffuse);
+            lightShader->set(lightPrefix+"specular", light->specular);
+
+            lightShader->set(lightPrefix+"attenuation_constant", light->attenuation.constant);
+            lightShader->set(lightPrefix+"attenuation_linear", light->attenuation.linear);
+            lightShader->set(lightPrefix+"attenuation_quadratic", light->attenuation.quadratic);
             //convert angles to radian
-            lightShader->set("light.inner_angle", light->spotAngle.inner*glm::pi<float>()/180);
-            lightShader->set("light.outer_angle", light->spotAngle.outer*glm::pi<float>()/180);
+            lightShader->set(lightPrefix+"inner_angle", light->spotAngle.inner*glm::pi<float>()/180);
+            lightShader->set(lightPrefix+"outer_angle", light->spotAngle.outer*glm::pi<float>()/180);
         }
     }
 

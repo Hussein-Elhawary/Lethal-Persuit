@@ -6,9 +6,9 @@
 
 namespace our {
     enum class LightType{
-        DIRECTIONAL,
-        POINT,
-        SPOT
+        DIRECTIONAL = 0,
+        POINT = 1,
+        SPOT = 2
     };
     class LightComponent : public Component {
     public:
