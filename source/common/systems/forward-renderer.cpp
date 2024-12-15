@@ -4,7 +4,7 @@
 
 #include "../mesh/mesh-utils.hpp"
 #include "../texture/texture-utils.hpp"
-
+#include "glm/gtx/string_cast.hpp"
 namespace our {
     void ForwardRenderer::initialize(const glm::ivec2 windowSize, const nlohmann::json &config) {
         // First, we store the window size for later use
@@ -102,7 +102,7 @@ namespace our {
             // so it is more performant to disable the depth mask
             postprocessMaterial->pipelineState.depthMask = false;
         }
-        lightSystem.initialize();
+        lightSystem.initialize(windowSize);
     }
 
     void ForwardRenderer::destroy() const {
@@ -225,7 +225,13 @@ namespace our {
             if(litMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
                 litMaterial->shader->set("object_to_world", localToWorld);
+                //litMaterial->shader->set("camera_position",  glm::vec3(0,0,10));
                 litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+                printf("View Matrix 1: %s\n", glm::to_string(VP).c_str());
+                //litMaterial->shader->set("view_projection", VP);
+                //litMaterial->shader->set("MVP", transformation);
+                printf("object to world %s\n", glm::to_string(localToWorld).c_str());
+                printf("object to world inv transpose %s\n", glm::to_string(objectToWorldInvTranspose).c_str());
             }else{
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);

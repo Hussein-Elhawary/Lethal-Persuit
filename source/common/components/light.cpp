@@ -49,6 +49,7 @@ namespace our {
         diffuse = data.value("diffuse", glm::vec3(0.0f, 0.0f, 0.0f));
         specular = data.value("specular", glm::vec3(0.0f, 0.0f, 0.0f));
         ambient = data.value("ambient", glm::vec3(0.0f, 0.0f, 0.0f));
+        direction = data.value("direction", glm::vec3(1.0f, 0.0f, 0.0f));
     }
 
     void LightComponent::deserialize(const nlohmann::json &data) {
