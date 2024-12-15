@@ -363,6 +363,11 @@
                     {
                         "type": "Movement",
                         "angularVelocity": [0, 0, 0]
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [0, 0, 0],
+                        "size": [0.001, 1, 1.35]
                     }
                 ]
             }

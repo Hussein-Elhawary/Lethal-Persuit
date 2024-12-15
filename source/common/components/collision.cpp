@@ -35,4 +35,5 @@ namespace our
                (thisMin.y <= otherMax.y && thisMax.y >= otherMin.y) &&
                (thisMin.z <= otherMax.z && thisMax.z >= otherMin.z);
     }
+
 }
