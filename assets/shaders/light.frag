@@ -56,5 +56,6 @@ void main() {
     vec3 ambient = material.ambient * light.ambient;
 
     // Then we combine the light component additively.
-    frag_color = fsin.color * vec4(diffuse + specular + ambient, 1.0f);
+//    frag_color = fsin.color * vec4(diffuse + specular + ambient, 1.0f);
+    frag_color = vec4(1.0f, 1.0f, 1.0f, 1.0f);
 }

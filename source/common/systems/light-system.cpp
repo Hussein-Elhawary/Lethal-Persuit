@@ -33,7 +33,7 @@ namespace our{
     }
 
     void LightSystem::sendCameraPositionToLightShaders(const glm::vec3 &cameraPosition) {
-        lightShader->set("cameraPosition", cameraPosition);
+        lightShader->set("camera_position", cameraPosition);
     }
 
     glm::vec3 LightSystem::calculateCameraPositionInWorld(const our::CameraComponent *camera) {
@@ -44,7 +44,7 @@ namespace our{
     }
 
     void LightSystem::sendViewMatrixToLightShaders(const glm::mat4 &viewMatrix) {
-        lightShader->set("viewMatrix", viewMatrix);
+        lightShader->set("view_projection", viewMatrix);
     }
 
     void LightSystem::addLightData(our::World *world) {
@@ -56,6 +56,7 @@ namespace our{
             }
             addLightComponentIfExist(entity, lights);
         }
+        lightShader->use();
         sendLightComponentDataToLightShaders(lights);
         if(camera != nullptr){
             glm::vec3 cameraPosition = calculateCameraPositionInWorld(camera);
