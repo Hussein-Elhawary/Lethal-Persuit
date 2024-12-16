@@ -148,28 +148,48 @@ namespace our
                     camera->fovY = fov;
                 }
             }
-            // jump ability TODO: change this to coloision with the ground
-            if(app->getKeyboard().justPressed(GLFW_KEY_SPACE)&& position.y < 0.1f)
+            // // jump ability TODO: change this to colision with the ground
+            bool isCollidedWithGround = collisionSystem.playerGroundCollision(world, deltaTime, position);
+            //fprintf(stderr, "Collision detected with ground: %s\n", isCollidedWithGround ? "true" : "false");
+            //printf("jump pressed: %s\n", app->getKeyboard().justPressed(GLFW_KEY_SPACE) ? "true" : "false"); 
+            bool jumpInCurrentFrame = false;
+            if(isCollidedWithGround && app->getKeyboard().justPressed(GLFW_KEY_SPACE) )
             {
                 controller->upSpeed = controller->jumpSpeed;
+                //printf("Jumping\n");
+                jumpInCurrentFrame = true;
             }
 
             // TODO: change this to check if collision with the ground
-            if (position.y > 0)
+            if (!isCollidedWithGround)
             {
                 controller->upSpeed -= deltaTime * controller->gravity;
             }
               
             position.y += controller->upSpeed * deltaTime;
-            if(position.y < 0) 
+            if(isCollidedWithGround && !jumpInCurrentFrame )
             {
-                controller->upSpeed = 0;
+                controller->upSpeed = -0.1;
+                position.y = old_position.y;
             }
 
             glm::vec3 direction = position - old_position;
             bool isCollide = collisionSystem.playerCollisionUpdate(world, deltaTime, position);
+            Entity* collidedEntity = collisionSystem.playerCollisionEntity(world, deltaTime, position);
             //printf("Collision detected: %d\n", isCollide);
             if(isCollide){
+                //wall jump
+                if (collidedEntity->name.substr(0,4) == "Wall")
+                {
+                    if(app->getKeyboard().justPressed(GLFW_KEY_SPACE))
+                    {
+                        controller->upSpeed = controller->jumpSpeed;
+                        position.y += controller->upSpeed * deltaTime;
+                        position += direction * deltaTime;
+                    }
+                }
+                
+                //position.y = old_position.y;
                 bool isCollideXPos = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0.1,0,0));
                 bool isCollideXNeg = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(-0.1,0,0));
                 if(direction.x != 0)
@@ -185,7 +205,12 @@ namespace our
                         position.z = old_position.z;
                 }
             }
-            
+            // if under the map reset the position
+            if(position.y < -10)
+            {
+                position.y = 2;
+                controller->upSpeed = 0;
+            }
             // updates Y position
             //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }

@@ -5,6 +5,7 @@
 #include "../mesh/mesh-utils.hpp"
 #include "../texture/texture-utils.hpp"
 #include "glm/gtx/string_cast.hpp"
+
 namespace our {
     void ForwardRenderer::initialize(const glm::ivec2 windowSize, const nlohmann::json &config) {
         // First, we store the window size for later use
@@ -232,7 +233,9 @@ namespace our {
             }
 
             //draw the mesh
-            mesh->draw();
+            for (const auto oneMesh: *mesh) {
+                oneMesh->draw();
+            }
         }
 
         // If there is a sky material, draw the sky
@@ -280,7 +283,9 @@ namespace our {
             }
 
             //draw the mesh
-            mesh->draw();
+            for (const auto oneMesh: *mesh) {
+                oneMesh->draw();
+            }
         }
 
         // If there is a postprocess material, apply postprocessing
