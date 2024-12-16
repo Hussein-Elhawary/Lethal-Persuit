@@ -100,6 +100,47 @@ namespace our {
         //printf("Diffuse %s Specular %s Ambient %s\n",glm::to_string(diffuse).c_str(),glm::to_string(specular).c_str(),glm::to_string(ambient).c_str());
     }
 
+    void LitTexturedMaterial::setup() const {
+        Material::setup();
+        setupTexture(albedoTexture, albedoSampler, "material.albedo_map", GL_TEXTURE0);
+        setupTexture(specularTexture, specularSampler, "material.specular_map", GL_TEXTURE1);
+        setupTexture(ambientOcclusionTexture, ambientOcclusionSampler, "material.ambient_occlusion_map", GL_TEXTURE2);
+        setupTexture(roughnessTexture, roughnessSampler, "material.roughness_map", GL_TEXTURE3);
+        setupTexture(emissiveTexture, emissiveSampler, "material.emissive_map", GL_TEXTURE4);
+    }
+
+    void LitTexturedMaterial::setupTexture(Texture2D* texture, Sampler* sampler, const std::string& uniformName, uint64_t activeTexture) const {
+        glActiveTexture(activeTexture);
+        GLint textureUnit = activeTexture - GL_TEXTURE0;
+        // bind the 2D texture to the active texture activeTexture
+        if (texture)
+            texture->bind();
+        // bind the sampler to the active texture activeTexture
+        if (sampler)
+            sampler->bind(textureUnit);
+        // set the uniform variable "tex" to the active texture activeTexture
+        shader->set(uniformName, textureUnit);
+    }
+
+    void LitTexturedMaterial::deserialize(const nlohmann::json &data) {
+        Material::deserialize(data);
+        deserializeTexture(data["albedo"], albedoTexture, albedoSampler);
+        deserializeTexture(data["specular"], specularTexture, specularSampler);
+        deserializeTexture(data["ambientOcclusion"], ambientOcclusionTexture, ambientOcclusionSampler);
+        deserializeTexture(data["roughness"], roughnessTexture, roughnessSampler);
+        deserializeTexture(data["emissive"], emissiveTexture, emissiveSampler);
+    }
+
+    void LitTexturedMaterial::deserializeTexture(const nlohmann::json& data, Texture2D*& texture, Sampler*& sampler){
+        std::string textureName = data.value("texture", "");
+        std::string samplerName = data.value("sampler", "");
+        texture = AssetLoader<Texture2D>::get(textureName);
+        sampler = AssetLoader<Sampler>::get(samplerName);
+        if(sampler == nullptr){
+            sampler = AssetLoader<Sampler>::get("default");
+        }
+    }
+
     void NTexturedMaterial::setup() const {
         //TODO: (Req 7) Write this function
         TintedMaterial::setup();

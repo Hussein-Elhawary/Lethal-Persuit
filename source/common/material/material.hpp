@@ -71,6 +71,30 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
+    class LitTexturedMaterial : public Material {
+    public:
+        Texture2D* albedoTexture;
+        Sampler* albedoSampler;
+        
+        Texture2D* specularTexture;
+        Sampler* specularSampler;
+        
+        Texture2D* ambientOcclusionTexture;
+        Sampler* ambientOcclusionSampler;
+        
+        Texture2D* roughnessTexture;
+        Sampler* roughnessSampler;
+
+        Texture2D* emissiveTexture;
+        Sampler* emissiveSampler;
+
+        void setup() const override;
+        void deserialize(const nlohmann::json& data) override;
+    private:
+        void setupTexture(Texture2D* texture, Sampler* sampler, const std::string& uniformName, uint64_t activeTexture) const;
+        void deserializeTexture(const nlohmann::json& data, Texture2D*& texture, Sampler*& sampler);
+    };
+
     class NTexturedMaterial : public TintedMaterial {
     public:
         std::vector<Texture2D*> textures;
@@ -91,7 +115,10 @@ namespace our {
             return new NTexturedMaterial();
         }else if(type == "LitMaterial") {
             return new LitMaterial();
-        }else{
+        }else if(type == "LitTexturedMaterial") {
+            return new LitTexturedMaterial();
+        }
+        else{
             return new Material();
         }
     }

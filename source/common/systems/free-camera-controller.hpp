@@ -168,7 +168,7 @@ namespace our
 
             glm::vec3 direction = position - old_position;
             bool isCollide = collisionSystem.playerCollisionUpdate(world, deltaTime, position);
-            printf("Collision detected: %d\n", isCollide);
+            //printf("Collision detected: %d\n", isCollide);
             if(isCollide){
                 bool isCollideXPos = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(0.1,0,0));
                 bool isCollideXNeg = collisionSystem.playerCollisionUpdate(world, deltaTime, old_position + glm::vec3(-0.1,0,0));
@@ -187,7 +187,7 @@ namespace our
             }
             
             // updates Y position
-            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

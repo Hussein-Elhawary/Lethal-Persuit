@@ -15,6 +15,7 @@ namespace our {
         LightType type;
         // We also define the color & intensity of the light for each component of the Phong model (Ambient, Diffuse, Specular).
         glm::vec3 diffuse, specular, ambient;
+        glm::vec3 color;
         glm::vec3 position; // Used for Point and Spot Lights only
         glm::vec3 direction; // Used for Directional and Spot Lights only
         struct {
