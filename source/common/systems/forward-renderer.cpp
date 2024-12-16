@@ -142,14 +142,16 @@ namespace our {
                 RenderCommand command{};
                 command.localToWorld = meshRenderer->getOwner()->getLocalToWorldMatrix();
                 command.center = glm::vec3(command.localToWorld * glm::vec4(0, 0, 0, 1));
-                command.mesh = meshRenderer->mesh;
-                command.material = meshRenderer->material;
-                // if it is transparent, we add it to the transparent commands list
-                if (command.material->transparent) {
-                    transparentCommands.push_back(command);
-                } else {
-                    // Otherwise, we add it to the opaque command list
-                    opaqueCommands.push_back(command);
+                for (auto const &oneMesh: *(meshRenderer->mesh)) {
+                    command.mesh = oneMesh;
+                    command.material = meshRenderer->material;
+                    // if it is transparent, we add it to the transparent commands list
+                    if (command.material->transparent) {
+                        transparentCommands.push_back(command);
+                    } else {
+                        // Otherwise, we add it to the opaque command list
+                        opaqueCommands.push_back(command);
+                    }
                 }
             }
         }
@@ -221,9 +223,8 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: opaqueCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
             //To Edit violates open closed principle
-            if (litMaterial) {
+            if (const auto *litMaterial = dynamic_cast<LitMaterial *>(material)) {
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
                 litMaterial->shader->set("object_to_world", localToWorld);
                 litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
@@ -233,9 +234,7 @@ namespace our {
             }
 
             //draw the mesh
-            for (const auto oneMesh: *mesh) {
-                oneMesh->draw();
-            }
+            mesh->draw();
         }
 
         // If there is a sky material, draw the sky
@@ -283,9 +282,7 @@ namespace our {
             }
 
             //draw the mesh
-            for (const auto oneMesh: *mesh) {
-                oneMesh->draw();
-            }
+            mesh->draw();
         }
 
         // If there is a postprocess material, apply postprocessing

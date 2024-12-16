@@ -20,7 +20,7 @@ namespace our
     struct RenderCommand {
         glm::mat4 localToWorld;
         glm::vec3 center;
-        std::vector<Mesh *> *mesh;
+        Mesh *mesh;
         Material* material;
     };
 
