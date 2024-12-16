@@ -37,9 +37,9 @@ namespace our{
             lightShader->set(lightPrefix+"position", light->position);
             lightShader->set(lightPrefix+"direction", light->direction);
 
-            lightShader->set(lightPrefix+"ambient", light->ambient);
-            lightShader->set(lightPrefix+"diffuse", light->diffuse);
-            lightShader->set(lightPrefix+"specular", light->specular);
+            // lightShader->set(lightPrefix+"ambient", light->ambient);
+            // lightShader->set(lightPrefix+"diffuse", light->diffuse);
+            // lightShader->set(lightPrefix+"specular", light->specular);
 
 
             lightShader->set(lightPrefix+"attenuation_constant", light->attenuation.constant);
@@ -73,7 +73,6 @@ namespace our{
         for (const auto light: lights) {
             ambient_component += light->ambient;
         }
-        ambient_component/=lights.size();
         lightShader->set("ambient_light", ambient_component);
     }
 

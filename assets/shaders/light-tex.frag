@@ -134,7 +134,11 @@ void main() {
             // Then we calculate the angle between the pixel and the cone axis.
             float angle = acos(dot(light.direction, light_to_object_direction));
             // And we calculate the attenuation based on the angle.
-            angle_attenuation = smoothstep(light.outer_angle, light.inner_angle, angle);
+            if(angle > light.outer_angle){
+                angle_attenuation = 0.0f;
+            }else if(angle > light.inner_angle){
+                angle_attenuation = smoothstep(light.outer_angle, light.inner_angle, angle);
+            }
         }
 
         float lambert = max(0.0f, dot(normal, -light_to_object_direction));
@@ -151,10 +155,10 @@ void main() {
 
         // Then we combine the light component additively.
         // attenuation only affects the diffuse and specular since ambient should be constant regardless of the position and direction.
+        //light_mixed_color += (diffuse + specular) * attenuation * angle_attenuation;
         light_mixed_color += (diffuse + specular) * attenuation * angle_attenuation;
+        
     }
 
     frag_color = fsin.color * vec4(light_mixed_color, 1.0f);
-    //frag_color = vec4(texture(texturedMaterial.emissive_map, tex_coord).rgb, 1.0f);
-    //frag_color = vec4(1.0f,0.0f,0.0f, 0.0f);
 }
