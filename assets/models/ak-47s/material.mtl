@@ -11,6 +11,10 @@ newmtl Material
 	Ns 25
 	d 1
 	Tr 0
+map_Pm Material_Metallic.png
+norm Material_Normal_OpenGL.png
+map_Pr Material_Roughness.png
+map_Kd Material_Base_color.png
 newmtl Scope.001
 	Ka 0.05087609 0.05087609 0.05087609
 	Kd 0.8 0.8 0.8
@@ -20,3 +24,11 @@ newmtl Scope.001
 	Ns 25
 	d 1
 	Tr 0
+map_Ke Scope.001_Emissive.png
+map_Pm Scope.001_Metallic.png
+norm Scope.001_Normal_OpenGL.png
+map_Pr Scope.001_Roughness.png
+map_Kd Scope.001_Base_color.png
+map_Ka Scope.001_Mixed_AO.png
+map_d Scope.001_Opacity.png
+
