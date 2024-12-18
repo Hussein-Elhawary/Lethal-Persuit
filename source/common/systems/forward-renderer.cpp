@@ -223,12 +223,13 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: opaqueCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
+            LitTexturedMaterial *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
             //To Edit violates open closed principle
-            if (const auto *litMaterial = dynamic_cast<LitMaterial *>(material)) {
+            if(litTexturedMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
-                litMaterial->shader->set("object_to_world", localToWorld);
-                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
-            } else {
+                litTexturedMaterial->shader->set("object_to_world", localToWorld);
+                litTexturedMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+            }else{
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);
             }
@@ -270,12 +271,12 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: transparentCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
+            LitTexturedMaterial *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
             //To Edit violates open closed principle
-            if(litMaterial){
+            if(litTexturedMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
-                litMaterial->shader->set("object_to_world", localToWorld);
-                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+                litTexturedMaterial->shader->set("object_to_world", localToWorld);
+                litTexturedMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
             }else{
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);
