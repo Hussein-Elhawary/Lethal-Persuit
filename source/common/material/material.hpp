@@ -8,6 +8,7 @@
 #include <glm/vec4.hpp>
 #include <json/json.hpp>
 #include <vector>
+#include <tinyobj/tiny_obj_loader.h>
 
 namespace our {
 
@@ -73,23 +74,27 @@ namespace our {
 
     class LitTexturedMaterial : public Material {
     public:
-        Texture2D* albedoTexture;
+        Texture2D *albedoTexture; //diffuse
         Sampler* albedoSampler;
-        
-        Texture2D* specularTexture;
-        Sampler* specularSampler;
-        
-        Texture2D* ambientOcclusionTexture;
-        Sampler* ambientOcclusionSampler;
-        
-        Texture2D* roughnessTexture;
-        Sampler* roughnessSampler;
 
-        Texture2D* emissiveTexture;
-        Sampler* emissiveSampler;
+        Texture2D *specularTexture; //mettalic
+        Sampler* specularSampler;
+
+        Texture2D *ambientOcclusionTexture; //ao
+        Sampler * ambientOcclusionSampler;
+
+        Texture2D *roughnessTexture; //roughness
+        Sampler *roughnessSampler;
+
+        Texture2D* emissiveTexture; //emissive
+        Sampler *emissiveSampler;
 
         void setup() const override;
         void deserialize(const nlohmann::json& data) override;
+        void loadTextures(const tinyobj::material_t &data);
+        void loadTexture(const std::string &textureName, Texture2D *&texture, Sampler *&sampler);
+        void load(const tinyobj::material_t &data);
+
     private:
         void setupTexture(Texture2D* texture, Sampler* sampler, const std::string& uniformName, uint64_t activeTexture) const;
         void deserializeTexture(const nlohmann::json& data, Texture2D*& texture, Sampler*& sampler);

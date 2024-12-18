@@ -145,6 +145,9 @@ namespace our {
                 for (auto const &oneMesh: *(meshRenderer->mesh)) {
                     command.mesh = oneMesh;
                     command.material = meshRenderer->material;
+                    if (command.material == nullptr) {
+                        command.material = AssetLoader<Material>::get(oneMesh->material);
+                    }
                     // if it is transparent, we add it to the transparent commands list
                     if (command.material->transparent) {
                         transparentCommands.push_back(command);
@@ -223,7 +226,7 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: opaqueCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            LitTexturedMaterial *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
+            auto *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
             //To Edit violates open closed principle
             if(litTexturedMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));

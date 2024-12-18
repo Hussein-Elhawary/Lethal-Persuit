@@ -3,6 +3,9 @@
 #include <unordered_map>
 #include <string>
 #include <json/json.hpp>
+#include <tinyobj/tiny_obj_loader.h>
+
+#include "objects/Object.hpp"
 
 namespace our {
 
@@ -31,8 +34,11 @@ namespace our {
                 return it->second;
             }
             return nullptr;
-        };
-        // This function deletes all the assets held by this class and clear the assets map 
+        }
+        static void loadMesh(const std::string &name, const Object &object);
+        static void loadMaterial(const tinyobj::material_t &material);
+        static void loadTexture(const std::string &name, const tinyobj::material_t &material);
+        // This function deletes all the assets held by this class and clear the assets map
         static void clear(){
             for(auto& [name, asset] : assets){
                 delete asset;

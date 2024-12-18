@@ -130,6 +130,19 @@ namespace our {
         deserializeTexture(data["roughness"], roughnessTexture, roughnessSampler);
         deserializeTexture(data["emissive"], emissiveTexture, emissiveSampler);
     }
+    void LitTexturedMaterial::loadTextures(const tinyobj::material_t &mat) {
+        loadTexture(mat.diffuse_texname, albedoTexture, albedoSampler);
+        loadTexture(mat.specular_texname, specularTexture, specularSampler);
+        loadTexture(mat.ambient_texname, ambientOcclusionTexture, ambientOcclusionSampler);
+        loadTexture(mat.roughness_texname, roughnessTexture, roughnessSampler);
+        loadTexture(mat.emissive_texname, emissiveTexture, emissiveSampler);
+    }
+    void LitTexturedMaterial::loadTexture(const std::string &textureName, Texture2D *&texture, Sampler *&sampler) {
+        texture = AssetLoader<Texture2D>::get(textureName);
+        if (texture == nullptr)
+            texture = AssetLoader<Texture2D>::get("black");
+        sampler = AssetLoader<Sampler>::get("default");
+    }
 
     void LitTexturedMaterial::deserializeTexture(const nlohmann::json& data, Texture2D*& texture, Sampler*& sampler){
         std::string textureName = data.value("texture", "");

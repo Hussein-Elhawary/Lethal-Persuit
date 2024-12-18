@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include <glad/gl.h>
 #include "vertex.hpp"
 
@@ -18,6 +19,7 @@ namespace our {
         GLsizei elementCount;
 
     public:
+        std::string material;
         // The constructor takes two vectors:
         // - vertices which contain the vertex data.
         // - elements which contain the indices of the vertices out of which each rectangle will be constructed.
@@ -25,10 +27,13 @@ namespace our {
         // a vertex buffer to store the vertex data on the VRAM,
         // an element buffer to store the element data on the VRAM,
         // a vertex array object to define how to read the vertex & element buffer during rendering 
-        Mesh(const std::vector<Vertex> &vertices, const std::vector<unsigned int> &elements) {
+        Mesh(const std::vector<Vertex> &vertices, const std::vector<unsigned int> &elements,
+             const std::string &materialName = "") {
             //TODO: (Req 2) Write this function
             // remember to store the number of elements in "elementCount" since you will need it for drawing
             // For the attribute locations, use the constants defined above: ATTRIB_LOC_POSITION, ATTRIB_LOC_COLOR, etc
+
+            material = materialName;
 
             elementCount = static_cast<GLsizei>(elements.size());
 

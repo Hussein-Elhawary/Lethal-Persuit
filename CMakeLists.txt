@@ -91,6 +91,8 @@ set(COMMON_SOURCES
         source/common/systems/light-system.cpp
         source/common/systems/light-system.hpp
 
+        source/common/objects/object.cpp
+        source/common/objects/object.hpp
 )
 
 # Define the directories in which to search for the included headers
