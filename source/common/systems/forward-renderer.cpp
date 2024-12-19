@@ -142,14 +142,19 @@ namespace our {
                 RenderCommand command{};
                 command.localToWorld = meshRenderer->getOwner()->getLocalToWorldMatrix();
                 command.center = glm::vec3(command.localToWorld * glm::vec4(0, 0, 0, 1));
-                command.mesh = meshRenderer->mesh;
-                command.material = meshRenderer->material;
-                // if it is transparent, we add it to the transparent commands list
-                if (command.material->transparent) {
-                    transparentCommands.push_back(command);
-                } else {
-                    // Otherwise, we add it to the opaque command list
-                    opaqueCommands.push_back(command);
+                for (auto const &oneMesh: *(meshRenderer->mesh)) {
+                    command.mesh = oneMesh;
+                    command.material = meshRenderer->material;
+                    if (command.material == nullptr) {
+                        command.material = AssetLoader<Material>::get(oneMesh->material);
+                    }
+                    // if it is transparent, we add it to the transparent commands list
+                    if (command.material->transparent) {
+                        transparentCommands.push_back(command);
+                    } else {
+                        // Otherwise, we add it to the opaque command list
+                        opaqueCommands.push_back(command);
+                    }
                 }
             }
         }
@@ -221,21 +226,19 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: opaqueCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
+            auto *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
             //To Edit violates open closed principle
-            if (litMaterial) {
+            if(litTexturedMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
-                litMaterial->shader->set("object_to_world", localToWorld);
-                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
-            } else {
+                litTexturedMaterial->shader->set("object_to_world", localToWorld);
+                litTexturedMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+            }else{
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);
             }
 
             //draw the mesh
-            for (const auto oneMesh: *mesh) {
-                oneMesh->draw();
-            }
+            mesh->draw();
         }
 
         // If there is a sky material, draw the sky
@@ -271,21 +274,19 @@ namespace our {
         for (auto &[localToWorld, center, mesh, material]: transparentCommands) {
             material->setup();
             const glm::mat4 transformation = VP * localToWorld;
-            LitMaterial *litMaterial = dynamic_cast<LitMaterial *>(material);
+            LitTexturedMaterial *litTexturedMaterial = dynamic_cast<LitTexturedMaterial *>(material);
             //To Edit violates open closed principle
-            if(litMaterial){
+            if(litTexturedMaterial){
                 const glm::mat4 objectToWorldInvTranspose = glm::transpose(glm::inverse(localToWorld));
-                litMaterial->shader->set("object_to_world", localToWorld);
-                litMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
+                litTexturedMaterial->shader->set("object_to_world", localToWorld);
+                litTexturedMaterial->shader->set("object_to_world_inv_transpose", objectToWorldInvTranspose);
             }else{
                 //set the transform uniform to be equal the model-view-projection matrix
                 material->shader->set("transform", transformation);
             }
 
             //draw the mesh
-            for (const auto oneMesh: *mesh) {
-                oneMesh->draw();
-            }
+            mesh->draw();
         }
 
         // If there is a postprocess material, apply postprocessing

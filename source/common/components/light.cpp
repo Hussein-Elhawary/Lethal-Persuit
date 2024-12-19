@@ -51,6 +51,7 @@ namespace our {
         diffuse = data.value("diffuse", glm::vec3(0.0f, 0.0f, 0.0f));
         specular = data.value("specular", glm::vec3(0.0f, 0.0f, 0.0f));
         ambient = data.value("ambient", glm::vec3(0.0f, 0.0f, 0.0f));
+        color = data.value("color", glm::vec3(1.0f, 1.0f, 1.0f));
         direction = data.value("direction", glm::vec3(1.0f, 0.0f, 0.0f));
         Entity* entity = this->getOwner();
         if(entity){

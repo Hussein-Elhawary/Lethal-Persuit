@@ -1,0 +1,11221 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2024 Aspose Pty Ltd.
+# File created: 12/12/2024 10:53:37
+
+newmtl TrashDecal1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1.jpg
+newmtl TrashDecal2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_2.jpg
+newmtl SewerGrate2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_3.jpg
+newmtl GrimeDecalRound
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_4.jpg
+newmtl SewerGrate4
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_5.jpg
+newmtl SewerGrate3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_6.jpg
+newmtl SewerGrate1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_7.jpg
+newmtl RoadPaint
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_8.jpg
+newmtl RoadPaint_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_9.jpg
+newmtl TrashDecal1_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_10.jpg
+newmtl TrashDecal2_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_11.jpg
+newmtl SewerGrate4_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_12.jpg
+newmtl SewerGrate3_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_13.jpg
+newmtl SewerGrate1_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_14.jpg
+newmtl SewerGrate2_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_15.jpg
+newmtl GrimeDecalRound_u2NWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_16.jpg
+newmtl GrimeDecalSquare
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_17.jpg
+newmtl TrashDecal1_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_18.jpg
+newmtl TrashDecal2_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_19.jpg
+newmtl GrimeDecalRound_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_20.jpg
+newmtl SewerGrate5
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_21.jpg
+newmtl SewerGrate4_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_22.jpg
+newmtl GrimeDecalSquare_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_23.jpg
+newmtl SewerGrate3_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_24.jpg
+newmtl SewerGrate1_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_25.jpg
+newmtl RoadPaint_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_26.jpg
+newmtl SewerGrate2_u2SEDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_27.jpg
+newmtl Graffiti1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_28.jpg
+newmtl SewerGrate2_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_29.jpg
+newmtl GrimeDecalRound_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_30.jpg
+newmtl TrashDecal1_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_31.jpg
+newmtl TrashDecal2_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_32.jpg
+newmtl SewerGrate4_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_33.jpg
+newmtl SewerGrate3_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_34.jpg
+newmtl SewerGrate1_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_35.jpg
+newmtl RoadPaint_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_36.jpg
+newmtl Graffiti1_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_37.jpg
+newmtl GrimeDecalSquare_u2SWDecal_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_38.jpg
+newmtl Signs3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_39.jpg
+newmtl MetalDark
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_40.jpg
+newmtl ACUnit2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_41.jpg
+newmtl u2SEBuild1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_42.jpg
+newmtl Concrete3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_43.jpg
+newmtl u2SEBuild1Window1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_44.jpg
+newmtl u2SEBuild1Window2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_45.jpg
+newmtl RoadTile
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_46.jpg
+newmtl RooftopProps
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_47.jpg
+newmtl MetalGalvanized
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_48.jpg
+newmtl BlackMetalPanels
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_49.jpg
+newmtl Concrete2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_50.jpg
+newmtl SkylightGlass
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_51.jpg
+newmtl Brick2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_52.jpg
+newmtl RollUpDoor2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_53.jpg
+newmtl MetalLight
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_54.jpg
+newmtl Signs2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_55.jpg
+newmtl WindowGroundlevel1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl Props2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_56.jpg
+newmtl Vent1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_57.jpg
+newmtl MetalGrey
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_58.jpg
+newmtl Buildinginterior
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_59.jpg
+newmtl DecalGrimeStrip
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_60.jpg
+newmtl Graffiti1_u2SEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_61.jpg
+newmtl Graffiti3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_62.jpg
+newmtl GrimeDecalSquare_u2SEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_63.jpg
+newmtl DecalCarltonBros
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_64.jpg
+newmtl Graffiti2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_65.jpg
+newmtl DecalGrimeStrip_u2SEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_66.jpg
+newmtl Graffiti1_u2SEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_67.jpg
+newmtl GrimeDecalSquare_u2SEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_68.jpg
+newmtl Brick2_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_69.jpg
+newmtl Brick8
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_70.jpg
+newmtl Concrete2_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_71.jpg
+newmtl Concrete
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_72.jpg
+newmtl Signs2_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_73.jpg
+newmtl MetalDark_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_74.jpg
+newmtl Props2_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_75.jpg
+newmtl RooftopProps_u2SEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_76.jpg
+newmtl Rollup2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_77.jpg
+newmtl RollUpDoor
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_78.jpg
+newmtl Concrete1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_79.jpg
+newmtl Chequer
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_80.jpg
+newmtl Cables
+	illum 2
+	Kd 0.0901961 0.0901961 0.0901961
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Signs2_u2SECable1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_81.jpg
+newmtl Concrete2_u2NWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_82.jpg
+newmtl LED_Light
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl u2NWBuild2B
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_83.jpg
+newmtl Building13WindowB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_84.jpg
+newmtl MetalLight_u2NWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_85.jpg
+newmtl RooftopProps_u2NWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_86.jpg
+newmtl MetalDark_u2NWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_87.jpg
+newmtl u2NWBuild2A
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_88.jpg
+newmtl Props1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_89.jpg
+newmtl LEDred
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Facade
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_90.jpg
+newmtl Concrete1_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_91.jpg
+newmtl u2WBuild5WindowsB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_92.jpg
+newmtl u2WBuild5Windows2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_93.jpg
+newmtl WindowGroundlevel1_u2SWBuild5_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl MetalGalvanized_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_94.jpg
+newmtl Concrete2_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_95.jpg
+newmtl MetalLight_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_96.jpg
+newmtl Props2_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_97.jpg
+newmtl Props1_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_98.jpg
+newmtl Vent1_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_99.jpg
+newmtl MetalGrey_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_100.jpg
+newmtl AirCon3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_101.jpg
+newmtl RoadTile_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_102.jpg
+newmtl Grass
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_103.jpg
+newmtl Paving2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_104.jpg
+newmtl Brick4
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_105.jpg
+newmtl AwningC
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_106.jpg
+newmtl RooftopProps_u2SWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_107.jpg
+newmtl WindowE2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_108.jpg
+newmtl WindowE1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_109.jpg
+newmtl Concrete2_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_110.jpg
+newmtl Props1_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_111.jpg
+newmtl BrickRed
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_112.jpg
+newmtl Brick3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_113.jpg
+newmtl MetalLight_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_114.jpg
+newmtl RooftopProps_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_115.jpg
+newmtl SkylightGlass_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_116.jpg
+newmtl MetalGrey_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_117.jpg
+newmtl MetalDark_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_118.jpg
+newmtl Brick2_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_119.jpg
+newmtl YellowPaint
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_120.jpg
+newmtl Concrete4
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_121.jpg
+newmtl AirCon3_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_122.jpg
+newmtl Building15
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_123.jpg
+newmtl Signs2_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_124.jpg
+newmtl Signs3_u2NWBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_125.jpg
+newmtl MetalLight_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_126.jpg
+newmtl RooftopProps_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_127.jpg
+newmtl Facade_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_128.jpg
+newmtl Concrete1_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_129.jpg
+newmtl WindowA
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_130.jpg
+newmtl WindowB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_131.jpg
+newmtl RoadTile_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_132.jpg
+newmtl MetalDark_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_133.jpg
+newmtl SkylightGlass_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_134.jpg
+newmtl MetalGrey_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_135.jpg
+newmtl Brick2_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_136.jpg
+newmtl Concrete2_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_137.jpg
+newmtl Signs3_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_138.jpg
+newmtl Awning2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_139.jpg
+newmtl YellowPaint_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_140.jpg
+newmtl Signs2_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_141.jpg
+newmtl BlackMetalPanels_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_142.jpg
+newmtl Props1_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_143.jpg
+newmtl SignHardware
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_144.jpg
+newmtl ACUnit2_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_145.jpg
+newmtl Props2_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_146.jpg
+newmtl Vent1_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_147.jpg
+newmtl AirCon3_u2NWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_148.jpg
+newmtl DeliSign
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_149.jpg
+newmtl Windows2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_150.jpg
+newmtl Window1B
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_151.jpg
+newmtl Brick7
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_152.jpg
+newmtl Concrete2_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_153.jpg
+newmtl Brick8_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_154.jpg
+newmtl Signs2_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_155.jpg
+newmtl MetalDark_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_156.jpg
+newmtl RooftopProps_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_157.jpg
+newmtl Vent1_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_158.jpg
+newmtl MetalGrey_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_159.jpg
+newmtl Props2_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_160.jpg
+newmtl Brick1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_161.jpg
+newmtl Concrete1_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_162.jpg
+newmtl BrickBlueStrip
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_163.jpg
+newmtl Brick2_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_164.jpg
+newmtl RollUpDoor_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_165.jpg
+newmtl Window1C
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_166.jpg
+newmtl Window1A
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_167.jpg
+newmtl StreeLampPole
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_168.jpg
+newmtl MetalLight_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_169.jpg
+newmtl Signs3_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_170.jpg
+newmtl Building12
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_171.jpg
+newmtl LED_Light_u2SEBuild10_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl PlyWood
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_172.jpg
+newmtl PowerBox
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_173.jpg
+newmtl Doors
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_174.jpg
+newmtl u2SEBuild10Window
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_175.jpg
+newmtl RedPaint
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_176.jpg
+newmtl Door2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_177.jpg
+newmtl SignFastFood
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_178.jpg
+newmtl Brick3_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_179.jpg
+newmtl MetalGalvanized_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_180.jpg
+newmtl SkylightGlass_u2SEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_181.jpg
+newmtl BlackMetalPanels_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_182.jpg
+newmtl Props2_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_183.jpg
+newmtl Concrete2_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_184.jpg
+newmtl Grass_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_185.jpg
+newmtl Paving1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_186.jpg
+newmtl Paving2_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_187.jpg
+newmtl MetalDark_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_188.jpg
+newmtl WindowGroundlevel1_u2SEBuild8_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl Concrete1_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_189.jpg
+newmtl MetalGalvanized_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_190.jpg
+newmtl Window1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_191.jpg
+newmtl Window2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_192.jpg
+newmtl ACUnit2_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_193.jpg
+newmtl SkylightGlass_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_194.jpg
+newmtl MetalLight_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_195.jpg
+newmtl RooftopProps_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_196.jpg
+newmtl RooftopPanel
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_197.jpg
+newmtl Doors_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_198.jpg
+newmtl AirCon3_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_199.jpg
+newmtl YellowPaint_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_200.jpg
+newmtl Props1_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_201.jpg
+newmtl Vent1_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_202.jpg
+newmtl MetalGrey_u2SEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_203.jpg
+newmtl LampsA
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_204.jpg
+newmtl SteelPosts
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_205.jpg
+newmtl Wirefence
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_206.jpg
+newmtl ConcreteBase
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_207.jpg
+newmtl Signs1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_208.jpg
+newmtl YellowPaint_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_209.jpg
+newmtl WoodGreen
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_210.jpg
+newmtl Concrete1_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_211.jpg
+newmtl StreeLampPole_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_212.jpg
+newmtl StreeLamp1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_213.jpg
+newmtl Signs1_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_214.jpg
+newmtl ConcreteBollard
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_215.jpg
+newmtl TrafficCones
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_216.jpg
+newmtl Signs2_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_217.jpg
+newmtl SignStop
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_218.jpg
+newmtl PowerBox_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_219.jpg
+newmtl MetalGalvanized_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_220.jpg
+newmtl FreeMailBox2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_221.jpg
+newmtl FreeMailBox2Glass
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_222.jpg
+newmtl BollardYellow
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_223.jpg
+newmtl JuiceCarton
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_224.jpg
+newmtl IronFence
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_225.jpg
+newmtl MetalLight_u2SWProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_226.jpg
+newmtl TrashBinMetal
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_227.jpg
+newmtl TrashBinConcrete
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_228.jpg
+newmtl StreeLamp1Base
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_229.jpg
+newmtl IronFence_u2IronFenceB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_230.jpg
+newmtl StreetLampMetal
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_231.jpg
+newmtl StreeLamp1_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_232.jpg
+newmtl Signs1_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_233.jpg
+newmtl SignStop_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_234.jpg
+newmtl StreeLamp1Base_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_235.jpg
+newmtl TrafficLight_Green
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_236.jpg
+newmtl TrafficLight_Amber
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_237.jpg
+newmtl TrafficLight_Red
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_238.jpg
+newmtl YellowPaint_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_239.jpg
+newmtl TrashBinMetal_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_240.jpg
+newmtl TrashBinConcrete_u2PropsMidA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_241.jpg
+newmtl SeaviewHotel
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_242.jpg
+newmtl MetalDark_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_243.jpg
+newmtl Concrete1_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_244.jpg
+newmtl RoadTile_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_245.jpg
+newmtl WindowsC
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_246.jpg
+newmtl Shopfront
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_247.jpg
+newmtl Brick1_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_248.jpg
+newmtl Door3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_249.jpg
+newmtl Door2_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_250.jpg
+newmtl WindowsA
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_251.jpg
+newmtl WindowsB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_252.jpg
+newmtl RollUpDoor_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_253.jpg
+newmtl Concrete2_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_254.jpg
+newmtl RollUpDoor2_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_255.jpg
+newmtl Sign_drugs2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_256.jpg
+newmtl SeaviewText
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_257.jpg
+newmtl MetalBlue
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_258.jpg
+newmtl MetalLight_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_259.jpg
+newmtl Sign
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_260.jpg
+newmtl SkylightGlass_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_261.jpg
+newmtl MetalGalvanized_u2NEBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_262.jpg
+newmtl BuildingFacade
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_263.jpg
+newmtl PepisColon
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_264.jpg
+newmtl WindowsA_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_265.jpg
+newmtl WindowsB_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_266.jpg
+newmtl Concrete2_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_267.jpg
+newmtl Signs3_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_268.jpg
+newmtl MetalDark_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_269.jpg
+newmtl BlackMetalPanels_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_270.jpg
+newmtl MetalLight_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_271.jpg
+newmtl Concrete1_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_272.jpg
+newmtl MetalGrey_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_273.jpg
+newmtl Watertower
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_274.jpg
+newmtl Props2_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_275.jpg
+newmtl Vent1_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_276.jpg
+newmtl Props1_u2NWBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_277.jpg
+newmtl BuildingFacade_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_278.jpg
+newmtl WindowB_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_279.jpg
+newmtl WindowA_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_280.jpg
+newmtl Concrete2_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_281.jpg
+newmtl Concrete1_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_282.jpg
+newmtl Brick3_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_283.jpg
+newmtl MetalDark_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_284.jpg
+newmtl Signs2_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_285.jpg
+newmtl RooftopProps_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_286.jpg
+newmtl Vent1_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_287.jpg
+newmtl MetalGrey_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_288.jpg
+newmtl Props2_u2NWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_289.jpg
+newmtl Concrete4_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_290.jpg
+newmtl Window1C_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_291.jpg
+newmtl WindowB_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_292.jpg
+newmtl WindowA_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_293.jpg
+newmtl Concrete1_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_294.jpg
+newmtl MetalDark_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_295.jpg
+newmtl Brick2_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_296.jpg
+newmtl Props2_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_297.jpg
+newmtl ACUnit2_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_298.jpg
+newmtl Signs3_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_299.jpg
+newmtl Building12_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_300.jpg
+newmtl Concrete2_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_301.jpg
+newmtl SignFastFood_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_302.jpg
+newmtl WindowsC_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_303.jpg
+newmtl SkylightGlass_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_304.jpg
+newmtl MetalGrey_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_305.jpg
+newmtl MetalLight_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_306.jpg
+newmtl Props1_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_307.jpg
+newmtl Brick3_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_308.jpg
+newmtl RoadTile_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_309.jpg
+newmtl RooftopProps_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_310.jpg
+newmtl RollUpDoor_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_311.jpg
+newmtl Awning
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_312.jpg
+newmtl Vent1_u2NWBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_313.jpg
+newmtl DecalGrimeStrip_u2NWBuild5D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_314.jpg
+newmtl Graffiti2_u2NWBuild5D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_315.jpg
+newmtl GrimeDecalSquare_u2NWBuild5D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_316.jpg
+newmtl Graffiti1_u2NWBuild5D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_317.jpg
+newmtl DecalCarltonBros_u2NWBuild5D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_318.jpg
+newmtl MetalDark_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_319.jpg
+newmtl ACUnit2_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_320.jpg
+newmtl Concrete1_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_321.jpg
+newmtl u2NWBuild3WindowC
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_322.jpg
+newmtl u2NWBuild3WindowA
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_323.jpg
+newmtl MetalLight_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_324.jpg
+newmtl SkylightGlass_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_325.jpg
+newmtl MetalGrey_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_326.jpg
+newmtl Building17WindowB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_327.jpg
+newmtl Concrete2_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_328.jpg
+newmtl RooftopProps_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_329.jpg
+newmtl Concrete4_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_330.jpg
+newmtl BlackMetalPanels_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_331.jpg
+newmtl Watertower_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_332.jpg
+newmtl Props2_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_333.jpg
+newmtl Facade_u2NWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_334.jpg
+newmtl u2NWBuild3WindowB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_335.jpg
+newmtl Building3Window1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_336.jpg
+newmtl u2SWBuild1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_337.jpg
+newmtl Building3Window2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_338.jpg
+newmtl MetalDark_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_339.jpg
+newmtl Concrete1_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_340.jpg
+newmtl ConcreteBollard_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_341.jpg
+newmtl MetalLight_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_342.jpg
+newmtl RooftopProps_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_343.jpg
+newmtl ACUnit2_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_344.jpg
+newmtl DellCoText
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_345.jpg
+newmtl SkylightGlass_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_346.jpg
+newmtl MetalGalvanized_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_347.jpg
+newmtl Doors_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_348.jpg
+newmtl AirCon3_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_349.jpg
+newmtl Concrete2_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_350.jpg
+newmtl YellowPaint_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_351.jpg
+newmtl Props2_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_352.jpg
+newmtl Props1_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_353.jpg
+newmtl Vent1_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_354.jpg
+newmtl MetalGrey_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_355.jpg
+newmtl BlackMetalPanels_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_356.jpg
+newmtl WindowGroundlevel1_u2SWBuild1_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl Paving1_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_357.jpg
+newmtl LampsA_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_358.jpg
+newmtl Paving2_u2SWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_359.jpg
+newmtl TrafficLight_Green_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_360.jpg
+newmtl TrafficLight_Amber_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_361.jpg
+newmtl TrafficLight_Red_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_362.jpg
+newmtl YellowPaint_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_363.jpg
+newmtl StreetLampMetal_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_364.jpg
+newmtl Mailbox1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_365.jpg
+newmtl TrashCan1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_366.jpg
+newmtl Bollard1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_367.jpg
+newmtl FreeMailBox2_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_368.jpg
+newmtl FreeMailBox2Glass_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_369.jpg
+newmtl FreeMailBox3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_370.jpg
+newmtl FreeMailBox3Glass
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_371.jpg
+newmtl TrafficCones_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_372.jpg
+newmtl TrashBags
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_373.jpg
+newmtl Signs2_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_374.jpg
+newmtl StreeLamp1_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_375.jpg
+newmtl Signs1_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_376.jpg
+newmtl BlackPlastic
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_377.jpg
+newmtl WoodGreen_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_378.jpg
+newmtl Concrete1_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_379.jpg
+newmtl SignStop_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_380.jpg
+newmtl PowerBox2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_381.jpg
+newmtl StreeLamp1Base_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_382.jpg
+newmtl TrashBinMetal_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_383.jpg
+newmtl TrashBinConcrete_u2NWPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_384.jpg
+newmtl Dumpster
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_385.jpg
+newmtl Walk
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_386.jpg
+newmtl DontWalk
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_387.jpg
+newmtl StreetLampMetal_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_388.jpg
+newmtl StreeLamp1_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_389.jpg
+newmtl Signs2_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_390.jpg
+newmtl PowerBox_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_391.jpg
+newmtl Mailbox1_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_392.jpg
+newmtl FreeMailBox2_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_393.jpg
+newmtl FreeMailBox2Glass_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_394.jpg
+newmtl FreeMailBox3_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_395.jpg
+newmtl FreeMailBox3Glass_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_396.jpg
+newmtl TrafficCones_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_397.jpg
+newmtl TrashBags_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_398.jpg
+newmtl PowerBox2_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_399.jpg
+newmtl YellowPaint_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_400.jpg
+newmtl StreeLamp1Base_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_401.jpg
+newmtl Dumpster_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_402.jpg
+newmtl JuiceCarton_u2NWPropsA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_403.jpg
+newmtl TrashBin
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_404.jpg
+newmtl trashbags
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_405.jpg
+newmtl TrafficLight_Green_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_406.jpg
+newmtl TrafficLight_Amber_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_407.jpg
+newmtl TrafficLight_Red_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_408.jpg
+newmtl YellowPaint_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_409.jpg
+newmtl StreetLampMetal_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_410.jpg
+newmtl BlackPlastic_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_411.jpg
+newmtl walkdontwalk
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_412.jpg
+newmtl StreeLamp1_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_413.jpg
+newmtl Signs1_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_414.jpg
+newmtl Mailbox1_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_415.jpg
+newmtl TrashCan1_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_416.jpg
+newmtl FreeMailBox3_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_417.jpg
+newmtl FreeMailBox3Glass_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_418.jpg
+newmtl FreeMailBox2_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_419.jpg
+newmtl FreeMailBox2Glass_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_420.jpg
+newmtl SignStop_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_421.jpg
+newmtl PowerBox_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_422.jpg
+newmtl StreeLamp1Base_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_423.jpg
+newmtl TrashBinMetal_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_424.jpg
+newmtl TrashBinConcrete_u2SEProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_425.jpg
+newmtl IronFence_u2IronFenceA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_426.jpg
+newmtl StreetLampMetal_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_427.jpg
+newmtl StreeLamp1_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_428.jpg
+newmtl Signs1_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_429.jpg
+newmtl SignStop_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_430.jpg
+newmtl TrashBinMetal_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_431.jpg
+newmtl TrashBinConcrete_u2PropsMidB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_432.jpg
+newmtl Graffiti1_u2NWBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_433.jpg
+newmtl GrimeDecalSquare_u2NWBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_434.jpg
+newmtl Graffiti2_u2NWBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_435.jpg
+newmtl Concrete_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_436.jpg
+newmtl WindowA_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_437.jpg
+newmtl Building11
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_438.jpg
+newmtl WindowsB_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_439.jpg
+newmtl ConcreteBollard_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_440.jpg
+newmtl RooftopProps_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_441.jpg
+newmtl MetalGalvanized_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_442.jpg
+newmtl Doors_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_443.jpg
+newmtl AirCon3_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_444.jpg
+newmtl YellowPaint_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_445.jpg
+newmtl Props1_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_446.jpg
+newmtl Props2_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_447.jpg
+newmtl Concrete1_u2SEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_448.jpg
+newmtl GrimeDecalSquare_u2SEBuild11D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_449.jpg
+newmtl Concrete_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_450.jpg
+newmtl WindowA_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_451.jpg
+newmtl Building11_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_452.jpg
+newmtl WindowsB_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_453.jpg
+newmtl RooftopProps_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_454.jpg
+newmtl Concrete1_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_455.jpg
+newmtl ConcreteBollard_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_456.jpg
+newmtl MetalGalvanized_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_457.jpg
+newmtl Doors_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_458.jpg
+newmtl AirCon3_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_459.jpg
+newmtl YellowPaint_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_460.jpg
+newmtl Props1_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_461.jpg
+newmtl Props2_u2EBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_462.jpg
+newmtl Concrete_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_463.jpg
+newmtl WindowA_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_464.jpg
+newmtl Building11_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_465.jpg
+newmtl WindowsB_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_466.jpg
+newmtl ConcreteBollard_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_467.jpg
+newmtl RooftopProps_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_468.jpg
+newmtl MetalGalvanized_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_469.jpg
+newmtl Doors_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_470.jpg
+newmtl AirCon3_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_471.jpg
+newmtl YellowPaint_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_472.jpg
+newmtl Props1_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_473.jpg
+newmtl Props2_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_474.jpg
+newmtl Concrete1_u2NBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_475.jpg
+newmtl SteelPosts_u2NWFence_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_476.jpg
+newmtl Wirefence_u2NWFence_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_477.jpg
+newmtl ConcreteBase_u2NWFence_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_478.jpg
+newmtl U2Car1Window
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_479.jpg
+newmtl U2Car1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_480.jpg
+newmtl u2SWBuild4
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_481.jpg
+newmtl Props1_u2SWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_482.jpg
+newmtl Concrete_u2SWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_483.jpg
+newmtl MetalDark_u2SWBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_484.jpg
+newmtl LEDRed
+	illum 2
+	Kd 0.266667 0.266667 0.266667
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Rooftop
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_485.jpg
+newmtl WindowsD
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_486.jpg
+newmtl WindowsE
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_487.jpg
+newmtl Brick3_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_488.jpg
+newmtl Brick2_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_489.jpg
+newmtl Concrete2_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_490.jpg
+newmtl LED_Light_u2NEBuild6_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl MetalDark_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_491.jpg
+newmtl RooftopProps_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_492.jpg
+newmtl Props2_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_493.jpg
+newmtl Signs3_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_494.jpg
+newmtl Sign_beerwine
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_495.jpg
+newmtl Concrete1_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_496.jpg
+newmtl Window1C_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_497.jpg
+newmtl Window1A_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_498.jpg
+newmtl Sign_Drugs
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_499.jpg
+newmtl SkylightGlass_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_500.jpg
+newmtl Shopfacade
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_501.jpg
+newmtl Window1B_u2NEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_502.jpg
+newmtl StreetLampMetal_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_503.jpg
+newmtl StreeLamp1_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_504.jpg
+newmtl Signs1_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_505.jpg
+newmtl StreeLamp1Base_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_506.jpg
+newmtl SignStop_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_507.jpg
+newmtl MetalGalvanized_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_508.jpg
+newmtl TrashBinMetal_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_509.jpg
+newmtl TrashBinConcrete_u2NEProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_510.jpg
+newmtl StreetLampMetal_u2SEProps3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_511.jpg
+newmtl StreeLamp1_u2SEProps3_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Signs1_u2SEProps3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_512.jpg
+newmtl MetalGrey_u2WProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_513.jpg
+newmtl StreeLamp1_u2WProps_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Signs1_u2WProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_514.jpg
+newmtl BollardYellow_u2WProps_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_515.jpg
+newmtl Watertower_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_516.jpg
+newmtl MetalDark_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_517.jpg
+newmtl Brick7_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_518.jpg
+newmtl Concrete1_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_519.jpg
+newmtl Props2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_520.jpg
+newmtl RooftopProps_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_521.jpg
+newmtl Signs3_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_522.jpg
+newmtl Storefront
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_523.jpg
+newmtl Doors_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_524.jpg
+newmtl SignFastFood_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_525.jpg
+newmtl u2SEBuild10Window_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_526.jpg
+newmtl Window1A_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_527.jpg
+newmtl Window1C_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_528.jpg
+newmtl Brick3_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_529.jpg
+newmtl SkylightGlass_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_530.jpg
+newmtl Brick2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_531.jpg
+newmtl LED_Light_u2SEBuild2_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Sign_beerwine_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_532.jpg
+newmtl Sign_Drugs_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_533.jpg
+newmtl Windows2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_534.jpg
+newmtl Windows2_glass2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_535.jpg
+newmtl Windows2_glass1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_536.jpg
+newmtl Concrete2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_537.jpg
+newmtl Brick1_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_538.jpg
+newmtl RollUpDoor_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_539.jpg
+newmtl Paving2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_540.jpg
+newmtl MetalLight_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_541.jpg
+newmtl Awning1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_542.jpg
+newmtl PlyWood_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_543.jpg
+newmtl Signs2_u2SEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_544.jpg
+newmtl Graffiti1_u2SEBuild2D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_545.jpg
+newmtl Graffiti3_u2SEBuild2D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_546.jpg
+newmtl Graffiti2_u2SEBuild2D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_547.jpg
+newmtl Brick2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_548.jpg
+newmtl Window1A_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_549.jpg
+newmtl Window1C_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_550.jpg
+newmtl RollUpDoor2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_551.jpg
+newmtl Concrete1_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_552.jpg
+newmtl Props2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_553.jpg
+newmtl Brick1_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_554.jpg
+newmtl MetalDark_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_555.jpg
+newmtl Sign_beerwine_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_556.jpg
+newmtl Awning2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_557.jpg
+newmtl Signs3_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_558.jpg
+newmtl Brick3_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_559.jpg
+newmtl RollUpDoor_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_560.jpg
+newmtl StreetLampMetal_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_561.jpg
+newmtl MetalLight_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_562.jpg
+newmtl Windows2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_563.jpg
+newmtl Windows2_glass2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_564.jpg
+newmtl Windows2_glass1_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_565.jpg
+newmtl Concrete2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_566.jpg
+newmtl Sign_drycleaner
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_567.jpg
+newmtl u2SEBuild10Window_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_568.jpg
+newmtl Doors_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_569.jpg
+newmtl Brick7_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_570.jpg
+newmtl Signs2_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_571.jpg
+newmtl PlyWood_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_572.jpg
+newmtl MetalGalvanized_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_573.jpg
+newmtl SkylightGlass_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_574.jpg
+newmtl Watertower_u2NEBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_575.jpg
+newmtl Concrete_u2SEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_576.jpg
+newmtl Building11_u2SEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_577.jpg
+newmtl WindowF
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_578.jpg
+newmtl WindowG
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_579.jpg
+newmtl RooftopProps_u2SEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_580.jpg
+newmtl Brick2_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_581.jpg
+newmtl Brick8_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_582.jpg
+newmtl Concrete2_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_583.jpg
+newmtl Concrete_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_584.jpg
+newmtl PlyWood_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_585.jpg
+newmtl MetalDark_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_586.jpg
+newmtl Props2_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_587.jpg
+newmtl Signs2_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_588.jpg
+newmtl MetalGalvanized_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_589.jpg
+newmtl RooftopProps_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_590.jpg
+newmtl Rollup2_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_591.jpg
+newmtl RollUpDoor_u2SEBuild3_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Concrete1_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_592.jpg
+newmtl Chequer_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_593.jpg
+newmtl Doors_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_594.jpg
+newmtl RedPaint_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_595.jpg
+newmtl DeliSign_u2SEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_596.jpg
+newmtl DecalGrimeStrip_u2SEBuild3D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_597.jpg
+newmtl Building9
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_598.jpg
+newmtl Props1_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_599.jpg
+newmtl Concrete2_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_600.jpg
+newmtl Concrete1_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_601.jpg
+newmtl Paving3
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_602.jpg
+newmtl MetalDark_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_603.jpg
+newmtl RooftopProps_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_604.jpg
+newmtl LEDRed_u2NWBuild1_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Building9WindowsB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_605.jpg
+newmtl Grass1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_606.jpg
+newmtl Brick4_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_607.jpg
+newmtl Props2_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_608.jpg
+newmtl Doors_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_609.jpg
+newmtl MetalGalvanized_u2NWBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_610.jpg
+newmtl Building9Windows
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_611.jpg
+newmtl WindowE2_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_612.jpg
+newmtl WindowE1_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_613.jpg
+newmtl Concrete2_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_614.jpg
+newmtl Props1_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_615.jpg
+newmtl BrickRed_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_616.jpg
+newmtl Brick3_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_617.jpg
+newmtl MetalLight_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_618.jpg
+newmtl RooftopProps_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_619.jpg
+newmtl SkylightGlass_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_620.jpg
+newmtl MetalGrey_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_621.jpg
+newmtl MetalDark_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_622.jpg
+newmtl YellowPaint_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_623.jpg
+newmtl Concrete1_u2NWBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_624.jpg
+newmtl SkylightGlass_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_625.jpg
+newmtl MetalGrey_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_626.jpg
+newmtl MetalDark_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_627.jpg
+newmtl RooftopProps_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_628.jpg
+newmtl Vent1_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_629.jpg
+newmtl Concrete1_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_630.jpg
+newmtl Facade_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_631.jpg
+newmtl WindowA_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_632.jpg
+newmtl WindowB_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_633.jpg
+newmtl Concrete2_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_634.jpg
+newmtl AirCon3_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_635.jpg
+newmtl Brick4_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_636.jpg
+newmtl Props1_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_637.jpg
+newmtl MetalLight_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_638.jpg
+newmtl Signs2_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_639.jpg
+newmtl BlackMetalPanels_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_640.jpg
+newmtl YellowPaint_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_641.jpg
+newmtl Props2_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_642.jpg
+newmtl ACUnit2_u2NWBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_643.jpg
+newmtl BlackMetalPanels_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_644.jpg
+newmtl WindowsF
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_645.jpg
+newmtl WindowsG
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_646.jpg
+newmtl Concrete_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_647.jpg
+newmtl MetalGalvanized_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_648.jpg
+newmtl RooftopProps_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_649.jpg
+newmtl Doors_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_650.jpg
+newmtl RoadTile_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_651.jpg
+newmtl Paving2_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_652.jpg
+newmtl Brick4_u2NBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_653.jpg
+newmtl DecalGrimeStrip_u2SEBuild1D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_654.jpg
+newmtl Graffiti1_u2SEBuild1D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_655.jpg
+newmtl Graffiti1_u2NWBuild4D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_656.jpg
+newmtl GrimeDecalSquare_u2NWBuild4D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_657.jpg
+newmtl DecalGrimeStrip_u2NWBuild4D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_658.jpg
+newmtl Graffiti3_u2NWBuild4D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_659.jpg
+newmtl Building9_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_660.jpg
+newmtl Props1_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_661.jpg
+newmtl Concrete2_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_662.jpg
+newmtl Rooftop_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_663.jpg
+newmtl MetalDark_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_664.jpg
+newmtl RooftopProps_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_665.jpg
+newmtl LEDRed_u2NBuild1_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Building9Windows_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_666.jpg
+newmtl Building9WindowsB_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_667.jpg
+newmtl Grass1_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_668.jpg
+newmtl Brick4_u2NBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_669.jpg
+newmtl Wheels
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_670.jpg
+newmtl Truck1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_671.jpg
+newmtl Windows
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_672.jpg
+newmtl Mirror
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_673.jpg
+newmtl Chrome
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_674.jpg
+newmtl Cables_u2NCablesA_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_675.jpg
+newmtl Wheels_u2Truck3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_676.jpg
+newmtl Truck1_u2Truck3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_677.jpg
+newmtl Windows_u2Truck3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_678.jpg
+newmtl Mirror_u2Truck3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_679.jpg
+newmtl Chrome_u2Truck3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_680.jpg
+newmtl Building9_u2SEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_681.jpg
+newmtl Props
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_682.jpg
+newmtl Concrete_u2SEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_683.jpg
+newmtl WindowsD_u2SEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_684.jpg
+newmtl MetalDark_u2SEBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_685.jpg
+newmtl GrimeDecalSquare_u2NEBuild3D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_686.jpg
+newmtl DecalGrimeStrip_u2NEBuild3D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_687.jpg
+newmtl Graffiti1_u2NEBuild3D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_688.jpg
+newmtl Concrete_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_689.jpg
+newmtl Rooftop_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_690.jpg
+newmtl BrickRed_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_691.jpg
+newmtl Building12_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_692.jpg
+newmtl Redpaint
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_693.jpg
+newmtl Props2_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_694.jpg
+newmtl SkylightGlass_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_695.jpg
+newmtl PlyWood_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_696.jpg
+newmtl Facade_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_697.jpg
+newmtl WindowA_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_698.jpg
+newmtl Props1_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_699.jpg
+newmtl WindowF_u2NEBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_700.jpg
+newmtl WindowE
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_701.jpg
+newmtl Rollup
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_702.jpg
+newmtl Metalgrey
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_703.jpg
+newmtl Concrete_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_704.jpg
+newmtl Paving3_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_705.jpg
+newmtl Concrete2_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_706.jpg
+newmtl Brick3_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_707.jpg
+newmtl Building12_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_708.jpg
+newmtl Redpaint_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_709.jpg
+newmtl SkylightGlass_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_710.jpg
+newmtl Facade_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_711.jpg
+newmtl Props1_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_712.jpg
+newmtl WindowE_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_713.jpg
+newmtl Rollup_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_714.jpg
+newmtl MetalDark_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_715.jpg
+newmtl MetalGalvanized_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_716.jpg
+newmtl Paving2_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_717.jpg
+newmtl BlackMetalPanels_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_718.jpg
+newmtl MetalLight_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_719.jpg
+newmtl u2SWBuild1_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_720.jpg
+newmtl RooftopProps_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_721.jpg
+newmtl Doors_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_722.jpg
+newmtl AirCon3_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_723.jpg
+newmtl Concrete1_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_724.jpg
+newmtl YellowPaint_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_725.jpg
+newmtl Props2_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_726.jpg
+newmtl Vent1_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_727.jpg
+newmtl Buildinginterior_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_728.jpg
+newmtl Awnings
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_729.jpg
+newmtl PlyWood_u2NEBuild9_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_730.jpg
+newmtl GrimeDecalSquare_u2NEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_731.jpg
+newmtl DecalGrimeStrip_u2NEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_732.jpg
+newmtl Graffiti1_u2NEBuild9D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_733.jpg
+newmtl Concrete_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_734.jpg
+newmtl WindowA_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_735.jpg
+newmtl Building11_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_736.jpg
+newmtl WindowsB_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_737.jpg
+newmtl RooftopProps_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_738.jpg
+newmtl Concrete1_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_739.jpg
+newmtl MetalGalvanized_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_740.jpg
+newmtl Doors_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_741.jpg
+newmtl AirCon3_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_742.jpg
+newmtl YellowPaint_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_743.jpg
+newmtl Props1_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_744.jpg
+newmtl Props2_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_745.jpg
+newmtl Paving2_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_746.jpg
+newmtl Paving3_u2NBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_747.jpg
+newmtl Concrete_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_748.jpg
+newmtl WindowA_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_749.jpg
+newmtl Building11_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_750.jpg
+newmtl WindowsB_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_751.jpg
+newmtl RooftopProps_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_752.jpg
+newmtl Concrete1_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_753.jpg
+newmtl MetalGalvanized_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_754.jpg
+newmtl Doors_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_755.jpg
+newmtl AirCon3_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_756.jpg
+newmtl YellowPaint_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_757.jpg
+newmtl Props1_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_758.jpg
+newmtl Props2_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_759.jpg
+newmtl Paving2_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_760.jpg
+newmtl Paving3_u2EBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_761.jpg
+newmtl MetalGalvanized_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_762.jpg
+newmtl StreeLamp1_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_763.jpg
+newmtl Signs1_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_764.jpg
+newmtl StreetLightBase
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_765.jpg
+newmtl SignStop_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_766.jpg
+newmtl Mailbox1_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_767.jpg
+newmtl TrashBin_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_768.jpg
+newmtl trashbags_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_769.jpg
+newmtl Dumpster_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_770.jpg
+newmtl JuiceCarton_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_771.jpg
+newmtl PowerBox_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_772.jpg
+newmtl BollardYellow_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_773.jpg
+newmtl TrashBinMetal_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_774.jpg
+newmtl TrashBinConcrete_u2NEPropsB_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_775.jpg
+newmtl BBallHoopStand
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_776.jpg
+newmtl Backside
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_777.jpg
+newmtl BasketbalBoard
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_778.jpg
+newmtl BasketbalHoop
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_779.jpg
+newmtl MetalDark_u2NEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_780.jpg
+newmtl Props1_u2NEBuild8_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_781.jpg
+newmtl GrimeDecalSquare_u2NEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_782.jpg
+newmtl DecalGrimeStrip_u2NEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_783.jpg
+newmtl Graffiti1_u2NEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_784.jpg
+newmtl DecalCarltonBros_u2NEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_785.jpg
+newmtl Graffiti2_u2NEBuild10D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_786.jpg
+newmtl Building6
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_787.jpg
+newmtl Concrete_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_788.jpg
+newmtl Building6Windows1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_789.jpg
+newmtl Building6Windows2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_790.jpg
+newmtl RooftopProps_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_791.jpg
+newmtl MetalGrey_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_792.jpg
+newmtl BlackMetalPanels_u2NEBuild5_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl SkylightGlass_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_793.jpg
+newmtl MetalDark_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_794.jpg
+newmtl Props2_u2NEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_795.jpg
+newmtl Facade_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_796.jpg
+newmtl Concrete_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_797.jpg
+newmtl u2WBuild5WindowsB_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_798.jpg
+newmtl u2WBuild5Windows2_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_799.jpg
+newmtl WindowGroundlevel1_u2SEBuild4_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl MetalGalvanized_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_800.jpg
+newmtl Props2_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_801.jpg
+newmtl Props1_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_802.jpg
+newmtl Vent1_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_803.jpg
+newmtl AirCon3_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_804.jpg
+newmtl RoadTile_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_805.jpg
+newmtl Grass_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_806.jpg
+newmtl Paving2_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_807.jpg
+newmtl Brick4_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_808.jpg
+newmtl AwningC_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_809.jpg
+newmtl RooftopProps_u2SEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_810.jpg
+newmtl Mailbox1_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_811.jpg
+newmtl TrashCan1_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_812.jpg
+newmtl FreeMailBox2_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_813.jpg
+newmtl FreeMailBox2Glass_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_814.jpg
+newmtl MetalGalvanized_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_815.jpg
+newmtl StreeLamp1_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_816.jpg
+newmtl Signs1_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_817.jpg
+newmtl StreetLightBase_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_818.jpg
+newmtl TrashBags_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_819.jpg
+newmtl BollardYellow_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_820.jpg
+newmtl SignStop_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_821.jpg
+newmtl JuiceCarton_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_822.jpg
+newmtl Plywood
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_823.jpg
+newmtl Dumpster_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_824.jpg
+newmtl TrashBin_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_825.jpg
+newmtl trashbags_u2SEProps1_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl PowerBox_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_826.jpg
+newmtl StreeLamp1Base_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_827.jpg
+newmtl BBallHoopStand_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_828.jpg
+newmtl Backside_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_829.jpg
+newmtl BasketbalBoard_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_830.jpg
+newmtl BasketbalHoop_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_831.jpg
+newmtl TrashBinMetal_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_832.jpg
+newmtl TrashBinConcrete_u2SEProps1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_833.jpg
+newmtl Building6_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_834.jpg
+newmtl Concrete_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_835.jpg
+newmtl Building6Windows1_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_836.jpg
+newmtl Building6Windows2_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_837.jpg
+newmtl RooftopProps_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_838.jpg
+newmtl MetalGrey_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_839.jpg
+newmtl BlackMetalPanels_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_840.jpg
+newmtl SkylightGlass_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_841.jpg
+newmtl MetalDark_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_842.jpg
+newmtl MetalLight_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_843.jpg
+newmtl Props2_u2NBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_844.jpg
+newmtl Building6_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_845.jpg
+newmtl Concrete_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_846.jpg
+newmtl Building6Windows1_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_847.jpg
+newmtl Building6Windows2_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_848.jpg
+newmtl RooftopProps_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_849.jpg
+newmtl MetalGrey_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_850.jpg
+newmtl BlackMetalPanels_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_851.jpg
+newmtl SkylightGlass_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_852.jpg
+newmtl MetalDark_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_853.jpg
+newmtl MetalLight_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_854.jpg
+newmtl Props2_u2SWBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_855.jpg
+newmtl ConcreteB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_856.jpg
+newmtl Props1_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_857.jpg
+newmtl WindowE_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_858.jpg
+newmtl Facade_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_859.jpg
+newmtl facade2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_860.jpg
+newmtl WindowsK
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_861.jpg
+newmtl WindowsJ
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_862.jpg
+newmtl Concrete_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_863.jpg
+newmtl Brick3_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_864.jpg
+newmtl RooftopProps_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_865.jpg
+newmtl Doors_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_866.jpg
+newmtl PlyWood_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_867.jpg
+newmtl Rollup_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_868.jpg
+newmtl Metalgrey_u2NEBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_869.jpg
+newmtl Metal
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_870.jpg
+newmtl Signs1_u2largeSign_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_871.jpg
+newmtl MetalLight_u2largeSign_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_872.jpg
+newmtl Brick2_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_873.jpg
+newmtl MetalDark_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_874.jpg
+newmtl Signs3_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_875.jpg
+newmtl Signs2_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_876.jpg
+newmtl Brick3_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_877.jpg
+newmtl WindowA_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_878.jpg
+newmtl Window1C_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_879.jpg
+newmtl Concrete1_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_880.jpg
+newmtl RooftopProps_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_881.jpg
+newmtl Props2_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_882.jpg
+newmtl Building12_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_883.jpg
+newmtl Sign_beerwine_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_884.jpg
+newmtl Concrete2_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_885.jpg
+newmtl WindowsC_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_886.jpg
+newmtl Window1A_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_887.jpg
+newmtl Windows2_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_888.jpg
+newmtl Window2A
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_889.jpg
+newmtl Window2B
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_890.jpg
+newmtl Brick1_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_891.jpg
+newmtl Watertower_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_892.jpg
+newmtl DeliSign_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_893.jpg
+newmtl SignFastFood_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_894.jpg
+newmtl Quoins
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_895.jpg
+newmtl BrickBlueStrip_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_896.jpg
+newmtl RollUpDoor_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_897.jpg
+newmtl Doors_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_898.jpg
+newmtl Brick7_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_899.jpg
+newmtl u2SEBuild10Window_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_900.jpg
+newmtl PlyWood_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_901.jpg
+newmtl MetalLight_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_902.jpg
+newmtl Sign_drycleaner_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_903.jpg
+newmtl MetalGalvanized_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_904.jpg
+newmtl SkylightGlass_u2NWBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_905.jpg
+newmtl Concrete_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_906.jpg
+newmtl Paving3_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_907.jpg
+newmtl Concrete2_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_908.jpg
+newmtl Brick3_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_909.jpg
+newmtl DoorLower
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_910.jpg
+newmtl Redpaint_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_911.jpg
+newmtl SkylightGlass_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_912.jpg
+newmtl Facade_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_913.jpg
+newmtl WindowsMain
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_914.jpg
+newmtl Props1_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_915.jpg
+newmtl WindowE_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_916.jpg
+newmtl Rollup_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_917.jpg
+newmtl MetalDark_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_918.jpg
+newmtl MetalGalvanized_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_919.jpg
+newmtl Paving2_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_920.jpg
+newmtl BlackMetalPanels_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_921.jpg
+newmtl MetalLight_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_922.jpg
+newmtl RooftopProps_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_923.jpg
+newmtl Doors_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_924.jpg
+newmtl AirCon3_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_925.jpg
+newmtl Concrete1_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_926.jpg
+newmtl YellowPaint_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_927.jpg
+newmtl Props2_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_928.jpg
+newmtl Vent1_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_929.jpg
+newmtl ShopSigns
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_930.jpg
+newmtl Awnings_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_931.jpg
+newmtl BaseConcrete
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_932.jpg
+newmtl PlyWood_u2NEBuild11_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_933.jpg
+newmtl crConcrete01
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_934.jpg
+newmtl Props1_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_935.jpg
+newmtl WindowE_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_936.jpg
+newmtl Facade_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_937.jpg
+newmtl facade
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_938.jpg
+newmtl WindowsK_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_939.jpg
+newmtl WindowsJ_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_940.jpg
+newmtl Concrete_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_941.jpg
+newmtl Brick3_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_942.jpg
+newmtl RooftopProps_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_943.jpg
+newmtl Doors_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_944.jpg
+newmtl PlyWood_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_945.jpg
+newmtl Rollup_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_946.jpg
+newmtl Metalgrey_u2SEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_947.jpg
+newmtl crConcrete01_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_948.jpg
+newmtl Props1_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_949.jpg
+newmtl WindowE_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_950.jpg
+newmtl Facade_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_951.jpg
+newmtl crBuilding03
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_952.jpg
+newmtl WindowsK_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_953.jpg
+newmtl WindowsJ_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_954.jpg
+newmtl Concrete_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_955.jpg
+newmtl Rooftop_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_956.jpg
+newmtl Brick3_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_957.jpg
+newmtl RooftopProps_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_958.jpg
+newmtl Doors_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_959.jpg
+newmtl PlyWood_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_960.jpg
+newmtl Rollup_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_961.jpg
+newmtl Metalgrey_u2EBuild4_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_962.jpg
+newmtl Concrete_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_963.jpg
+newmtl WindowA_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_964.jpg
+newmtl Building11_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_965.jpg
+newmtl WindowsB_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_966.jpg
+newmtl RooftopProps_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_967.jpg
+newmtl Concrete1_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_968.jpg
+newmtl MetalGalvanized_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_969.jpg
+newmtl Doors_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_970.jpg
+newmtl AirCon3_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_971.jpg
+newmtl YellowPaint_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_972.jpg
+newmtl Props1_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_973.jpg
+newmtl Props2_u2NBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_974.jpg
+newmtl DecalStorage
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_975.jpg
+newmtl GrimeDecalSquare_u2NWBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_976.jpg
+newmtl DecalGrimeStrip_u2NWBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_977.jpg
+newmtl Graffiti2_u2NWBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_978.jpg
+newmtl Graffiti1_u2NWBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_979.jpg
+newmtl Concrete_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_980.jpg
+newmtl Building11_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_981.jpg
+newmtl MetalLight_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_982.jpg
+newmtl WindowA_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_983.jpg
+newmtl WindowsB_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_984.jpg
+newmtl Concrete1_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_985.jpg
+newmtl RooftopProps_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_986.jpg
+newmtl GreenMetalPanel
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_987.jpg
+newmtl Props1_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_988.jpg
+newmtl MetalDark_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_989.jpg
+newmtl MetalGalvanized_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_990.jpg
+newmtl BlackMetalPanels_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_991.jpg
+newmtl u2SWBuild1_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_992.jpg
+newmtl Props2_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_993.jpg
+newmtl Grass_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_994.jpg
+newmtl Paving1_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_995.jpg
+newmtl Paving2_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_996.jpg
+newmtl WindowGroundlevel1_u2SWBuild6_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl LampsA_u2SWBuild6_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_997.jpg
+newmtl StreetLampMetal_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_998.jpg
+newmtl StreeLamp1_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 0.7
+	Tr 0.3
+map_Kd assets/textures/city/texture_999.jpg
+newmtl Signs2_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1000.jpg
+newmtl StreeLamp1Base_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1001.jpg
+newmtl Mailbox1_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1002.jpg
+newmtl FreeMailBox2_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1003.jpg
+newmtl FreeMailBox2Glass_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1004.jpg
+newmtl FreeMailBox3_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1005.jpg
+newmtl FreeMailBox3Glass_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1006.jpg
+newmtl TrafficCones_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1007.jpg
+newmtl PowerBox2_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1008.jpg
+newmtl Signs1_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1009.jpg
+newmtl BollardYellow_u2SWProps2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1010.jpg
+newmtl Concrete2_u2NWWalls_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1011.jpg
+newmtl Brick4_u2NWWalls_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1012.jpg
+newmtl Graffiti1_u2NWBuild11D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1013.jpg
+newmtl Graffiti3_u2NWBuild11D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1014.jpg
+newmtl DecalCarltonBros_u2NWBuild11D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1015.jpg
+newmtl Graffiti2_u2NWBuild11D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1016.jpg
+newmtl Concrete_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1017.jpg
+newmtl Rooftop_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1018.jpg
+newmtl WindowA_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1019.jpg
+newmtl Building11_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1020.jpg
+newmtl WindowsB_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1021.jpg
+newmtl RooftopProps_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1022.jpg
+newmtl MetalGalvanized_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1023.jpg
+newmtl Doors_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1024.jpg
+newmtl AirCon3_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1025.jpg
+newmtl Props1_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1026.jpg
+newmtl Props2_u2WBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1027.jpg
+newmtl u2SWBuild1_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1028.jpg
+newmtl Brick3_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1029.jpg
+newmtl Concrete_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1030.jpg
+newmtl RooftopProps_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1031.jpg
+newmtl Doors_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1032.jpg
+newmtl AirCon3_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1033.jpg
+newmtl YellowPaint_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1034.jpg
+newmtl Props2_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1035.jpg
+newmtl Props1_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1036.jpg
+newmtl Vent1_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1037.jpg
+newmtl MetalGrey_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1038.jpg
+newmtl crConcrete01_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1039.jpg
+newmtl WindowE_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1040.jpg
+newmtl Facade_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1041.jpg
+newmtl FacadeA
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1042.jpg
+newmtl WindowsK_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1043.jpg
+newmtl WindowsJ_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1044.jpg
+newmtl PlyWood_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1045.jpg
+newmtl Rollup_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1046.jpg
+newmtl Metalgrey_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1047.jpg
+newmtl SpoonText
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1048.jpg
+newmtl SpoonTextframe
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1049.jpg
+newmtl MetalDark_u2NEBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1050.jpg
+newmtl DecalStorage_u2NEBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1051.jpg
+newmtl GrimeDecalSquare_u2NEBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1052.jpg
+newmtl DecalGrimeStrip_u2NEBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1053.jpg
+newmtl Graffiti2_u2NEBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1054.jpg
+newmtl Graffiti1_u2NEBuild12D_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1055.jpg
+newmtl Building9_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1056.jpg
+newmtl Props1_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1057.jpg
+newmtl Concrete2_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1058.jpg
+newmtl MetalDark_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1059.jpg
+newmtl RooftopProps_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1060.jpg
+newmtl LEDRed_u2NEBuild7_1
+	illum 2
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl WindowsA_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1061.jpg
+newmtl WindowsB_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1062.jpg
+newmtl Grass1_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1063.jpg
+newmtl Brick4_u2NEBuild7_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1064.jpg
+newmtl BlackMetalPanels_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1065.jpg
+newmtl Props2_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1066.jpg
+newmtl Concrete2_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1067.jpg
+newmtl Grass_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1068.jpg
+newmtl Paving1_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1069.jpg
+newmtl Paving2_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1070.jpg
+newmtl MetalDark_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1071.jpg
+newmtl WindowGroundlevel1_u2WBuild1_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl Concrete1_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1072.jpg
+newmtl MetalGalvanized_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1073.jpg
+newmtl Window1_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1074.jpg
+newmtl Window2_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1075.jpg
+newmtl ACUnit2_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1076.jpg
+newmtl SkylightGlass_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1077.jpg
+newmtl MetalLight_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1078.jpg
+newmtl RooftopProps_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1079.jpg
+newmtl RooftopPanel_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1080.jpg
+newmtl Doors_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1081.jpg
+newmtl AirCon3_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1082.jpg
+newmtl YellowPaint_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1083.jpg
+newmtl Props1_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1084.jpg
+newmtl Vent1_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1085.jpg
+newmtl MetalGrey_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1086.jpg
+newmtl LampsA_u2WBuild1_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1087.jpg
+newmtl Facade_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1088.jpg
+newmtl Concrete1_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1089.jpg
+newmtl Build8Windows1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1090.jpg
+newmtl Build8Windows2
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1091.jpg
+newmtl WindowGroundlevel1_u2WBuild2_1
+	illum 2
+	Kd 0.94902 0.956863 0.956863
+	Ke 0 0 0
+	Pr 0.9776393
+	Pm 0
+	d 1
+	Tr 0
+newmtl MetalGalvanized_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1092.jpg
+newmtl Concrete2_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1093.jpg
+newmtl MetalLight_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1094.jpg
+newmtl Props2_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1095.jpg
+newmtl Props1_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1096.jpg
+newmtl Vent
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1097.jpg
+newmtl MetalGrey_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1098.jpg
+newmtl AirCon3_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1099.jpg
+newmtl RoadTile_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1100.jpg
+newmtl ConcreteBollard_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1101.jpg
+newmtl Grass_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1102.jpg
+newmtl Paving
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1103.jpg
+newmtl Brick4_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1104.jpg
+newmtl Awning_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1105.jpg
+newmtl RooftopProps_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1106.jpg
+newmtl RooftopDoor
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1107.jpg
+newmtl BlackMetalPanels_u2WBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1108.jpg
+newmtl Concrete2_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1109.jpg
+newmtl Props1_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1110.jpg
+newmtl WindowE_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1111.jpg
+newmtl Facade_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1112.jpg
+newmtl facadeB
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1113.jpg
+newmtl WindowsK_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1114.jpg
+newmtl WindowsJ_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1115.jpg
+newmtl Concrete_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1116.jpg
+newmtl Brick3_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1117.jpg
+newmtl RooftopProps_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1118.jpg
+newmtl Doors_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1119.jpg
+newmtl PlyWood_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1120.jpg
+newmtl Rollup_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1121.jpg
+newmtl Metalgrey_u2NWBuild12_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1122.jpg
+newmtl Concrete2_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1123.jpg
+newmtl Props1_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1124.jpg
+newmtl BrickRed_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1125.jpg
+newmtl Brick3_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1126.jpg
+newmtl MetalLight_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1127.jpg
+newmtl RooftopProps_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1128.jpg
+newmtl MetalDark_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1129.jpg
+newmtl SkylightGlass_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1130.jpg
+newmtl MetalGrey_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1131.jpg
+newmtl YellowPaint_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1132.jpg
+newmtl WindowE2_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1133.jpg
+newmtl WindowE1_u2SEBuild5_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1134.jpg
+newmtl BlackMetalPanels_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1135.jpg
+newmtl WindowsG_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1136.jpg
+newmtl WindowsF_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1137.jpg
+newmtl Concrete_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1138.jpg
+newmtl MetalGalvanized_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1139.jpg
+newmtl RooftopProps_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1140.jpg
+newmtl Doors_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1141.jpg
+newmtl RoadTile_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1142.jpg
+newmtl Paving2_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1143.jpg
+newmtl Brick4_u2WBuild3_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1144.jpg
+newmtl BlackMetalPanels_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1145.jpg
+newmtl WindowH
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1146.jpg
+newmtl WindowI
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1147.jpg
+newmtl Concrete_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1148.jpg
+newmtl RooftopProps_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1149.jpg
+newmtl Props1_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1150.jpg
+newmtl LEDred_u2SWBuild2_1
+	illum 2
+	Kd 0.00392157 0.00392157 0.00392157
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+newmtl Concrete3_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1151.jpg
+newmtl Paving1_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1152.jpg
+newmtl Grass_u2SWBuild2_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1153.jpg
+newmtl Concrete_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1154.jpg
+newmtl Paving3_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1155.jpg
+newmtl Concrete2_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1156.jpg
+newmtl Brick3_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1157.jpg
+newmtl Building12_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1158.jpg
+newmtl Redpaint_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1159.jpg
+newmtl SkylightGlass_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1160.jpg
+newmtl Facade_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1161.jpg
+newmtl Props1_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1162.jpg
+newmtl WindowE_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1163.jpg
+newmtl Rollup_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1164.jpg
+newmtl MetalDark_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1165.jpg
+newmtl Metalgrey_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1166.jpg
+newmtl Paving2_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1167.jpg
+newmtl BlackMetalPanels_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1168.jpg
+newmtl MetalLight_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1169.jpg
+newmtl MetalGrey_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1170.jpg
+newmtl u2SWBuild1_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1171.jpg
+newmtl RooftopProps_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1172.jpg
+newmtl Doors_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1173.jpg
+newmtl AirCon3_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9685357
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1174.jpg
+newmtl Concrete1_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1175.jpg
+newmtl YellowPaint_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1176.jpg
+newmtl Props2_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1177.jpg
+newmtl Vent1_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1178.jpg
+newmtl Awnings_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1179.jpg
+newmtl PlyWood_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1180.jpg
+newmtl MetalGalvanized_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1181.jpg
+newmtl RollUpDoor2_u2NEBuild10_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9693814
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1182.jpg
+newmtl RoadCorner
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1183.jpg
+newmtl RoadEdge
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1184.jpg
+newmtl RoadTile_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1185.jpg
+newmtl Paving3_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1186.jpg
+newmtl Paving2_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1187.jpg
+newmtl Concrete2_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1188.jpg
+newmtl Brick4_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1189.jpg
+newmtl RoadEdgePaved
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1190.jpg
+newmtl SewerGrate1_u2SERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1191.jpg
+newmtl RoadEdge_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1192.jpg
+newmtl RoadTile_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1193.jpg
+newmtl RoadCorner_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1194.jpg
+newmtl Paving3_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1195.jpg
+newmtl Paving2_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1196.jpg
+newmtl Brick4_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1197.jpg
+newmtl Concrete2_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9686419
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1198.jpg
+newmtl RoadEdgePaved_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1199.jpg
+newmtl Brick1_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1200.jpg
+newmtl SewerGrate1_u2NWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1201.jpg
+newmtl RoadCorner_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1202.jpg
+newmtl RoadEdgePaved_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1203.jpg
+newmtl RoadTile_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1204.jpg
+newmtl RoadEdge_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1205.jpg
+newmtl Brick1_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1206.jpg
+newmtl Paving2_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1207.jpg
+newmtl Paving3_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1208.jpg
+newmtl Concrete2_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1209.jpg
+newmtl Brick4_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1210.jpg
+newmtl IronFence_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.97
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1211.jpg
+newmtl SewerGrate1_u2NERoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1212.jpg
+newmtl RoadCorner_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1213.jpg
+newmtl RoadEdge_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1214.jpg
+newmtl RoadTile_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1215.jpg
+newmtl Paving2_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1216.jpg
+newmtl Paving3_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1217.jpg
+newmtl RoadEdgePaved_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1218.jpg
+newmtl Grass_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1219.jpg
+newmtl Brick4_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1220.jpg
+newmtl Concrete_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1221.jpg
+newmtl Dirt
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1222.jpg
+newmtl Paving1_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1223.jpg
+newmtl SewerGrate1_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.9691779
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1224.jpg
+newmtl Concrete2_u2SWRoad_1
+	illum 2
+	Kd 1 1 1
+	Ke 0 0 0
+	Pr 0.96877503
+	Pm 0
+	d 1
+	Tr 0
+map_Kd assets/textures/city/texture_1225.jpg

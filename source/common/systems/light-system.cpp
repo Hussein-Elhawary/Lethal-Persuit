@@ -31,13 +31,16 @@ namespace our{
             std::string lightIdx = std::to_string(i);
             std::string lightPrefix = "lights["+lightIdx+"].";
             lightShader->set(lightPrefix+"type", static_cast<int>(light->type));
+            
+            lightShader->set(lightPrefix+"color", light->color);
 
             lightShader->set(lightPrefix+"position", light->position);
             lightShader->set(lightPrefix+"direction", light->direction);
 
-            lightShader->set(lightPrefix+"ambient", light->ambient);
-            lightShader->set(lightPrefix+"diffuse", light->diffuse);
-            lightShader->set(lightPrefix+"specular", light->specular);
+            // lightShader->set(lightPrefix+"ambient", light->ambient);
+            // lightShader->set(lightPrefix+"diffuse", light->diffuse);
+            // lightShader->set(lightPrefix+"specular", light->specular);
+
 
             lightShader->set(lightPrefix+"attenuation_constant", light->attenuation.constant);
             lightShader->set(lightPrefix+"attenuation_linear", light->attenuation.linear);
@@ -46,6 +49,7 @@ namespace our{
             lightShader->set(lightPrefix+"inner_angle", light->spotAngle.inner*glm::pi<float>()/180);
             lightShader->set(lightPrefix+"outer_angle", light->spotAngle.outer*glm::pi<float>()/180);
         }
+        sendLightAmbientComponentToLightShaders(lights);
     }
 
     void LightSystem::sendCameraPositionToLightShaders(const glm::vec3 &cameraPosition) {
@@ -61,6 +65,15 @@ namespace our{
 
     void LightSystem::sendViewMatrixToLightShaders(const glm::mat4 &viewMatrix) {
         lightShader->set("view_projection", viewMatrix);
+    }
+
+    void LightSystem::sendLightAmbientComponentToLightShaders(const std::vector<LightComponent*>& lights) {
+        //Average all ambient components to generate a single one and send to shader
+        glm::vec3 ambient_component = glm::vec3(0.0f, 0.0f, 0.0f);
+        for (const auto light: lights) {
+            ambient_component += light->ambient;
+        }
+        lightShader->set("ambient_light", ambient_component);
     }
 
     void LightSystem::addLightData(our::World *world) {

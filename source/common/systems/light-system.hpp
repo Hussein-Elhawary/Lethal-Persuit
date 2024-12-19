@@ -18,6 +18,7 @@ namespace our{
         void sendLightComponentDataToLightShaders(const std::vector<LightComponent*>& lights);
         void sendCameraPositionToLightShaders(const glm::vec3& cameraPosition);
         void sendViewMatrixToLightShaders(const glm::mat4& viewMatrix);
+        void sendLightAmbientComponentToLightShaders(const std::vector<LightComponent*>& lights);
         glm::vec3 calculateCameraPositionInWorld(const CameraComponent* camera);
         glm::ivec2 windowSize;
     public:

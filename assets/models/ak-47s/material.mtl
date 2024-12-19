@@ -1,0 +1,32 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2024 Aspose Pty Ltd.
+# File created: 12/11/2024 20:42:35
+
+newmtl Material
+	Ka 0.05087609 0.05087609 0.05087609
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	illum 2
+	Ks 0.8 0.8 0.8
+	Ns 25
+	d 1
+	Tr 0
+map_Ks assets/textures/ak-47s/Material_Metallic.png
+map_Pr assets/textures/ak-47s/Material_Roughness.png
+map_Kd assets/textures/ak-47s/Material_Base_color.png
+newmtl Scope.001
+	Ka 0.05087609 0.05087609 0.05087609
+	Kd 0.8 0.8 0.8
+	Ke 0 0 0
+	illum 2
+	Ks 0.8 0.8 0.8
+	Ns 25
+	d 1
+	Tr 0
+map_Ke assets/textures/ak-47s/Scope.001_Emissive.png
+map_Ks assets/textures/ak-47s/Scope.001_Metallic.png
+map_Pr assets/textures/ak-47s/Scope.001_Roughness.png
+map_Kd assets/textures/ak-47s/Scope.001_Base_color.png
+map_Ka assets/textures/ak-47s/Scope.001_Mixed_AO.png
+map_d assets/textures/ak-47s/Scope.001_Opacity.png
+
