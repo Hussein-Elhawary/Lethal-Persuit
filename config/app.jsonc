@@ -58,7 +58,8 @@
                 "oakwood1": "assets/textures/house/oak_diff.jpg",
                 "oakwood2": "assets/textures/house/oak_ao.jpg",
                 "black": "assets/textures/black.jpg",
-                "grey": "assets/textures/grey.jpg"
+                "grey": "assets/textures/grey.jpg",
+                "white": "assets/textures/white.jpg"
             },
             "objects": {
                 "cube": "assets/models/cube.obj",
@@ -66,7 +67,8 @@
                 "plane": "assets/models/plane.obj",
                 "sphere": "assets/models/sphere.obj",
                 "ak-47": "assets/models/ak-47s/ak-47s.obj",
-                "city": "assets/models/city/city.obj"
+                "city": "assets/models/city/city.obj",
+                "bullet": "assets/models/bullet/bullet.obj"
             },
             "samplers":{
                 "default":{},
@@ -232,7 +234,7 @@
                         "components": [
                             {
                                 "type": "Mesh Renderer",
-                                "mesh": "ak-47",
+                                "mesh": "bullet",
                                 "material": "mtl"
                             }
                         ]
@@ -364,11 +366,11 @@
                         // "ambient": [0.1,0.1,0.1],
                         "color": [
                             1,
-                            0,
-                            0
+                            1,
+                            1
                         ],
                         "attenuation": {
-                            "constant": 1,
+                            "constant": 20,
                             "linear": 0,
                             "quadratic": 0
                         },
