@@ -11,7 +11,6 @@
 
 namespace our
 {
-    class Weapon;
     // Given a json object, this function picks and creates a component in the given entity
     // based on the "type" specified in the json object which is later deserialized from the rest of the json object
     inline void deserializeComponent(const nlohmann::json &data, Entity *entity)
