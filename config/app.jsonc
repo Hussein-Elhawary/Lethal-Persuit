@@ -211,7 +211,7 @@
         "world":[
             {
                 "name": "Player",
-                "position": [80, 2, 98],
+                "position": [0, 2, 0],
                 "components": [
                     {
                         "type": "Camera"
@@ -242,6 +242,24 @@
                                 "initialPosition": [0.045, -0.035, -0.05]
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                "name": "Bullets",
+                "rotation": [-90, 0, 0],
+                "scale": [0.00015, 0.00015, 0.00015],
+                "position": [0.045, -0.035, -0.05],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "bullet",
+                        "material": "mtl"
+                    },
+                    {
+                        "type": "Bullet",
+                        "direction": [0, 0, 1],
+                        "speed": 0.5
                     }
                 ]
             },

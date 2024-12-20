@@ -25,7 +25,7 @@ namespace our
         void enter(Application *app)
         {
             this->app = app;
-            printf("Collision System Entered\n");
+            // printf("Collision System Entered\n");
         }
 
         void setPlayer(Entity *player)
@@ -74,12 +74,12 @@ namespace our
                         {
                             if (collisionComponent1->checkForCollision(*collisionComponent2))
                             {
-                                printf("Collision Detected\n");
+                                // printf("Collision Detected\n");
 
                                 if (entity1->name == "Player")
                                 {
                                     // entity1->localTransform.position = old_position;
-                                    printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                                    // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                                     return true;
                                 }
                             }

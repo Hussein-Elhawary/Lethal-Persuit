@@ -96,6 +96,8 @@ set(COMMON_SOURCES
         source/common/systems/shooting.hpp
         source/common/components/weapon.cpp
         source/common/components/weapon.hpp
+        source/common/components/bullet.cpp
+        source/common/components/bullet.hpp
 )
 
 # Define the directories in which to search for the included headers
