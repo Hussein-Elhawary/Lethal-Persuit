@@ -57,6 +57,7 @@ namespace our {
                         auto bulletComponent = bulletEntity->getComponent<Bullet>();
                         bulletComponent->lastShootTime = std::chrono::system_clock::now();
                         bulletComponent->isShot = true;
+                        glm::vec3 bulletToNozzel = {0.1f, 0.1f, 0.1f};
 
                         const auto MW = weapon->getOwner()->getLocalToWorldMatrix();
                         const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
@@ -64,11 +65,15 @@ namespace our {
 
                         const auto eyeW = glm::vec3(eyedW4d.x, eyedW4d.y, eyedW4d.z);
                         const auto centerW = glm::vec3(centerW4d.x, centerW4d.y, centerW4d.z);
-                        const glm::vec3 translation = {MW[3][0], MW[3][1], MW[3][2]};
+                        glm::vec3 translation = {MW[3][0], MW[3][1], MW[3][2]};
 
                         auto combinedDirection = normalize(centerW - eyeW);
                         bulletComponent->direction = combinedDirection;
-
+                        glm::vec3 projection = glm::vec3(bulletToNozzel.x * combinedDirection.x,
+                                                         bulletToNozzel.y * combinedDirection.y,
+                                                         bulletToNozzel.z * combinedDirection.z);
+       
+                        translation += projection;
                         auto playrot = player->localTransform.rotation;
                         bulletEntity->localTransform.rotation = glm::vec3(playrot.x - glm::radians(90.0f),playrot.y, 0);
                         bulletEntity->localTransform.position = translation;
