@@ -35,6 +35,10 @@
                 "lighted": {
                     "vs": "assets/shaders/light.vert",
                     "fs": "assets/shaders/light.frag"
+                },
+                "gunFlare":{
+                    "vs":"assets/shaders/gun-flare.vert",
+                    "fs":"assets/shaders/gun-flare.frag"
                 }
             },
             "textures":{
@@ -59,7 +63,8 @@
                 "oakwood2": "assets/textures/house/oak_ao.jpg",
                 "black": "assets/textures/black.jpg",
                 "grey": "assets/textures/grey.jpg",
-                "white": "assets/textures/white.jpg"
+                "white": "assets/textures/white.jpg",
+                "gunflare": "assets/textures/gunflare.png"
             },
             "objects": {
                 "cube": "assets/models/cube.obj",
@@ -207,13 +212,29 @@
                     ],
                     "textures": ["plainWall1","plainWall2","redhousecolor","window1","door","oakwood1","oakwood2"],
                     "samplers": ["default","default","default","default","default","default","default"]
+                },
+                "gunFlare":{
+                    "type": "textured",
+                    "shader": "gunFlare",
+                    "pipelineState": {
+                        "faceCulling":{
+                            "enabled": false
+                        },
+                        "depthTesting":{
+                            "enabled": true
+                        }
+                    },
+                    "tint": [1, 1, 1, 1],
+                    "texture": "gunflare",
+                    "sampler": "default"
                 }
+
             }
         },
         "world":[
             {
                 "name": "Player",
-                "position": [10, 2, 0],
+                "position": [0, 2, 0],
                 "components": [
                     {
                         "type": "Camera"
@@ -242,6 +263,19 @@
                             {
                                 "type": "Weapon",
                                 "initialPosition": [0.045, -0.035, -0.05]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Gun Flare",
+                        "position": [0.02, -0.015, -0.093],
+                        "rotation": [0, 0, 0],
+                        "scale": [0.01, 0.01, 0.01],
+                        "components": [
+                            {
+                                "type": "Mesh Renderer",
+                                "mesh": "plane",
+                                "material": "gunFlare"
                             }
                         ]
                     }
