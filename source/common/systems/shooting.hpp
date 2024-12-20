@@ -31,7 +31,6 @@ namespace our {
             CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
             Weapon *weapon = nullptr;
-            Bullet *genericBullet = nullptr;
             for (const auto entity: world->getEntities()) {
                 //printf("Entity: %s\n", entity->name.c_str());
                 if (entity->getComponent<CameraComponent>() && entity->getComponent<FreeCameraControllerComponent>()) {
@@ -40,12 +39,9 @@ namespace our {
                 } else if (entity->getComponent<Weapon>()) {
                     weapon = entity->getComponent<Weapon>();
                 }
-                else if (entity->getComponent<Bullet>()) {
-                    genericBullet = entity->getComponent<Bullet>();
-                }
-                if (camera && controller && weapon && genericBullet) break;
+                if (camera && controller && weapon) break;
             }
-            if (!(camera && controller && weapon && genericBullet)) return;
+            if (!(camera && controller && weapon)) return;
             Entity *player = camera->getOwner();
 
             bool isShooting = false;
