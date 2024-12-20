@@ -1,0 +1,162 @@
+# Blender 4.3.2 MTL File: 'None'
+# www.blender.org
+
+newmtl 24_Material31(2)_1_0_0
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 24_Material31(3)_1_0_0
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl 24_Material31(4)_1_0_0
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd assets/textures/soldier/kar98 Mk1.png
+map_d assets/textures/soldier/kar98 Mk1.png
+
+newmtl backpack_handle
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_backpack_handle_cout.png
+
+newmtl backpack_row
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_backpack_row_cout.png
+
+newmtl chest_armor
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_chest_armor_lower_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl chestplate_row
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_chestplate_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl eyes
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd assets/textures/soldier/common_eyeout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+map_d assets/textures/soldier/common_eyeout.png
+
+newmtl flashlight
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_flashlight_cout.png
+
+newmtl glow
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd assets/textures/soldier/soldier_glowout.png
+map_d assets/textures/soldier/soldier_glowout.png
+
+newmtl head
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/commander_officeryurgen_head_col_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl helmet
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_helmet_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl mask
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_mask_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl shoulderpad
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_shoulderpad_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl soldier_row
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
+
+newmtl soldier_venus
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd assets/textures/soldier/soldier_venus_venussoldaten_nailgun_row_cout.png
+map_Ns assets/textures/soldier/mesh1.006_specular.png
