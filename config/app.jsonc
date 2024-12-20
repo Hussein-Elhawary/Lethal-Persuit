@@ -213,7 +213,7 @@
         "world":[
             {
                 "name": "Player",
-                "position": [0, 2, 0],
+                "position": [10, 2, 0],
                 "components": [
                     {
                         "type": "Camera"
@@ -359,6 +359,7 @@
                 ]
             },
             {
+                "name":"Side Cube Face",
                 "position": [0, 1, -2],
                 "rotation": [0, 0, 0],
                 "scale": [2, 2, 2],
@@ -368,6 +369,12 @@
                         "mesh": "plane",
                         "material": "street"
                     }
+                    // {
+                    //     "type": "Collision",
+                    //     "center": [0,0,0],
+                    //     "size": [1,1,1]
+                    // }
+
                 ]
             },
             {

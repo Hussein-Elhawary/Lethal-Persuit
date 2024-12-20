@@ -33,6 +33,7 @@ namespace our
             this->player = player;
         }
 
+
         bool update(World *world, float deltaTime, glm::vec3 old_position)
         {
             // First of all, we search for an entity containing both a CameraComponent and a FreeCameraControllerComponent
@@ -217,7 +218,7 @@ namespace our
             {
                 if (auto collisionComponent = entity->getComponent<CollisionComponent>())
                 {
-                    printf("Entity Name: %s\n", entity->name.c_str());
+                    // printf("Entity Name: %s\n", entity->name.c_str());
                     if(entity->name == "Bullets")continue;
                     collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
 
@@ -229,21 +230,6 @@ namespace our
             return collidingEntities;
         }
 
-        void bulletCollision(World *world, float deltaTime, Entity* currentBullet, std::vector<Entity*> collidingEntities){
-            
-            for(auto entity : collidingEntities){
-                if(auto collisionComponent1 = currentBullet->getComponent<CollisionComponent>()){
-                    if(auto collisionComponent2 = entity->getComponent<CollisionComponent>()){
-                        if(collisionComponent1->checkForCollision(*collisionComponent2)){
-                            // printf("Collided Bullet: ", currentBullet->name.c_str());
-                            // printf("Colliding Entity: ", entity->name.c_str());
-                            world->markForRemoval(currentBullet);
-                            
-                        }
-                    }
-                }
-            }
-        }
     };
 
 }

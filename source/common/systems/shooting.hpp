@@ -56,6 +56,7 @@ namespace our {
                         weaponComponent->isShooting = true;
 
                         auto bulletComponent = bulletEntity->getComponent<Bullet>();
+                        bulletComponent->shooterName = "Player";
                         bulletComponent->lastShootTime = std::chrono::system_clock::now();
                         bulletComponent->isShot = true;
 
@@ -94,7 +95,7 @@ namespace our {
                                 deltaTime;
 
                         auto currentTime = std::chrono::system_clock::now();
-                        if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 10.0f) {
+                        if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 20.0f) {
                             bulletsSystem->removeBullet(entity);
                             world->markForRemoval(entity);
                         }
