@@ -22,7 +22,7 @@ namespace our {
         float speedupFactor = 0.50f; // A multiplier for the positionSensitivity if "Left Shift" is held.
         bool tpSet = false; //check if tp is set
         glm::vec3 tp = glm::vec3(0, 0, 0); //tp position
-        int dashCoolDown = 5; //dash cool down
+        int dashCoolDown = 0; //dash cool down
         std::chrono::time_point<std::chrono::system_clock> lastDashTime = std::chrono::system_clock::now(); //last dash time
         bool inDash = false; //check if in dash
         glm::vec3 dashDirection = glm::vec3(0, 0, 0); //dash direction

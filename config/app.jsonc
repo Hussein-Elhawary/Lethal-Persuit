@@ -234,8 +234,12 @@
                         "components": [
                             {
                                 "type": "Mesh Renderer",
-                                "mesh": "bullet",
+                                "mesh": "ak-47",
                                 "material": "mtl"
+                            },
+                            {
+                                "type": "Weapon",
+                                "initialPosition": [0.045, -0.035, -0.05]
                             }
                         ]
                     }
