@@ -44,7 +44,6 @@ namespace our {
             if (!(camera && controller && weapon)) return;
             Entity *player = camera->getOwner();
 
-            bool isShooting = false;
             Entity* bulletEntity = nullptr;
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
