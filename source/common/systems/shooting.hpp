@@ -9,6 +9,7 @@
 #include "components/bullet.hpp"
 #include "components/weapon.hpp"
 #include "ecs/world.hpp"
+#include "bullets.hpp"
 
 namespace our {
     class Shooting {
@@ -27,7 +28,7 @@ namespace our {
 
         }
 
-        void update(World *world, float deltaTime) {
+        void update(World *world, float deltaTime, bulletsSystem *bulletsSystem) {
             CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
             Weapon *weapon = nullptr;
@@ -51,6 +52,7 @@ namespace our {
                     if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
                         bulletEntity = world->add();
                         bulletEntity->deserializeBullet(*data);
+                        bulletsSystem->addBullet(bulletEntity);
                         weaponComponent->lastShootTime = std::chrono::system_clock::now();
                         weaponComponent->isShooting = true;
 
@@ -93,7 +95,8 @@ namespace our {
                                 deltaTime;
 
                         auto currentTime = std::chrono::system_clock::now();
-                        if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 2.0f) {
+                        if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 10.0f) {
+                            bulletsSystem->removeBullet(entity);
                             world->markForRemoval(entity);
                         }
                     }

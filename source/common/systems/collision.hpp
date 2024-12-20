@@ -124,9 +124,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return true;
                         }
                     }
@@ -162,9 +162,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return entity;
                         }
                     }
@@ -198,9 +198,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return true;
                         }
                     }
@@ -208,6 +208,41 @@ namespace our
             }
 
             return false;
+        }
+
+        std::vector<Entity *> getCollidingEntitiesWithoutBullets(World *world)
+        {
+            std::vector<Entity *> collidingEntities;
+            for (auto entity : world->getEntities())
+            {
+                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
+                {
+                    printf("Entity Name: %s\n", entity->name.c_str());
+                    if(entity->name == "Bullets")continue;
+                    collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
+
+                    collidingEntities.push_back(entity);
+                    //printf("Not Bullet Entity: %s\n", entity->name.c_str());
+                }
+            }
+           
+            return collidingEntities;
+        }
+
+        void bulletCollision(World *world, float deltaTime, Entity* currentBullet, std::vector<Entity*> collidingEntities){
+            
+            for(auto entity : collidingEntities){
+                if(auto collisionComponent1 = currentBullet->getComponent<CollisionComponent>()){
+                    if(auto collisionComponent2 = entity->getComponent<CollisionComponent>()){
+                        if(collisionComponent1->checkForCollision(*collisionComponent2)){
+                            // printf("Collided Bullet: ", currentBullet->name.c_str());
+                            // printf("Colliding Entity: ", entity->name.c_str());
+                            world->markForRemoval(currentBullet);
+                            
+                        }
+                    }
+                }
+            }
         }
     };
 
