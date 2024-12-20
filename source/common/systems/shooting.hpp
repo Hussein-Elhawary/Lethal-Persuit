@@ -20,16 +20,21 @@ namespace our {
         }
 
         void update(World *world, float deltaTime) {
-            CameraComponent* camera = nullptr;
+            CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
-            for(const auto entity : world->getEntities()){
+            Weapon *weapon = nullptr;
+            for (const auto entity: world->getEntities()) {
                 //printf("Entity: %s\n", entity->name.c_str());
-                camera = entity->getComponent<CameraComponent>();
-                controller = entity->getComponent<FreeCameraControllerComponent>();
-                if(camera && controller) break;
+                if (entity->getComponent<CameraComponent>() && entity->getComponent<FreeCameraControllerComponent>()) {
+                    camera = entity->getComponent<CameraComponent>();
+                    controller = entity->getComponent<FreeCameraControllerComponent>();
+                } else if (entity->getComponent<Weapon>()) {
+                    weapon = entity->getComponent<Weapon>();
+                }
+                if (camera && controller && weapon) break;
             }
-            if(!(camera && controller)) return;
-            Entity* player = camera->getOwner();
+            if (!(camera && controller && weapon)) return;
+            Entity *player = camera->getOwner();
 
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
@@ -39,7 +44,8 @@ namespace our {
                     }
 
                     const auto currentTime = std::chrono::system_clock::now();
-                    if (const auto timeSinceLastShoot = std::chrono::duration<float>(currentTime - weaponComponent->lastShootTime).count();
+                    if (const auto timeSinceLastShoot = std::chrono::duration<float>(
+                            currentTime - weaponComponent->lastShootTime).count();
                         timeSinceLastShoot < 0.1f && weaponComponent->isShooting) {
                         entity->localTransform.position =
                                 weaponComponent->initialPosition + glm::vec3(0, 0, 1) * timeSinceLastShoot * 0.1f;
@@ -54,24 +60,26 @@ namespace our {
                         bulletComponent->lastShootTime = std::chrono::system_clock::now();
                         bulletComponent->isShot = true;
 
-                        entity->localTransform.position = player->localTransform.position;
+                        const auto MW = weapon->getOwner()->getLocalToWorldMatrix();
+                        const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
+                        const auto centerW4d = MW * glm::vec4({0, 0, 1, 1});
 
-                        const auto M = player->getLocalToWorldMatrix();
-                        const glm::vec4 eye4d = M * glm::vec4({0, 0, 0, 1});
-                        const glm::vec4 center4d = M * glm::vec4({0, 0, -1, 1});
-                        const auto eye = glm::vec3(eye4d.x, eye4d.y, eye4d.z);
-                        const auto center = glm::vec3(center4d.x, center4d.y, center4d.z);
-                        bulletComponent->direction = center - eye;
+                        const auto eyeW = glm::vec3(eyedW4d.x, eyedW4d.y, eyedW4d.z);
+                        const auto centerW = glm::vec3(centerW4d.x, centerW4d.y, centerW4d.z);
+                        const glm::vec3 translation = {MW[3][0], MW[3][1], MW[3][2]};
 
-                        entity->localTransform.rotation = glm::vec3(player->localTransform.rotation.x - glm::radians(90.0f),player->localTransform.rotation.y, 0);
+                        auto combinedDirection = normalize(centerW - eyeW);
+                        bulletComponent->direction = combinedDirection;
+
+                        auto playrot = player->localTransform.rotation;
+                        entity->localTransform.rotation = glm::vec3(playrot.x - glm::radians(90.0f),playrot.y, 0);
+                        entity->localTransform.position = translation;
                     }
 
                     if (bulletComponent->isShot) {
-                        entity->localTransform.position += bulletComponent->direction * bulletComponent->speed * deltaTime;
-                        printf("Bullet position: x = %f, y = %f, z = %f\n", entity->localTransform.position.x,
-                               entity->localTransform.position.y, entity->localTransform.position.z);
+                        entity->localTransform.position += bulletComponent->direction * bulletComponent->speed *
+                                deltaTime;
                     }
-
                 }
             }
         }
