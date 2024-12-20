@@ -66,9 +66,11 @@
                 "monkey": "assets/models/monkey.obj",
                 "plane": "assets/models/plane.obj",
                 "sphere": "assets/models/sphere.obj",
+                "terrorist": "assets/models/terrorist/terrorist.obj",
                 "ak-47": "assets/models/ak-47s/ak-47s.obj",
                 "city": "assets/models/city/city.obj",
-                "bullet": "assets/models/bullet/bullet.obj"
+                "bullet": "assets/models/bullet/bullet.obj",
+                "soldier": "assets/models/soldier/soldier.obj"
             },
             "samplers":{
                 "default":{},
@@ -211,7 +213,7 @@
         "world":[
             {
                 "name": "Player",
-                "position": [0, 2, 0],
+                "position": [10, 2, 0],
                 "components": [
                     {
                         "type": "Camera"
@@ -331,6 +333,33 @@
                 ]
             },
             {
+                "name": "enemy",
+                "position": [0, -1, 0],
+                "rotation": [0, 0, 0],
+                "scale": [0.8, 0.8, 0.8],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "terrorist",
+                        "material": "mtl"
+                    }
+                ]
+            },
+            {
+                "name": "soldier",
+                "position": [0, -1, 2],
+                "rotation": [0, 0, 0],
+                "scale": [0.8, 0.8, 0.8],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "soldier",
+                        "material": "mtl"
+                    }
+                ]
+            },
+            {
+                "name":"Side Cube Face",
                 "position": [0, 1, -2],
                 "rotation": [0, 0, 0],
                 "scale": [2, 2, 2],
@@ -340,6 +369,12 @@
                         "mesh": "plane",
                         "material": "street"
                     }
+                    // {
+                    //     "type": "Collision",
+                    //     "center": [0,0,0],
+                    //     "size": [1,1,1]
+                    // }
+
                 ]
             },
             {
@@ -387,14 +422,14 @@
                 "components": [
                     {
                         "type": "Light",
-                        "lightType": "spot",
+                        "lightType": "directional",
                         // "diffuse": [1, 1, 1],
                         // "specular": [1, 1, 1],
                         // "ambient": [0.1,0.1,0.1],
                         "color": [
-                            1,
-                            1,
-                            1
+                            0.6,
+                            0.6,
+                            0.6
                         ],
                         "attenuation": {
                             "constant": 20,
@@ -402,7 +437,77 @@
                             "quadratic": 0
                         },
                         "direction": [
-                            0.5,
+                            0,
+                            -1,
+                            -1
+                        ],
+                        "angle": {
+                            "inner": 10,
+                            "outer": 50
+                        }
+                    }
+                ]
+            },
+            {
+                "position": [
+                    0,
+                    5,
+                    0
+                ],
+                "components": [
+                    {
+                        "type": "Light",
+                        "lightType": "directional",
+                        // "diffuse": [1, 1, 1],
+                        // "specular": [1, 1, 1],
+                        // "ambient": [0.1,0.1,0.1],
+                        "color": [
+                            0.6,
+                            0.6,
+                            0.6
+                        ],
+                        "attenuation": {
+                            "constant": 20,
+                            "linear": 0,
+                            "quadratic": 0
+                        },
+                        "direction": [
+                            0,
+                            -1,
+                            1
+                        ],
+                        "angle": {
+                            "inner": 10,
+                            "outer": 50
+                        }
+                    }
+                ]
+            },
+            {
+                "position": [
+                    0,
+                    5,
+                    0
+                ],
+                "components": [
+                    {
+                        "type": "Light",
+                        "lightType": "directional",
+                        // "diffuse": [1, 1, 1],
+                        // "specular": [1, 1, 1],
+                        // "ambient": [0.1,0.1,0.1],
+                        "color": [
+                            0.6,
+                            0.6,
+                            0.6
+                        ],
+                        "attenuation": {
+                            "constant": 20,
+                            "linear": 0,
+                            "quadratic": 0
+                        },
+                        "direction": [
+                            -1,
                             -1,
                             0
                         ],
@@ -424,9 +529,9 @@
                         "type": "Light",
                         "lightType": "directional",
                         "color": [
-                            1,
-                            1,
-                            1
+                            0.6,
+                            0.6,
+                            0.6
                         ],
                         "direction": [
                             -1,

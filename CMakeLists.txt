@@ -90,6 +90,7 @@ set(COMMON_SOURCES
         source/common/systems/collision.hpp
         source/common/systems/light-system.cpp
         source/common/systems/light-system.hpp
+        source/common/systems/bullets.hpp
 
         source/common/objects/object.cpp
         source/common/objects/object.hpp

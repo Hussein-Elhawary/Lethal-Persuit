@@ -33,6 +33,7 @@ namespace our
             this->player = player;
         }
 
+
         bool update(World *world, float deltaTime, glm::vec3 old_position)
         {
             // First of all, we search for an entity containing both a CameraComponent and a FreeCameraControllerComponent
@@ -124,9 +125,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return true;
                         }
                     }
@@ -162,9 +163,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return entity;
                         }
                     }
@@ -198,9 +199,9 @@ namespace our
                     {
                         if (collisionComponent1->checkForCollision(*collisionComponent2))
                         {
-                            printf("Collision Detected\n");
+                            // printf("Collision Detected\n");
 
-                            printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
+                            // printf("Player Position after: x = %f, y = %f, z = %f\n", old_position.x, old_position.y, old_position.z);
                             return true;
                         }
                     }
@@ -209,6 +210,26 @@ namespace our
 
             return false;
         }
+
+        std::vector<Entity *> getCollidingEntitiesWithoutBullets(World *world)
+        {
+            std::vector<Entity *> collidingEntities;
+            for (auto entity : world->getEntities())
+            {
+                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
+                {
+                    // printf("Entity Name: %s\n", entity->name.c_str());
+                    if(entity->name == "Bullets")continue;
+                    collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
+
+                    collidingEntities.push_back(entity);
+                    //printf("Not Bullet Entity: %s\n", entity->name.c_str());
+                }
+            }
+           
+            return collidingEntities;
+        }
+
     };
 
 }

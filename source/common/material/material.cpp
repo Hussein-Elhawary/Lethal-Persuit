@@ -132,7 +132,7 @@ namespace our {
     }
     void LitTexturedMaterial::loadTextures(const tinyobj::material_t &mat) {
         loadTexture(mat.diffuse_texname, albedoTexture, albedoSampler);
-        loadTexture("black", specularTexture, specularSampler);
+        loadTexture(mat.specular_texname, specularTexture, specularSampler);
         loadTexture(mat.ambient_texname, ambientOcclusionTexture, ambientOcclusionSampler);
         loadTexture(mat.roughness_texname.empty()? "white": mat.roughness_texname, roughnessTexture, roughnessSampler);
         loadTexture(mat.emissive_texname, emissiveTexture, emissiveSampler);

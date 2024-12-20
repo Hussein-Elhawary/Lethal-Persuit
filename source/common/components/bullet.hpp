@@ -10,6 +10,7 @@
 namespace our {
     class Bullet : public Component {
     public:
+        std::string shooterName;
         glm::vec3 direction = {0, 0, 0};
         std::chrono::time_point<std::chrono::system_clock> lastShootTime = std::chrono::system_clock::now();
         bool isShot = false;
