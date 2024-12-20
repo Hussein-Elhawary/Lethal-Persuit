@@ -15,6 +15,7 @@ namespace our {
     // based on the "type" specified in the json object which is later deserialized from the rest of the json object
     inline void deserializeComponent(const nlohmann::json &data, Entity *entity) {
         const std::string type = data.value("type", "");
+        const int n = data.value("n", 1);
         Component *component = nullptr;
         // TODO: (Req 8) Add an option to deserialize a "MeshRendererComponent" to the following if-else statement
         if (type == CameraComponent::getID()) {

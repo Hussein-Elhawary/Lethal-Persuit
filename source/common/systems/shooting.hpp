@@ -36,6 +36,7 @@ namespace our {
             if (!(camera && controller && weapon)) return;
             Entity *player = camera->getOwner();
 
+            bool isShooting = false;
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
                     if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
@@ -56,9 +57,10 @@ namespace our {
                     }
                 }
                 if (auto *bulletComponent = entity->getComponent<Bullet>()) {
-                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
+                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) && !bulletComponent->isShot && !isShooting) {
                         bulletComponent->lastShootTime = std::chrono::system_clock::now();
                         bulletComponent->isShot = true;
+                        isShooting = true;
 
                         const auto MW = weapon->getOwner()->getLocalToWorldMatrix();
                         const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
