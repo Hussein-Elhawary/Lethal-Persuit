@@ -33,7 +33,6 @@ namespace our
         void addBullet(Entity *bullet)
         {
             bulletsEntities.push_back(bullet);
-            //printf("Bullet Added: %s\n", bullet->name.c_str());
         }
 
         void removeBullet(Entity *bullet)
@@ -42,7 +41,6 @@ namespace our
             if (it != bulletsEntities.end())
             {
                 bulletsEntities.erase(it, bulletsEntities.end());
-                //printf("bulletsEntities Size: %d\n", bulletsEntities.size());
             }
         }
 
@@ -51,9 +49,7 @@ namespace our
             std::vector<Entity *> collidingEntities;
 
             collidingEntities = collisionSystem.getCollidingEntitiesWithoutBullets(world);
-            // printf("Entered Bullet Update\n");
-            // printf("Colliding Entities Size: %d\n", collidingEntities.size());
-            // printf("bulletsEntites Size: %d\n", bulletsEntities.size());
+            
             for (auto currentBullet : bulletsEntities)
             {
                 if (auto bulletComponent = currentBullet->getComponent<Bullet>())

@@ -11,7 +11,7 @@
     },
     "scene": {
         "renderer":{
-            "sky": "assets/textures/black.jpg",
+            "sky": "assets/textures/sky.jpg",
             "postprocess": "assets/shaders/postprocess/vignette.frag"
         },
         "assets":{
@@ -295,7 +295,7 @@
                     {
                         "type": "Bullet",
                         "direction": [0, 0, 1],
-                        "speed": 1
+                        "speed": 50
                     },
                     {
                         "type": "Collision",
