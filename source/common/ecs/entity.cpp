@@ -33,4 +33,16 @@ namespace our {
             }
         }
     }
+    void Entity::deserializeBullet(const nlohmann::json &data) {
+        if (!data.is_object()) return;
+        name = data.value("name", name);
+        localTransform.deserialize(data);
+        if (data.contains("components")) {
+            if (const auto &components = data["components"]; components.is_array()) {
+                for (auto &component: components) {
+                    deserializeComponent(component, this);
+                }
+            }
+        }
+    }
 }

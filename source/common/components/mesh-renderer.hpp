@@ -18,6 +18,7 @@ namespace our {
 
         // Receives the mesh & material from the AssetLoader by the names given in the json object
         void deserialize(const nlohmann::json& data) override;
+        void CreateMesh(const std::string &name);
     };
 
 }

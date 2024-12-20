@@ -35,7 +35,7 @@ class Playstate: public our::State {
         // We initialize the camera controller system since it needs a pointer to the app
         cameraController.enter(getApp());
         collisionSystem.enter(getApp());
-        shooting.enter(getApp());
+        shooting.enter(getApp(), config["world"]);
         // Then we initialize the renderer
         auto size = getApp()->getFrameBufferSize();
         renderer.initialize(size, config["renderer"]);
@@ -57,6 +57,8 @@ class Playstate: public our::State {
             // If the escape  key is pressed in this frame, go to the play state
             getApp()->changeState("menu");
         }
+
+        world.deleteMarkedEntities();
     }
 
     void onDestroy() override {

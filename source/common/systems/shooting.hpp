@@ -13,16 +13,25 @@
 namespace our {
     class Shooting {
         Application *app = nullptr;
+        const nlohmann::json *data = nullptr;
 
     public:
-        void enter(Application *app) {
+        void enter(Application *app, const nlohmann::json &data) {
             this->app = app;
+            for (const auto &component: data) {
+                if (auto name = component.value("name", ""); name == "Bullets") {
+                    this->data = &component;
+                    break;
+                }
+            }
+
         }
 
         void update(World *world, float deltaTime) {
             CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
             Weapon *weapon = nullptr;
+            Bullet *genericBullet = nullptr;
             for (const auto entity: world->getEntities()) {
                 //printf("Entity: %s\n", entity->name.c_str());
                 if (entity->getComponent<CameraComponent>() && entity->getComponent<FreeCameraControllerComponent>()) {
@@ -31,36 +40,27 @@ namespace our {
                 } else if (entity->getComponent<Weapon>()) {
                     weapon = entity->getComponent<Weapon>();
                 }
-                if (camera && controller && weapon) break;
+                else if (entity->getComponent<Bullet>()) {
+                    genericBullet = entity->getComponent<Bullet>();
+                }
+                if (camera && controller && weapon && genericBullet) break;
             }
-            if (!(camera && controller && weapon)) return;
+            if (!(camera && controller && weapon && genericBullet)) return;
             Entity *player = camera->getOwner();
 
             bool isShooting = false;
+            Entity* bulletEntity = nullptr;
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
                     if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
+                        bulletEntity = world->add();
+                        bulletEntity->deserializeBullet(*data);
                         weaponComponent->lastShootTime = std::chrono::system_clock::now();
                         weaponComponent->isShooting = true;
-                    }
 
-                    const auto currentTime = std::chrono::system_clock::now();
-                    if (const auto timeSinceLastShoot = std::chrono::duration<float>(
-                            currentTime - weaponComponent->lastShootTime).count();
-                        timeSinceLastShoot < 0.1f && weaponComponent->isShooting) {
-                        entity->localTransform.position =
-                                weaponComponent->initialPosition + glm::vec3(0, 0, 1) * timeSinceLastShoot * 0.1f;
-                        weaponComponent->maxPosition = entity->localTransform.position;
-                    } else if (timeSinceLastShoot < 0.2f && weaponComponent->isShooting) {
-                        entity->localTransform.position =
-                                weaponComponent->maxPosition - glm::vec3(0, 0, 1) * (timeSinceLastShoot - 0.1f) * 0.1f;
-                    }
-                }
-                if (auto *bulletComponent = entity->getComponent<Bullet>()) {
-                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) && !bulletComponent->isShot && !isShooting) {
+                        auto bulletComponent = bulletEntity->getComponent<Bullet>();
                         bulletComponent->lastShootTime = std::chrono::system_clock::now();
                         bulletComponent->isShot = true;
-                        isShooting = true;
 
                         const auto MW = weapon->getOwner()->getLocalToWorldMatrix();
                         const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
@@ -74,13 +74,32 @@ namespace our {
                         bulletComponent->direction = combinedDirection;
 
                         auto playrot = player->localTransform.rotation;
-                        entity->localTransform.rotation = glm::vec3(playrot.x - glm::radians(90.0f),playrot.y, 0);
-                        entity->localTransform.position = translation;
+                        bulletEntity->localTransform.rotation = glm::vec3(playrot.x - glm::radians(90.0f),playrot.y, 0);
+                        bulletEntity->localTransform.position = translation;
                     }
 
+                    const auto currentTime = std::chrono::system_clock::now();
+                    if (const auto timeSinceLastShoot = std::chrono::duration<float>(
+                            currentTime - weaponComponent->lastShootTime).count();
+                        timeSinceLastShoot < 0.1f && weaponComponent->isShooting) {
+                        entity->localTransform.position =
+                                weaponComponent->initialPosition + glm::vec3(0, 0, 1) * timeSinceLastShoot * 0.1f;
+                        weaponComponent->maxPosition = entity->localTransform.position;
+                    } else if (timeSinceLastShoot < 0.2f && weaponComponent->isShooting) {
+                        entity->localTransform.position =
+                                weaponComponent->maxPosition - glm::vec3(0, 0, 1) * (timeSinceLastShoot - 0.1f) * 0.1f;
+                    }
+                    break;
+                }
+                if (auto *bulletComponent = entity->getComponent<Bullet>()) {
                     if (bulletComponent->isShot) {
                         entity->localTransform.position += bulletComponent->direction * bulletComponent->speed *
                                 deltaTime;
+
+                        auto currentTime = std::chrono::system_clock::now();
+                        if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 2.0f) {
+                            world->markForRemoval(entity);
+                        }
                     }
                 }
             }

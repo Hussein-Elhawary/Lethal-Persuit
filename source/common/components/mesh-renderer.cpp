@@ -14,4 +14,9 @@ namespace our {
         this->material = AssetLoader<Material>::get(data["material"].get<std::string>());
         this->mesh = AssetLoader<std::vector<Mesh*>>::get(data["mesh"].get<std::string>());
     }
+
+    void MeshRendererComponent::CreateMesh(const std::string & name) {
+        this->material = nullptr;
+        this->mesh = AssetLoader<std::vector<Mesh*>>::get(name);
+    }
 }
