@@ -36,6 +36,10 @@
                     "vs": "assets/shaders/light.vert",
                     "fs": "assets/shaders/light.frag"
                 },
+                "lightedbricks": {
+                    "vs": "assets/shaders/light.vert",
+                    "fs": "assets/shaders/light.frag"
+                },
                 "gunFlare":{
                     "vs":"assets/shaders/gun-flare.vert",
                     "fs":"assets/shaders/gun-flare.frag"
@@ -64,7 +68,10 @@
                 "black": "assets/textures/black.jpg",
                 "grey": "assets/textures/grey.jpg",
                 "white": "assets/textures/white.jpg",
-                "gunflare": "assets/textures/gunflare.png"
+                "gunflare": "assets/textures/gunflare.png",
+                "redbrickdiff": "assets/textures/red_brick_diff.jpg",
+                "redbrickdisp": "assets/textures/red_brick_disp.png"
+                
             },
             "objects": {
                 "cube": "assets/models/cube.obj",
@@ -227,7 +234,39 @@
                     "tint": [1, 1, 1, 1],
                     "texture": "gunflare",
                     "sampler": "default"
-                }
+                },
+                "bricks":{
+                    "type":"LitTexturedMaterial",
+                    "shader":"lighted",
+                    "pipelineState":{
+                        "faceCulling":{
+                            "enabled": false
+                        },
+                        "depthTesting":{
+                            "enabled": true
+                        }
+                    },
+                    "albedo":{
+                        "texture":"redbrickdiff",
+                        "sampler":"repeating"
+                    },
+                    "emissive":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "roughness":{
+                        "texture":"white",
+                        "sampler":"default"
+                    },
+                    "specular":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "ambientOcclusion":{
+                        "texture":"redbrickdisp",
+                        "sampler":"repeating"
+                    }
+            }
 
             }
         },
@@ -615,8 +654,8 @@
                 ]
             },//game system from here
             {
-                "name": "Ground",
-                "position": [-120, -50, 0],
+                "name": "Ground", //ground under
+                "position": [-110, -50, -10],
                 "rotation": [
                     -90,
                     0,
@@ -624,8 +663,8 @@
                 ],
                 "scale": [
                     10,
-                    1,
-                    10
+                    10,
+                    1
                 ],
                 "components": [
                     {
@@ -637,14 +676,281 @@
                         "type": "Collision",
                         "center": [
                             0,
-                            -1,
+                            0,
                             0
                         ],
                         "size": [
                             1,
+                            0.05,
+                            10
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ground", //ground under mirrored
+                "position": [-110, -50, 10],
+                "rotation": [
+                    90,
+                    0,
+                    0
+                ],
+                "scale": [
+                    10,
+                    10,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            1,
+                            0.05,
+                            10
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall back under ground 
+                "position": [-110, -43, -20],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            0,
+                            0,
+                            -1
+                        ],
+                        "size": [
+                            1,
+                            1,
+                            2
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall back under ground mirrored
+                "position": [-110, -43, 20],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall left under ground 
+                "position": [-100, -43, -10],
+                "rotation": [
+                    0,
+                    90,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            -0.05,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            0.1,
                             1,
                             10
                         ]
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall left under ground mirrored
+                "position": [-100, -43, 10],
+                "rotation": [
+                    0,
+                    -90,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            -0.02,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            0.1,
+                            1,
+                            10
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall right under ground 
+                "position": [-120, -43, -10],
+                "rotation": [
+                    0,
+                    90,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            0.1,
+                            1,
+                            10
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "nojumpwall", //wall right under ground mirrored
+                "position": [-120, -43, 10],
+                "rotation": [
+                    0,
+                    -90,
+                    0
+                ],
+                "scale": [
+                    10,
+                    7,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    },
+                    {
+                        "type": "Collision",
+                        "center": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "size": [
+                            0.1,
+                            1,
+                            10
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Roof", //ground under
+                "position": [-110, -36, -10],
+                "rotation": [
+                    -90,
+                    0,
+                    0
+                ],
+                "scale": [
+                    10,
+                    10,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
+                    }
+                ]
+            },
+            {
+                "name": "Roof", //ground under mirrored
+                "position": [-110, -36, 10],
+                "rotation": [
+                    90,
+                    0,
+                    0
+                ],
+                "scale": [
+                    10,
+                    10,
+                    1
+                ],
+                "components": [
+                    {
+                        "type": "Mesh Renderer",
+                        "mesh": "plane",
+                        "material": "street"
                     }
                 ]
             }
