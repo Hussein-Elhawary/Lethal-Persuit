@@ -1,0 +1,12 @@
+# Blender 4.3.2 MTL File: 'None'
+# www.blender.org
+
+newmtl wire_028028177.002
+map_Kd assets/textures/bullet/wire_028028177_Base_color.png
+map_Ks assets/textures/bullet/wire_028028177_Metallic.png
+map_Ns assets/textures/bullet/wire_028028177_Roughness.png
+
+newmtl wire_196088225.002
+map_Kd assets/textures/bullet/wire_196088225_Base_color.png
+map_Ks assets/textures/bullet/wire_196088225_Metallic.png
+map_Ns assets/textures/bullet/wire_196088225_Roughness.png
