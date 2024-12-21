@@ -322,7 +322,8 @@
               },
               {
                 "type": "Weapon",
-                "initialPosition": [0.045, -0.035, -0.05]
+                "initialPosition": [0.045, -0.035, -0.05],
+                "ownerName" : "Player"
               }
             ]
           },
@@ -452,7 +453,8 @@
               },
               {
                 "type": "Weapon",
-                "initialPosition": [0.2, 1.22, 0.4]
+                "initialPosition": [0.2, 1.22, 0.4],
+                "ownerName": "Enemy"
               }
             ]
           }
@@ -486,7 +488,8 @@
             "components": [
               {
                 "type": "Weapon",
-                "initialPosition": [-0.085, 1.22, 0.7]
+                "initialPosition": [-0.085, 1.22, 0.7],
+                "ownerName": "Enemy"
               }
             ]
           }
@@ -663,8 +666,7 @@
             "size": [0.1, 1, 1.35]
           }
         ]
-      },
-      ,//game system from here
+      }, //game system from here
       {
         "name": "Ground", //ground under
         "position": [-110, -50, -10],

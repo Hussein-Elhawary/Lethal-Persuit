@@ -47,7 +47,9 @@ namespace our {
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
                     // if shot is pressed
-                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) ) {
+                    if ((app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) && weaponComponent->ownerName == "Player") ||
+                        (weaponComponent->ownerName != "Player" &&
+                            std::chrono::duration<float>(currentTime - weaponComponent->lastShootTime).count() > 1.0f)) {
                         bulletEntity = world->add(); // create a new bullet entity and add it to the world
                         bulletEntity->deserializeBullet(*data); // fill the bullet entity with the data from the json
                         bulletsSystem->addBullet(bulletEntity); // add the bullet to the bullets system
@@ -56,7 +58,7 @@ namespace our {
                         weaponComponent->isShooting = true;
 
                         auto bulletComponent = bulletEntity->getComponent<Bullet>();
-                        bulletComponent->shooterName = "Player";
+                        bulletComponent->shooterName = weaponComponent->ownerName;
                         bulletComponent->lastShootTime = currentTime;
                         bulletComponent->isShot = true;
                         glm::vec3 bulletToNozzle = {0.1f, 0.1f, 0.1f};
@@ -68,7 +70,6 @@ namespace our {
 
                         const auto eyeW = glm::vec3(eyedW4d.x, eyedW4d.y, eyedW4d.z);
                         const auto centerW = glm::vec3(centerW4d.x, centerW4d.y, centerW4d.z);
-                        const auto upW = glm::vec3(upW4d.x, upW4d.y, upW4d.z);
                         glm::vec3 translation = {MW[3][0], MW[3][1], MW[3][2]};
 
                         auto combinedDirection = normalize(eyeW - centerW);
@@ -77,27 +78,9 @@ namespace our {
                                                     bulletToNozzle.y * combinedDirection.y,
                                                     bulletToNozzle.z * combinedDirection.z);
 
-                        // auto dotangleY = glm::acos(dot(combinedDirection, glm::vec3(0, 1, 0)));
-                        // auto dotangleX = glm::acos(dot(combinedDirection, glm::vec3(1, 0, 0)));
-                        // // auto dotangleZ = glm::acos(dot(combinedDirection, glm::vec3(0, 0, -1)));
-                        // bulletEntity->localTransform.rotation = glm::vec3(-glm::radians(90.0f), -dotangleX, 0);
-
-                        // auto look = glm::lookAt(eyeW, centerW, upW);
-                        // look[3] = glm::vec4(0,0,0, 1);
-                        // auto rot = glm::quat_cast(look);
-                        // auto euler = glm::eulerAngles(rot);
-                        glm::vec3 direction = combinedDirection;
-                        glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f); // Assuming the up vector is along the y-axis
-
                         translation += projection;
                         bulletEntity->localTransform.position = translation;
 
-                        // bulletEntity->localTransform.rotation = glm::vec3(euler.x, euler.y, 0);
-
-                        // auto weaponRot = weaponComponent->getOwner()->localTransform.rotation;
-                        // auto parentRot = weaponComponent->getOwner()->parent->localTransform.rotation;
-                        // bulletEntity->localTransform.rotation = weaponRot + parentRot + glm::vec3(glm::radians(90.0f), 0, 0);
-                        // bulletEntity->localTransform.rotation *= glm::vec3(1, 1, 0);
                         auto playRot = (weaponComponent->getOwner()->parent->localTransform.rotation + weaponComponent->getOwner()->localTransform.rotation) + glm::vec3(0, glm::radians(180.0f), 0);
                         bulletEntity->localTransform.rotation = playRot;
                     }
