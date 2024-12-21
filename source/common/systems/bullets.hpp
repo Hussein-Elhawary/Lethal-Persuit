@@ -76,9 +76,11 @@ namespace our
                                         healthComponent->health -= 1;
                                         if (healthComponent->health <= 0)
                                         {
+                                            if (entity->name == "Player")
+                                                healthComponent->timeDied = std::chrono::system_clock::now();
                                             healthComponent->status = false;
                                             entity->localTransform.rotation = glm::vec3(glm::radians(-90.0f), 0, 0);
-                                            entity->localTransform.position.y += 0.1;
+                                            entity->localTransform.position.y += 0.2;
                                             collisionComponent->boundingBoxSize = glm::vec3(0, 0, 0); // Set the bounding box size to 0 to avoid collision
 
                                         }
@@ -89,6 +91,10 @@ namespace our
                     }
                 }
             }
-        };
+        }
+        void clear() {
+            // empty the bullets vector
+            bulletsEntities.clear();
+        }
     };
 }

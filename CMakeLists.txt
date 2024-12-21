@@ -103,6 +103,7 @@ set(COMMON_SOURCES
         source/common/components/weapon.hpp
         source/common/components/bullet.cpp
         source/common/components/bullet.hpp
+        source/common/systems/player.hpp
 )
 
 # Define the directories in which to search for the included headers
