@@ -1,966 +1,946 @@
 {
-    "start-scene": "menu",
-    "window":
-    {
-        "title":"Lethal Persuit",
-        "size":{
-            "width":1280,
-            "height":720
-        },
-        "fullscreen": false
+  "start-scene": "menu",
+  "window": {
+    "title": "Lethal Persuit",
+    "size": {
+      "width": 1280,
+      "height": 720
     },
-    "scene": {
-        "renderer":{
-            "sky": "assets/textures/sky.jpg",
-            "postprocess": "assets/shaders/postprocess/vignette.frag"
+    "fullscreen": false
+  },
+  "scene": {
+    "renderer": {
+      "sky": "assets/textures/sky.jpg",
+      "postprocess": "assets/shaders/postprocess/vignette.frag"
+    },
+    "assets": {
+      "shaders": {
+        "tinted": {
+          "vs": "assets/shaders/tinted.vert",
+          "fs": "assets/shaders/tinted.frag"
         },
-        "assets":{
-            "shaders":{
-                "tinted":{
-                    "vs":"assets/shaders/tinted.vert",
-                    "fs":"assets/shaders/tinted.frag"
-                },
-                "textured":{
-                    "vs":"assets/shaders/textured.vert",
-                    "fs":"assets/shaders/textured.frag"
-                },
-                "street":{
-                    "vs":"assets/shaders/street.vert",
-                    "fs":"assets/shaders/street.frag"
-                },
-                "wall":{
-                    "vs":"assets/shaders/wall.vert",
-                    "fs":"assets/shaders/wall.frag"
-                },
-                "lighted": {
-                    "vs": "assets/shaders/light.vert",
-                    "fs": "assets/shaders/light.frag"
-                },
-                "lightedbricks": {
-                    "vs": "assets/shaders/light.vert",
-                    "fs": "assets/shaders/light.frag"
-                },
-                "gunFlare":{
-                    "vs":"assets/shaders/gun-flare.vert",
-                    "fs":"assets/shaders/gun-flare.frag"
-                }
-            },
-            "textures":{
-                "moon": "assets/textures/moon.jpg",
-                "grass": "assets/textures/grass_ground_d.jpg",
-                "wood": "assets/textures/wood.jpg",
-                "glass": "assets/textures/glass-panels.png",
-                "monkey": "assets/textures/monkey.png",
-                "street1": "assets/textures/street/street_diff.jpg",
-                "street2": "assets/textures/street/street_disp.png",
-                "pavement1": "assets/textures/street/pavement_diff.jpg",
-                "pavement2": "assets/textures/street/pavement_disp.png",
-                "separator1": "assets/textures/street/separator_diff.jpg",
-                "separator2": "assets/textures/street/separator_disp.png",
-                "streetMap": "assets/textures/street/street_map.png",
-                "plainWall1": "assets/textures/house/polystyrene_diff.jpg",
-                "plainWall2": "assets/textures/house/polystyrene_disp.png",
-                "redhousecolor": "assets/textures/house/red_house_color.png",
-                "window1": "assets/textures/house/window1.png",
-                "door": "assets/textures/house/door.jpg",
-                "oakwood1": "assets/textures/house/oak_diff.jpg",
-                "oakwood2": "assets/textures/house/oak_ao.jpg",
-                "black": "assets/textures/black.jpg",
-                "grey": "assets/textures/grey.jpg",
-                "white": "assets/textures/white.jpg",
-                "gunflare": "assets/textures/gunflare.png",
-                "redbrickdiff": "assets/textures/red_brick_diff.jpg",
-                "redbrickdisp": "assets/textures/red_brick_disp.png",
-                "bloodWall": "assets/textures/surface_with_blood.jpg",
-                "bloodeffect": "blood_effect.png"
-                
-            },
-            "objects": {
-                "cube": "assets/models/cube.obj",
-                "monkey": "assets/models/monkey.obj",
-                "plane": "assets/models/plane.obj",
-                "sphere": "assets/models/sphere.obj",
-                "terrorist": "assets/models/terrorist/terrorist.obj",
-                "ak-47": "assets/models/ak-47s/ak-47s.obj",
-                "city": "assets/models/city/city.obj",
-                "bullet": "assets/models/bullet/bullet2.obj",
-                "soldier": "assets/models/soldier/soldier.obj",
-                
-            },
-            "samplers":{
-                "default":{},
-                "pixelated":{
-                    "MAG_FILTER": "GL_NEAREST"
-                },
-                "repeating":{
-                    "WRAP_S":"GL_REPEAT",
-                    "WRAP_T":"GL_REPEAT"
-                },
-                "anisotropic":{
-                    "MAG_FILTER": "GL_LINEAR",
-                    "MIN_FILTER": "GL_LINEAR_MIPMAP_LINEAR",
-                    "TEXTURE_MAX_ANISOTROPY_EXT": 16
-                }
-            },
-            "materials":{
-                "metal":{
-                    "type": "tinted",
-                    "shader": "tinted",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "tint": [0.45, 0.4, 0.5, 1]
-                },
-                "glass":{
-                    "type": "textured",
-                    "shader": "textured",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        },
-                        "blending":{
-                            "enabled": true,
-                            "sourceFactor": "GL_SRC_ALPHA",
-                            "destinationFactor": "GL_ONE_MINUS_SRC_ALPHA"
-                        },
-                        "depthMask": false
-                    },
-                    "transparent": true,
-                    "tint": [1, 1, 1, 1],
-                    "texture": "glass",
-                    "sampler": "pixelated"
-                },
-                "grass":{
-                    "type": "textured",
-                    "shader": "textured",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "tint": [1, 1, 1, 1],
-                    "texture": "grass",
-                    "sampler": "default"
-                },
-                "monkey":{
-                    "type": "textured",
-                    "shader": "textured",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "tint": [1, 1, 1, 1],
-                    "texture": "monkey",
-                    "sampler": "default"
-                },
-                "moon":{
-                    "type": "textured",
-                    "shader": "textured",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "tint": [1, 1, 1, 1],
-                    "texture": "moon",
-                    "sampler": "default"
-                },
-                "street": {
-                    "type": "Ntextured",
-                    "shader": "street",
-                    "pipelineState": {
-                        "faceCulling": {
-                            "enabled": false
-                        },
-                        "depthTesting": {
-                            "enabled": true
-                        }
-                    },
-                    "tint": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ],
-                    "textures": ["street1","street2","pavement1","pavement2","separator1","separator2","streetMap"],
-                    "samplers": ["anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic"]
-                },
-                "redwall": {
-                    "type": "Ntextured",
-                    "shader": "wall",
-                    "pipelineState": {
-                        "faceCulling": {
-                            "enabled": false
-                        },
-                        "depthTesting": {
-                            "enabled": true
-                        }
-                    },
-                    "tint": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ],
-                    "textures": ["plainWall1","plainWall2","redhousecolor","window1","door","oakwood1","oakwood2"],
-                    "samplers": ["default","default","default","default","default","default","default"]
-                },
-                "gunFlare":{
-                    "type": "textured",
-                    "shader": "gunFlare",
-                    "pipelineState": {
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "tint": [1, 1, 1, 1],
-                    "texture": "gunflare",
-                    "sampler": "default"
-                },
-                "bricks":{
-                    "type":"LitTexturedMaterial",
-                    "shader":"lighted",
-                    "pipelineState":{
-                        "faceCulling":{
-                            "enabled": false
-                        },
-                        "depthTesting":{
-                            "enabled": true
-                        }
-                    },
-                    "albedo":{
-                        "texture":"redbrickdiff",
-                        "sampler":"repeating"
-                    },
-                    "emissive":{
-                        "texture":"black",
-                        "sampler":"default"
-                    },
-                    "roughness":{
-                        "texture":"white",
-                        "sampler":"default"
-                    },
-                    "specular":{
-                        "texture":"black",
-                        "sampler":"default"
-                    },
-                    "ambientOcclusion":{
-                        "texture":"redbrickdisp",
-                        "sampler":"repeating"
-                    }
-            }
-
-            }
+        "textured": {
+          "vs": "assets/shaders/textured.vert",
+          "fs": "assets/shaders/textured.frag"
         },
-        "world":[
-            {
-                "name": "Player",
-                "position": [-120, -47, 0],
-                "scale": [1, 1.3, 1],
-                "components": [
-                    {
-                        "type": "Camera"
-                    },
-                    {
-                        "type": "Free Camera Controller"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [0, 0, 0],
-                        "size": [0.1, 1, 0.1]
-                    },
-                    {
-                        "type": "Health",
-                        "health": 5
-                      }
-                ],
-                "children": [
-                    {
-                        "name": "Weapon",
-                        "rotation": [-5, 190, 0],
-                        "scale": [0.00015, 0.00015, 0.00015],
-                        "position": [0.045, -0.035, -0.05],
-                        "components": [
-                            {
-                                "type": "Mesh Renderer",
-                                "mesh": "ak-47",
-                                "material": "mtl"
-                            },
-                            {
-                                "type": "Weapon",
-                                "initialPosition": [0.045, -0.035, -0.05]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Gun Flare",
-                        "position": [0.02, -0.015, -0.093],
-                        "rotation": [0, 0, 0],
-                        "scale": [0.01, 0.01, 0.01],
-                        "components": [
-                            {
-                                "type": "Mesh Renderer",
-                                "mesh": "plane",
-                                "material": "gunFlare"
-                            }
-                        ]
-                    }
-                ]
+        "street": {
+          "vs": "assets/shaders/street.vert",
+          "fs": "assets/shaders/street.frag"
+        },
+        "wall": {
+          "vs": "assets/shaders/wall.vert",
+          "fs": "assets/shaders/wall.frag"
+        },
+        "lighted": {
+          "vs": "assets/shaders/light.vert",
+          "fs": "assets/shaders/light.frag"
+        },
+        "lightedbricks": {
+          "vs": "assets/shaders/light.vert",
+          "fs": "assets/shaders/light.frag"
+        },
+        "gunFlare": {
+          "vs": "assets/shaders/gun-flare.vert",
+          "fs": "assets/shaders/gun-flare.frag"
+        }
+      },
+      "textures": {
+        "moon": "assets/textures/moon.jpg",
+        "grass": "assets/textures/grass_ground_d.jpg",
+        "wood": "assets/textures/wood.jpg",
+        "glass": "assets/textures/glass-panels.png",
+        "monkey": "assets/textures/monkey.png",
+        "street1": "assets/textures/street/street_diff.jpg",
+        "street2": "assets/textures/street/street_disp.png",
+        "pavement1": "assets/textures/street/pavement_diff.jpg",
+        "pavement2": "assets/textures/street/pavement_disp.png",
+        "separator1": "assets/textures/street/separator_diff.jpg",
+        "separator2": "assets/textures/street/separator_disp.png",
+        "streetMap": "assets/textures/street/street_map.png",
+        "plainWall1": "assets/textures/house/polystyrene_diff.jpg",
+        "plainWall2": "assets/textures/house/polystyrene_disp.png",
+        "redhousecolor": "assets/textures/house/red_house_color.png",
+        "window1": "assets/textures/house/window1.png",
+        "door": "assets/textures/house/door.jpg",
+        "oakwood1": "assets/textures/house/oak_diff.jpg",
+        "oakwood2": "assets/textures/house/oak_ao.jpg",
+        "black": "assets/textures/black.jpg",
+        "grey": "assets/textures/grey.jpg",
+        "white": "assets/textures/white.jpg",
+        "gunflare": "assets/textures/gunflare.png",
+        "redbrickdiff": "assets/textures/red_brick_diff.jpg",
+        "redbrickdisp": "assets/textures/red_brick_disp.png",
+        "bloodWall": "assets/textures/surface_with_blood.jpg",
+        "bloodeffect": "blood_effect.png"
+      },
+      "objects": {
+        "cube": "assets/models/cube.obj",
+        "monkey": "assets/models/monkey.obj",
+        "plane": "assets/models/plane.obj",
+        "sphere": "assets/models/sphere.obj",
+        "terrorist": "assets/models/terrorist/terrorist.obj",
+        "ak-47": "assets/models/ak-47s/ak-47s.obj",
+        "city": "assets/models/city/city.obj",
+        "bullet": "assets/models/bullet/bullet2.obj",
+        "soldier": "assets/models/soldier/soldier.obj"
+      },
+      "samplers": {
+        "default": {},
+        "pixelated": {
+          "MAG_FILTER": "GL_NEAREST"
+        },
+        "repeating": {
+          "WRAP_S": "GL_REPEAT",
+          "WRAP_T": "GL_REPEAT"
+        },
+        "anisotropic": {
+          "MAG_FILTER": "GL_LINEAR",
+          "MIN_FILTER": "GL_LINEAR_MIPMAP_LINEAR",
+          "TEXTURE_MAX_ANISOTROPY_EXT": 16
+        }
+      },
+      "materials": {
+        "metal": {
+          "type": "tinted",
+          "shader": "tinted",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
             },
-            {
-                "name": "Bullets",
-                "rotation": [-90, 0, 0],
-                "scale": [0.00015, 0.00015, 0.00015],
-                "position": [0.045, -0.035, -0.05],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "bullet",
-                        "material": "mtl"
-                    },
-                    {
-                        "type": "Bullet",
-                        "direction": [0, 0, 1],
-                        "speed": 50
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [0, 0, 0],
-                        "size": [0.001, 0.001, 0.001]
-                    }
-                ]
-            },
-            {
-                "rotation": [-45, 0, 0],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "monkey",
-                        "material": "monkey"
-                    },
-                    {
-                        "type": "Movement",
-                        "linearVelocity": [0, 0.1, 0],
-                        "angularVelocity": [0, 45, 0]
-                    }
-                ]
-            },
-            {
-                "name": "Ground",
-                "position": [0, -1, 0],
-                "rotation": [
-                    0,
-                    0,
-                    0
-                ],
-                "scale": [
-                    2.3,
-                    2.3,
-                    2.3
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "city",
-                        "material": "mtl"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            -1,
-                            0
-                        ],
-                        "size": [
-                            100,
-                            1,
-                            100
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Front Cube Face",
-                "position": [0, 1, 2],
-                "rotation": [0, 0, 0],
-                "scale": [2, 2, 2],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
-            },
-            {
-                "name": "enemy",
-                "position": [0, -1, 0],
-                "rotation": [0, 0, 0],
-                "scale": [0.8, 0.8, 0.8],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "terrorist",
-                        "material": "mtl"
-                    }
-                ]
-            },
-            {
-                "name": "soldier",
-                "position": [10.2, -0.5, -21.8],
-                "rotation": [0, 0, 0],
-                "scale": [1.3, 1.3, 1.3],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "soldier",
-                        "material": "mtl"
-                    }
-                ]
-            },
-            {
-                "name":"Side Cube Face",
-                "position": [0, 1, -2],
-                "rotation": [0, 0, 0],
-                "scale": [2, 2, 2],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                    // {
-                    //     "type": "Collision",
-                    //     "center": [0,0,0],
-                    //     "size": [1,1,1]
-                    // }
-
-                ]
-            },
-            {
-                "position": [2, 1, 0],
-                "rotation": [0, 90, 0],
-                "scale": [2, 2, 2],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
-            },
-            {
-                "position": [-2, 1, 0],
-                "rotation": [0, 90, 0],
-                "scale": [2, 2, 2],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
-            },
-            {
-                "position": [0, 3, 0],
-                "rotation": [90, 0, 0],
-                "scale": [2, 2, 2],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "glass"
-                    }
-                ]
-            },
-            {
-                "position": [
-                    0,
-                    5,
-                    0
-                ],
-                "components": [
-                    {
-                        "type": "Light",
-                        "lightType": "directional",
-                        // "diffuse": [1, 1, 1],
-                        // "specular": [1, 1, 1],
-                        // "ambient": [0.1,0.1,0.1],
-                        "color": [
-                            0.6,
-                            0.6,
-                            0.6
-                        ],
-                        "attenuation": {
-                            "constant": 20,
-                            "linear": 0,
-                            "quadratic": 0
-                        },
-                        "direction": [
-                            0,
-                            -1,
-                            -1
-                        ],
-                        "angle": {
-                            "inner": 10,
-                            "outer": 50
-                        }
-                    }
-                ]
-            },
-            {
-                "position": [
-                    0,
-                    5,
-                    0
-                ],
-                "components": [
-                    {
-                        "type": "Light",
-                        "lightType": "directional",
-                        // "diffuse": [1, 1, 1],
-                        // "specular": [1, 1, 1],
-                        // "ambient": [0.1,0.1,0.1],
-                        "color": [
-                            0.6,
-                            0.6,
-                            0.6
-                        ],
-                        "attenuation": {
-                            "constant": 20,
-                            "linear": 0,
-                            "quadratic": 0
-                        },
-                        "direction": [
-                            0,
-                            -1,
-                            1
-                        ],
-                        "angle": {
-                            "inner": 10,
-                            "outer": 50
-                        }
-                    }
-                ]
-            },
-            {
-                "position": [
-                    0,
-                    5,
-                    0
-                ],
-                "components": [
-                    {
-                        "type": "Light",
-                        "lightType": "directional",
-                        // "diffuse": [1, 1, 1],
-                        // "specular": [1, 1, 1],
-                        // "ambient": [0.1,0.1,0.1],
-                        "color": [
-                            0.6,
-                            0.6,
-                            0.6
-                        ],
-                        "attenuation": {
-                            "constant": 20,
-                            "linear": 0,
-                            "quadratic": 0
-                        },
-                        "direction": [
-                            -1,
-                            -1,
-                            0
-                        ],
-                        "angle": {
-                            "inner": 10,
-                            "outer": 50
-                        }
-                    }
-                ]
-            },
-            {
-                "position": [
-                    0,
-                    100,
-                    0
-                ],
-                "components": [
-                    {
-                        "type": "Light",
-                        "lightType": "directional",
-                        "color": [
-                            0.6,
-                            0.6,
-                            0.6
-                        ],
-                        "direction": [
-                            -1,
-                            -1,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "position": [0, 10, 0],
-                "rotation": [45, 45, 0],
-                "scale": [5, 5, 5],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "sphere",
-                        "material": "moon"
-                    },
-                    {
-                        "type": "Movement",
-                        "angularVelocity": [0, 90, 0]
-                    }
-                ]
-            },
-            {
-                "name": "WallLeft",
-                "position": [71, 10, 80],
-                "rotation": [0, 90, 0],
-                "scale": [22, 11, 16],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "redwall"
-                    },
-                    {
-                        "type": "Movement",
-                        "angularVelocity": [0, 0, 0]
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [0, 0, -0.15],
-                        "size": [0.1, 1, 1.35]
-                    }
-                ]
-            },//game system from here
-            {
-                "name": "Ground", //ground under
-                "position": [-110, -50, -10],
-                "rotation": [
-                    -90,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    10,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            1,
-                            0.05,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Ground", //ground under mirrored
-                "position": [-110, -50, 10],
-                "rotation": [
-                    90,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    10,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            1,
-                            0.05,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall back under ground 
-                "position": [-110, -43, -20],
-                "rotation": [
-                    0,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            0,
-                            -1
-                        ],
-                        "size": [
-                            1,
-                            1,
-                            2
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall back under ground mirrored
-                "position": [-110, -43, 20],
-                "rotation": [
-                    0,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall left under ground 
-                "position": [-100, -43, -10],
-                "rotation": [
-                    0,
-                    90,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            -0.05,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            0.1,
-                            1,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall left under ground mirrored
-                "position": [-100, -43, 10],
-                "rotation": [
-                    0,
-                    -90,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            -0.02,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            0.1,
-                            1,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall right under ground 
-                "position": [-120, -43, -10],
-                "rotation": [
-                    0,
-                    90,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            0.1,
-                            1,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "nojumpwall", //wall right under ground mirrored
-                "position": [-120, -43, 10],
-                "rotation": [
-                    0,
-                    -90,
-                    0
-                ],
-                "scale": [
-                    10,
-                    7,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    },
-                    {
-                        "type": "Collision",
-                        "center": [
-                            0,
-                            0,
-                            0
-                        ],
-                        "size": [
-                            0.1,
-                            1,
-                            10
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Roof", //ground under
-                "position": [-110, -36, -10],
-                "rotation": [
-                    -90,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    10,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
-            },
-            {
-                "name": "Roof", //ground under mirrored
-                "position": [-110, -36, 10],
-                "rotation": [
-                    90,
-                    0,
-                    0
-                ],
-                "scale": [
-                    10,
-                    10,
-                    1
-                ],
-                "components": [
-                    {
-                        "type": "Mesh Renderer",
-                        "mesh": "plane",
-                        "material": "street"
-                    }
-                ]
+            "depthTesting": {
+              "enabled": true
             }
+          },
+          "tint": [0.45, 0.4, 0.5, 1]
+        },
+        "glass": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            },
+            "blending": {
+              "enabled": true,
+              "sourceFactor": "GL_SRC_ALPHA",
+              "destinationFactor": "GL_ONE_MINUS_SRC_ALPHA"
+            },
+            "depthMask": false
+          },
+          "transparent": true,
+          "tint": [1, 1, 1, 1],
+          "texture": "glass",
+          "sampler": "pixelated"
+        },
+        "grass": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "grass",
+          "sampler": "default"
+        },
+        "monkey": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "monkey",
+          "sampler": "default"
+        },
+        "moon": {
+          "type": "textured",
+          "shader": "textured",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "moon",
+          "sampler": "default"
+        },
+        "street": {
+          "type": "Ntextured",
+          "shader": "street",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "textures": ["street1","street2","pavement1","pavement2","separator1","separator2","streetMap"],
+          "samplers": ["anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic","anisotropic"]
+        },
+        "redwall": {
+          "type": "Ntextured",
+          "shader": "wall",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "textures": ["plainWall1","plainWall2","redhousecolor","window1","door","oakwood1","oakwood2"],
+          "samplers": ["default","default","default","default","default","default","default"]
+        },
+        "gunFlare": {
+          "type": "textured",
+          "shader": "gunFlare",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [1, 1, 1, 1],
+          "texture": "gunflare",
+          "sampler": "default"
+        },
+        "bricks":{
+          "type":"LitTexturedMaterial",
+          "shader":"lighted",
+          "pipelineState":{
+            "faceCulling":{
+              "enabled": false
+            },
+            "depthTesting":{
+              "enabled": true
+            }
+          },
+          "albedo":{
+            "texture":"redbrickdiff",
+            "sampler":"repeating"
+          },
+          "emissive":{
+            "texture":"black",
+            "sampler":"default"
+          },
+          "roughness":{
+            "texture":"white",
+            "sampler":"default"
+          },
+          "specular":{
+            "texture":"black",
+            "sampler":"default"
+          },
+          "ambientOcclusion":{
+            "texture":"redbrickdisp",
+            "sampler":"repeating"
+          }
+        }
+      }
+    },
+    "world": [
+      {
+        "name": "Player",
+        "position": [-120, -47, 0],
+        "scale": [1, 1.3, 1],
+        "components": [
+          {
+            "type": "Camera"
+          },
+          {
+            "type": "Free Camera Controller"
+          },
+          {
+            "type": "Collision",
+            "center": [0, 0, 0],
+            "size": [0.1, 1, 0.1]
+          },
+          {
+            "type": "Health",
+            "health": 5
+          }
+        ],
+        "children": [
+          {
+            "name": "Weapon",
+            "rotation": [0, 190, 0],
+            "scale": [0.00015, 0.00015, 0.00015],
+            "position": [0.045, -0.035, -0.05],
+            "components": [
+              {
+                "type": "Mesh Renderer",
+                "mesh": "ak-47",
+                "material": "mtl"
+              },
+              {
+                "type": "Weapon",
+                "initialPosition": [0.045, -0.035, -0.05],
+                "ownerName" : "Player"
+              }
+            ]
+          },
+          {
+            "name": "Gun Flare",
+            "position": [0.02, -0.015, -0.093],
+            "rotation": [0, 0, 0],
+            "scale": [0.01, 0.01, 0.01],
+            "components": [
+              {
+                "type": "Mesh Renderer",
+                "mesh": "plane",
+                "material": "gunFlare"
+              }
+            ]
+          }
         ]
-    }
+      },
+      {
+        "name": "Bullets",
+        "rotation": [-90, 0, 0],
+        "scale": [0.00015, 0.00015, 0.00015],
+        "position": [0.045, -0.035, -0.05],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "bullet",
+            "material": "mtl"
+          },
+          {
+            "type": "Bullet",
+            "direction": [0, 0, 1],
+            "speed": 50
+          },
+          {
+            "type": "Collision",
+            "center": [0, 0, 0],
+            "size": [0.001, 0.001, 0.001]
+          }
+        ]
+      },
+      {
+        "rotation": [-45, 0, 0],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "monkey",
+            "material": "monkey"
+          },
+          {
+            "type": "Movement",
+            "linearVelocity": [0, 0.1, 0],
+            "angularVelocity": [0, 45, 0]
+          }
+        ]
+      },
+      {
+        "name": "Ground",
+        "position": [0, -1, 0],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          2.3,
+          2.3,
+          2.3
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "city",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              -1,
+              0
+            ],
+            "size": [
+              100,
+              1,
+              100
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Front Cube Face",
+        "position": [0, 1, 2],
+        "rotation": [0, 0, 0],
+        "scale": [2, 2, 2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      },
+      {
+        "name": "Enemy",
+        "position": [10.2, -0.5, -21.8],
+        "rotation": [0, 0, 0],
+        "scale": [1.3, 1.3, 1.3],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "terrorist",
+            "material": "mtl"
+          }
+        ],
+        "children": [
+          {
+            "name": "Weapon3",
+            "rotation": [0, 20, 0],
+            "scale": [0.0006, 0.0006, 0.0006],
+            "position": [0.2, 1.22, 0.4],
+            "components": [
+              {
+                "type": "Mesh Renderer",
+                "mesh": "ak-47",
+                "material": "mtl"
+              },
+              {
+                "type": "Weapon",
+                "initialPosition": [0.2, 1.22, 0.4],
+                "ownerName": "Enemy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldier",
+        "position": [0, -1, 4],
+        "rotation": [0, 0, 0],
+        "scale": [0.8, 0.8, 0.8],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "soldier",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [0, 0.8, 0.2],
+            "size": [0.3, 0.6, 0.6]
+          },
+          {
+            "type": "Health",
+            "health": 2,
+            "status": true
+          }
+        ],
+        "children": [
+          {
+            "name": "Weapon2",
+            "components": [
+              {
+                "type": "Weapon",
+                "initialPosition": [-0.085, 1.22, 0.7],
+                "ownerName": "Enemy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Side Cube Face",
+        "position": [0, 1, -2],
+        "rotation": [0, 0, 0],
+        "scale": [2, 2, 2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+          // {
+          //     "type": "Collision",
+          //     "center": [0,0,0],
+          //     "size": [1,1,1]
+          // }
+        ]
+      },
+      {
+        "position": [2, 1, 0],
+        "rotation": [0, 90, 0],
+        "scale": [2, 2, 2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      },
+      {
+        "position": [-2, 1, 0],
+        "rotation": [0, 90, 0],
+        "scale": [2, 2, 2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      },
+      {
+        "position": [0, 3, 0],
+        "rotation": [90, 0, 0],
+        "scale": [2, 2, 2],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "glass"
+          }
+        ]
+      },
+      {
+        "position": [0, 5, 0],
+        "components": [
+          {
+            "type": "Light",
+            "lightType": "directional",
+            // "diffuse": [1, 1, 1],
+            // "specular": [1, 1, 1],
+            // "ambient": [0.1,0.1,0.1],
+            "color": [0.6, 0.6, 0.6],
+            "attenuation": {
+              "constant": 20,
+              "linear": 0,
+              "quadratic": 0
+            },
+            "direction": [0, -1, -1],
+            "angle": {
+              "inner": 10,
+              "outer": 50
+            }
+          }
+        ]
+      },
+      {
+        "position": [0, 5, 0],
+        "components": [
+          {
+            "type": "Light",
+            "lightType": "directional",
+            // "diffuse": [1, 1, 1],
+            // "specular": [1, 1, 1],
+            // "ambient": [0.1,0.1,0.1],
+            "color": [0.6, 0.6, 0.6],
+            "attenuation": {
+              "constant": 20,
+              "linear": 0,
+              "quadratic": 0
+            },
+            "direction": [0, -1, 1],
+            "angle": {
+              "inner": 10,
+              "outer": 50
+            }
+          }
+        ]
+      },
+      {
+        "position": [0, 5, 0],
+        "components": [
+          {
+            "type": "Light",
+            "lightType": "directional",
+            // "diffuse": [1, 1, 1],
+            // "specular": [1, 1, 1],
+            // "ambient": [0.1,0.1,0.1],
+            "color": [0.6, 0.6, 0.6],
+            "attenuation": {
+              "constant": 20,
+              "linear": 0,
+              "quadratic": 0
+            },
+            "direction": [-1, -1, 0],
+            "angle": {
+              "inner": 10,
+              "outer": 50
+            }
+          }
+        ]
+      },
+      {
+        "position": [0, 100, 0],
+        "components": [
+          {
+            "type": "Light",
+            "lightType": "directional",
+            "color": [0.6, 0.6, 0.6],
+            "direction": [-1, -1, 0]
+          }
+        ]
+      },
+      {
+        "position": [0, 10, 0],
+        "rotation": [45, 45, 0],
+        "scale": [5, 5, 5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "sphere",
+            "material": "moon"
+          },
+          {
+            "type": "Movement",
+            "angularVelocity": [0, 90, 0]
+          }
+        ]
+      },
+      {
+        "name": "WallLeft",
+        "position": [71, 10, 80],
+        "rotation": [0, 90, 0],
+        "scale": [22, 11, 16],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "redwall"
+          },
+          {
+            "type": "Movement",
+            "angularVelocity": [0, 0, 0]
+          },
+          {
+            "type": "Collision",
+            "center": [0, 0, -0.15],
+            "size": [0.1, 1, 1.35]
+          }
+        ]
+      }, //game system from here
+      {
+        "name": "Ground", //ground under
+        "position": [-110, -50, -10],
+        "rotation": [
+          -90,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              1,
+              0.05,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ground", //ground under mirrored
+        "position": [-110, -50, 10],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              1,
+              0.05,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall back under ground
+        "position": [-110, -43, -20],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall back under ground mirrored
+        "position": [-110, -43, 20],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall left under ground
+        "position": [-100, -43, -10],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              -0.05,
+              0,
+              0
+            ],
+            "size": [
+              0.1,
+              1,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall left under ground mirrored
+        "position": [-100, -43, 10],
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              -0.02,
+              0,
+              0
+            ],
+            "size": [
+              0.1,
+              1,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall right under ground
+        "position": [-120, -43, -10],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              0.1,
+              1,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall", //wall right under ground mirrored
+        "position": [-120, -43, 10],
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              0.1,
+              1,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Roof", //ground under
+        "position": [-110, -36, -10],
+        "rotation": [
+          -90,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      },
+      {
+        "name": "Roof", //ground under mirrored
+        "position": [-110, -36, 10],
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          10,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          }
+        ]
+      }
+    ]
+  }
 }

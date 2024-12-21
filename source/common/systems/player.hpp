@@ -14,15 +14,14 @@ namespace our {
         }
 
         void update(World *world, float deltaTime) {
-            for (const auto entity: world->getEntities()) {
-                if (entity->name == "Player") {
-                    if (const auto health = entity->getComponent<HealthComponent>()) {
-                        if (std::chrono::duration<float>(std::chrono::system_clock::now() - health->timeDied).count() >
-                            5.0f) {
-                            app->changeState("menu");
-                        }
-                    }
-                }
+            if (GameState::numberOfEnemies == 0 && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 5) {
+                app->changeState("menu");
+                GameState::numberOfEnemies = -1;
+            }
+            else if (GameState::died && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 5) {
+                app->changeState("menu");
+                GameState::died = false;
+                GameState::numberOfEnemies = -1;
             }
         }
     };

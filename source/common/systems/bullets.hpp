@@ -76,8 +76,12 @@ namespace our
                                         healthComponent->health -= 1;
                                         if (healthComponent->health <= 0)
                                         {
-                                            if (entity->name == "Player")
-                                                healthComponent->timeDied = std::chrono::system_clock::now();
+                                            if (entity->name == "Player") {
+                                                GameState::died = true;
+                                            }
+                                            GameState::numberOfEnemies--;
+                                            GameState::time = std::chrono::system_clock::now();
+
                                             healthComponent->status = false;
                                             entity->localTransform.rotation = glm::vec3(glm::radians(-90.0f), 0, 0);
                                             entity->localTransform.position.y += 0.2;

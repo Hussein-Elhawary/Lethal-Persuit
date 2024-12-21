@@ -49,10 +49,10 @@ namespace our
             Entity* entity = camera->getOwner();
             //printf("Entity: %s\n", entity->name.c_str());
             collisionSystem.setPlayer(entity);
-            printf("before ms_clicked\n");
+            // printf("before ms_clicked\n");
             if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_5)) 
             {
-                printf("ms_clicked\n");
+                // printf("ms_clicked\n");
                 // if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked)
                 // {
                 //     app->getMouse().lockMouse(app->getWindow());
@@ -290,7 +290,7 @@ namespace our
                 controller->upSpeed = 0;
             }
             // updates Y position
-            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            // printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

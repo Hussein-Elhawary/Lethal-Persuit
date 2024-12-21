@@ -6,13 +6,16 @@
 
 #include <glm/glm.hpp>
 
+#include "game.hpp"
+
 namespace our {
     class HealthComponent : public Component {
     public:
         int health = 1;
+        static int numberOfEntities;
         bool status = true; // true: Live,  false: Dead
-        std::chrono::time_point<std::chrono::system_clock> timeDied = std::chrono::system_clock::now() + std::chrono::minutes(15);
 
+        HealthComponent() { GameState::numberOfEnemies++; }
         // The ID of this component type is "Health"
         static std::string getID() { return "Health"; }
 
