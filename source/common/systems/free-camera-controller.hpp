@@ -206,13 +206,13 @@ namespace our
                 }
             }
             // if under the map reset the position
-            if(position.y < -10)
+            if(position.y < -100)
             {
                 position.y = 2;
                 controller->upSpeed = 0;
             }
             // updates Y position
-            //printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked
