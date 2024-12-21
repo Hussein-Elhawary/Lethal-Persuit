@@ -83,8 +83,9 @@
                 "terrorist": "assets/models/terrorist/terrorist.obj",
                 "ak-47": "assets/models/ak-47s/ak-47s.obj",
                 "city": "assets/models/city/city.obj",
-                "bullet": "assets/models/bullet/bullet.obj",
-                "soldier": "assets/models/soldier/soldier.obj"
+                "bullet": "assets/models/bullet/bullet2.obj",
+                "soldier": "assets/models/soldier/soldier.obj",
+                
             },
             "samplers":{
                 "default":{},
