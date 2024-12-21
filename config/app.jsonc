@@ -10,7 +10,7 @@
   },
   "scene": {
     "renderer": {
-      "sky": "assets/textures/sky.jpg",
+      "sky": "assets/textures/sky2.jpg",
       "postprocess": "assets/shaders/postprocess/vignette.frag"
     },
     "assets": {
@@ -71,7 +71,7 @@
         "redbrickdiff": "assets/textures/red_brick_diff.jpg",
         "redbrickdisp": "assets/textures/red_brick_disp.png",
         "bloodWall": "assets/textures/surface_with_blood.jpg",
-        "bloodeffect": "blood_effect.png"
+        "bloodeffect": "assets/textures/blood_effect.png"
       },
       "objects": {
         "cube": "assets/models/cube.obj",
@@ -329,7 +329,7 @@
           {
             "type": "Bullet",
             "direction": [0, 0, 1],
-            "speed": 50
+            "speed": 0.7
           },
           {
             "type": "Collision",
