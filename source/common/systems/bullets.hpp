@@ -9,6 +9,7 @@
 #include "../components/mesh-renderer.hpp"
 #include "bullets.hpp"
 #include "components/bullet.hpp"
+#include "components/health.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
@@ -49,25 +50,39 @@ namespace our
             std::vector<Entity *> collidingEntities;
 
             collidingEntities = collisionSystem.getCollidingEntitiesWithoutBullets(world);
-            
+
             for (auto currentBullet : bulletsEntities)
             {
                 if (auto bulletComponent = currentBullet->getComponent<Bullet>())
                 {
                     for (auto entity : collidingEntities)
                     {
-                        if (auto collisionComponent1 = currentBullet->getComponent<CollisionComponent>())
+                        if (auto healthComponent = entity->getComponent<HealthComponent>())
                         {
-                            if (bulletComponent->shooterName == entity->name)
-                                continue;
-                            if (auto collisionComponent2 = entity->getComponent<CollisionComponent>())
+                            if(healthComponent->status == false) continue;
+                            if (auto bulletCollisionComponent = currentBullet->getComponent<CollisionComponent>())
                             {
-                                if (collisionComponent1->checkForCollision(*collisionComponent2))
+                                if (bulletComponent->shooterName == entity->name)
+                                    continue;
+                                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
                                 {
-                                    printf("Current Bullet: %s\n",currentBullet->name.c_str());
-                                    printf("Colliding Entity: %s\n",entity->name.c_str());
-                                    removeBullet(currentBullet);
-                                    world->markForRemoval(currentBullet);
+                                    if (bulletCollisionComponent->checkForCollision(*collisionComponent))
+                                    {
+                                        // printf("Current Bullet: %s\n", currentBullet->name.c_str());
+                                        // printf("Colliding Entity: %s\n", entity->name.c_str());
+                                        removeBullet(currentBullet);
+                                        world->markForRemoval(currentBullet);
+
+                                        healthComponent->health -= 1;
+                                        if (healthComponent->health <= 0)
+                                        {
+                                            healthComponent->status = false;
+                                            entity->localTransform.rotation = glm::vec3(glm::radians(-90.0f), 0, 0);
+                                            entity->localTransform.position.y += 0.1;
+                                            collisionComponent->boundingBoxSize = glm::vec3(0, 0, 0); // Set the bounding box size to 0 to avoid collision
+
+                                        }
+                                    }
                                 }
                             }
                         }

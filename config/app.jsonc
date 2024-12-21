@@ -266,6 +266,10 @@
             "type": "Collision",
             "center": [0, 0, 0],
             "size": [0.1, 1, 0.1]
+          },
+          {
+            "type": "Health",
+            "health": 5
           }
         ],
         "children": [
@@ -398,6 +402,11 @@
             "type": "Collision",
             "center": [0, 0.8, 0.2],
             "size": [0.3, 0.6, 0.6]
+          },
+          {
+            "type": "Health",
+            "health": 2,
+            "status": true
           }
         ]
       },
