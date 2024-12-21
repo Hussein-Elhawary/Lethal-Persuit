@@ -82,6 +82,10 @@ set(COMMON_SOURCES
         source/common/components/collision.cpp
         source/common/components/light.cpp
         source/common/components/light.hpp
+        source/common/components/bullet.cpp
+        source/common/components/bullet.hpp
+        source/common/components/health.cpp
+        source/common/components/health.hpp
 
         source/common/systems/forward-renderer.hpp
         source/common/systems/forward-renderer.cpp

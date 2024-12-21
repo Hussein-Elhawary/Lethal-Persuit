@@ -144,6 +144,7 @@ namespace our
                     collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
 
                     collidingEntities.push_back(entity);
+                    //printf("Colliding Entities: %s\n",entity->name.c_str());
                 }
             }
            

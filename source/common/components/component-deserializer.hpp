@@ -9,6 +9,7 @@
 #include "collision.hpp"
 #include "light.hpp"
 #include "weapon.hpp"
+#include "health.hpp"
 
 namespace our {
     // Given a json object, this function picks and creates a component in the given entity
@@ -34,6 +35,8 @@ namespace our {
             component = entity->addComponent<Weapon>();
         } else if (type == Bullet::getID()) {
             component = entity->addComponent<Bullet>();
+        } else if (type == HealthComponent::getID()) {
+            component = entity->addComponent<HealthComponent>();
         }
         if (component)
             component->deserialize(data);

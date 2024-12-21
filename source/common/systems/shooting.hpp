@@ -31,37 +31,37 @@ namespace our {
         void update(World *world, float deltaTime, bulletsSystem *bulletsSystem) {
             CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
-            Weapon *weapon = nullptr;
             for (const auto entity: world->getEntities()) {
                 //printf("Entity: %s\n", entity->name.c_str());
                 if (entity->getComponent<CameraComponent>() && entity->getComponent<FreeCameraControllerComponent>()) {
                     camera = entity->getComponent<CameraComponent>();
                     controller = entity->getComponent<FreeCameraControllerComponent>();
-                } else if (entity->getComponent<Weapon>()) {
-                    weapon = entity->getComponent<Weapon>();
                 }
-                if (camera && controller && weapon) break;
+                if (camera && controller) break;
             }
-            if (!(camera && controller && weapon)) return;
+            if (!(camera && controller)) return;
             Entity *player = camera->getOwner();
 
             Entity* bulletEntity = nullptr;
+            const auto currentTime = std::chrono::system_clock::now();
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
+                    // if shot is pressed
                     if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
-                        bulletEntity = world->add();
-                        bulletEntity->deserializeBullet(*data);
-                        bulletsSystem->addBullet(bulletEntity);
+                        bulletEntity = world->add(); // create a new bullet entity and add it to the world
+                        bulletEntity->deserializeBullet(*data); // fill the bullet entity with the data from the json
+                        bulletsSystem->addBullet(bulletEntity); // add the bullet to the bullets system
+
                         weaponComponent->lastShootTime = std::chrono::system_clock::now();
                         weaponComponent->isShooting = true;
 
                         auto bulletComponent = bulletEntity->getComponent<Bullet>();
                         bulletComponent->shooterName = "Player";
-                        bulletComponent->lastShootTime = std::chrono::system_clock::now();
+                        bulletComponent->lastShootTime = currentTime;
                         bulletComponent->isShot = true;
                         glm::vec3 bulletToNozzel = {0.1f, 0.1f, 0.1f};
 
-                        const auto MW = weapon->getOwner()->getLocalToWorldMatrix();
+                        const auto MW = weaponComponent->getOwner()->getLocalToWorldMatrix();
                         const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
                         const auto centerW4d = MW * glm::vec4({0, 0, 1, 1});
 
@@ -71,9 +71,9 @@ namespace our {
 
                         auto combinedDirection = normalize(centerW - eyeW);
                         bulletComponent->direction = combinedDirection;
-                        glm::vec3 projection = glm::vec3(bulletToNozzel.x * combinedDirection.x,
-                                                         bulletToNozzel.y * combinedDirection.y,
-                                                         bulletToNozzel.z * combinedDirection.z);
+                        auto projection = glm::vec3(bulletToNozzel.x * combinedDirection.x,
+                                                    bulletToNozzel.y * combinedDirection.y,
+                                                    bulletToNozzel.z * combinedDirection.z);
        
                         translation += projection;
                         auto playrot = player->localTransform.rotation;
@@ -81,7 +81,6 @@ namespace our {
                         bulletEntity->localTransform.position = translation;
                     }
 
-                    const auto currentTime = std::chrono::system_clock::now();
                     if (const auto timeSinceLastShoot = std::chrono::duration<float>(
                             currentTime - weaponComponent->lastShootTime).count();
                         timeSinceLastShoot < 0.1f && weaponComponent->isShooting) {
@@ -92,14 +91,12 @@ namespace our {
                         entity->localTransform.position =
                                 weaponComponent->maxPosition - glm::vec3(0, 0, 1) * (timeSinceLastShoot - 0.1f) * 0.1f;
                     }
-                    break;
                 }
                 if (auto *bulletComponent = entity->getComponent<Bullet>()) {
                     if (bulletComponent->isShot) {
                         entity->localTransform.position += bulletComponent->direction * bulletComponent->speed *
                                 deltaTime;
 
-                        auto currentTime = std::chrono::system_clock::now();
                         if (std::chrono::duration<float>(currentTime - bulletComponent->lastShootTime).count() > 20.0f) {
                             bulletsSystem->removeBullet(entity);
                             world->markForRemoval(entity);
