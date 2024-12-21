@@ -14,6 +14,7 @@ namespace our {
         glm::vec3 initialPosition = glm::vec3(0, 0, 0);
         glm::vec3 maxPosition = glm::vec3(0, 0, 0);
         bool isShooting = false;
+        std::string ownerName;
 
         static std::string getID() { return "Weapon"; }
         void deserialize(const nlohmann::json &) override;

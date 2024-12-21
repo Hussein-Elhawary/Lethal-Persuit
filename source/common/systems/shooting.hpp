@@ -47,7 +47,7 @@ namespace our {
             for (const auto entity: world->getEntities()) {
                 if (auto *weaponComponent = entity->getComponent<Weapon>()) {
                     // if shot is pressed
-                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT)) {
+                    if (app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) ) {
                         bulletEntity = world->add(); // create a new bullet entity and add it to the world
                         bulletEntity->deserializeBullet(*data); // fill the bullet entity with the data from the json
                         bulletsSystem->addBullet(bulletEntity); // add the bullet to the bullets system
@@ -63,22 +63,43 @@ namespace our {
 
                         const auto MW = weaponComponent->getOwner()->getLocalToWorldMatrix();
                         const auto eyedW4d = MW * glm::vec4({0, 0, 0, 1});
-                        const auto centerW4d = MW * glm::vec4({0, 0, 1, 1});
+                        const auto centerW4d = MW * glm::vec4({0, 0, -1, 1});
+                        const auto upW4d = MW * glm::vec4({0, 1, 0, 0});
 
                         const auto eyeW = glm::vec3(eyedW4d.x, eyedW4d.y, eyedW4d.z);
                         const auto centerW = glm::vec3(centerW4d.x, centerW4d.y, centerW4d.z);
+                        const auto upW = glm::vec3(upW4d.x, upW4d.y, upW4d.z);
                         glm::vec3 translation = {MW[3][0], MW[3][1], MW[3][2]};
 
-                        auto combinedDirection = normalize(centerW - eyeW);
+                        auto combinedDirection = normalize(eyeW - centerW);
                         bulletComponent->direction = combinedDirection;
                         auto projection = glm::vec3(bulletToNozzle.x * combinedDirection.x,
                                                     bulletToNozzle.y * combinedDirection.y,
                                                     bulletToNozzle.z * combinedDirection.z);
-       
+
+                        // auto dotangleY = glm::acos(dot(combinedDirection, glm::vec3(0, 1, 0)));
+                        // auto dotangleX = glm::acos(dot(combinedDirection, glm::vec3(1, 0, 0)));
+                        // // auto dotangleZ = glm::acos(dot(combinedDirection, glm::vec3(0, 0, -1)));
+                        // bulletEntity->localTransform.rotation = glm::vec3(-glm::radians(90.0f), -dotangleX, 0);
+
+                        // auto look = glm::lookAt(eyeW, centerW, upW);
+                        // look[3] = glm::vec4(0,0,0, 1);
+                        // auto rot = glm::quat_cast(look);
+                        // auto euler = glm::eulerAngles(rot);
+                        glm::vec3 direction = combinedDirection;
+                        glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f); // Assuming the up vector is along the y-axis
+
                         translation += projection;
-                        auto playRot = player->localTransform.rotation;
-                        bulletEntity->localTransform.rotation = glm::vec3(playRot.x - glm::radians(90.0f),playRot.y, 0);
                         bulletEntity->localTransform.position = translation;
+
+                        // bulletEntity->localTransform.rotation = glm::vec3(euler.x, euler.y, 0);
+
+                        // auto weaponRot = weaponComponent->getOwner()->localTransform.rotation;
+                        // auto parentRot = weaponComponent->getOwner()->parent->localTransform.rotation;
+                        // bulletEntity->localTransform.rotation = weaponRot + parentRot + glm::vec3(glm::radians(90.0f), 0, 0);
+                        // bulletEntity->localTransform.rotation *= glm::vec3(1, 1, 0);
+                        auto playRot = (weaponComponent->getOwner()->parent->localTransform.rotation + weaponComponent->getOwner()->localTransform.rotation) + glm::vec3(0, glm::radians(180.0f), 0);
+                        bulletEntity->localTransform.rotation = playRot;
                     }
 
                     if (const auto timeSinceLastShoot = std::chrono::duration<float>(

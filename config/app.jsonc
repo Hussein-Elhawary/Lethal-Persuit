@@ -73,7 +73,7 @@
         "terrorist": "assets/models/terrorist/terrorist.obj",
         "ak-47": "assets/models/ak-47s/ak-47s.obj",
         "city": "assets/models/city/city.obj",
-        "bullet": "assets/models/bullet/bullet.obj",
+        "bullet": "assets/models/bullet/bullet2.obj",
         "soldier": "assets/models/soldier/soldier.obj"
       },
       "samplers": {
@@ -275,7 +275,7 @@
         "children": [
           {
             "name": "Weapon",
-            "rotation": [-5, 190, 0],
+            "rotation": [0, 190, 0],
             "scale": [0.00015, 0.00015, 0.00015],
             "position": [0.045, -0.035, -0.05],
             "components": [
@@ -385,6 +385,25 @@
             "mesh": "terrorist",
             "material": "mtl"
           }
+        ],
+        "children": [
+          {
+            "name": "Weapon3",
+            "rotation": [0, 20, 0],
+            "scale": [0.0006, 0.0006, 0.0006],
+            "position": [0.2, 1.22, 0.4],
+            "components": [
+              {
+                "type": "Mesh Renderer",
+                "mesh": "ak-47",
+                "material": "mtl"
+              },
+              {
+                "type": "Weapon",
+                "initialPosition": [0.2, 1.22, 0.4]
+              }
+            ]
+          }
         ]
       },
       {
@@ -407,6 +426,17 @@
             "type": "Health",
             "health": 2,
             "status": true
+          }
+        ],
+        "children": [
+          {
+            "name": "Weapon2",
+            "components": [
+              {
+                "type": "Weapon",
+                "initialPosition": [-0.085, 1.22, 0.7]
+              }
+            ]
           }
         ]
       },
