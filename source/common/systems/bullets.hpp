@@ -64,6 +64,8 @@ namespace our
                             {
                                 if (collisionComponent1->checkForCollision(*collisionComponent2))
                                 {
+                                    printf("Current Bullet: %s\n",currentBullet->name.c_str());
+                                    printf("Colliding Entity: %s\n",entity->name.c_str());
                                     removeBullet(currentBullet);
                                     world->markForRemoval(currentBullet);
                                 }
