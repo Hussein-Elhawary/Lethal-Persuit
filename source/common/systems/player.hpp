@@ -6,7 +6,7 @@
 
 namespace our {
     class PlayerSystem {
-        Application *app;
+        Application *app = nullptr;
 
     public:
         void enter(Application *app) {
@@ -14,12 +14,12 @@ namespace our {
         }
 
         void update(World *world, float deltaTime) {
-            if (GameState::numberOfEnemies == 0 && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 5) {
-                app->changeState("menu");
+            if (GameState::numberOfEnemies == 0 && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 2) {
+                app->changeState("win");
                 GameState::numberOfEnemies = -1;
             }
-            else if (GameState::died && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 5) {
-                app->changeState("menu");
+            else if (GameState::died && std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now() - GameState::time).count() > 2) {
+                app->changeState("lose");
                 GameState::died = false;
                 GameState::numberOfEnemies = -1;
             }
