@@ -140,7 +140,7 @@ namespace our
             {
                 if (auto collisionComponent = entity->getComponent<CollisionComponent>())
                 {
-                    if(entity->name == "Bullets")continue;
+                    if(entity->name == "Bullets")continue;                    
                     collisionComponent->updateBoundingBoxToWorld(entity->getLocalToWorldMatrix(), entity->localTransform.scale);
 
                     collidingEntities.push_back(entity);

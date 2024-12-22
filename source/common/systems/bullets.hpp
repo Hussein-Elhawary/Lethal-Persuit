@@ -57,26 +57,29 @@ namespace our
                 {
                     for (auto entity : collidingEntities)
                     {
-                        if (auto healthComponent = entity->getComponent<HealthComponent>())
-                        {
-                            if(healthComponent->status == false) continue;
-                            if (auto bulletCollisionComponent = currentBullet->getComponent<CollisionComponent>())
-                            {
-                                if (bulletComponent->shooterName == entity->name)
-                                    continue;
-                                if (auto collisionComponent = entity->getComponent<CollisionComponent>())
-                                {
-                                    if (bulletCollisionComponent->checkForCollision(*collisionComponent))
-                                    {
-                                        // printf("Current Bullet: %s\n", currentBullet->name.c_str());
-                                        // printf("Colliding Entity: %s\n", entity->name.c_str());
-                                        removeBullet(currentBullet);
-                                        world->markForRemoval(currentBullet);
 
+                        if (auto bulletCollisionComponent = currentBullet->getComponent<CollisionComponent>())
+                        {
+                            if (bulletComponent->shooterName == entity->name)
+                                continue;
+                            if (auto collisionComponent = entity->getComponent<CollisionComponent>())
+                            {
+                                if (bulletCollisionComponent->checkForCollision(*collisionComponent))
+                                {
+                                    // printf("Current Bullet: %s\n", currentBullet->name.c_str());
+                                    // printf("Colliding Entity: %s\n", entity->name.c_str());
+                                    removeBullet(currentBullet);
+                                    world->markForRemoval(currentBullet);
+
+                                    if (auto healthComponent = entity->getComponent<HealthComponent>())
+                                    {
+                                        if (healthComponent->status == false)
+                                            continue;
                                         healthComponent->health -= 1;
                                         if (healthComponent->health <= 0)
                                         {
-                                            if (entity->name == "Player") {
+                                            if (entity->name == "Player")
+                                            {
                                                 GameState::died = true;
                                             }
                                             GameState::numberOfEnemies--;
@@ -86,7 +89,6 @@ namespace our
                                             entity->localTransform.rotation = glm::vec3(glm::radians(-90.0f), 0, 0);
                                             entity->localTransform.position.y += 0.2;
                                             collisionComponent->boundingBoxSize = glm::vec3(0, 0, 0); // Set the bounding box size to 0 to avoid collision
-
                                         }
                                     }
                                 }
@@ -96,7 +98,8 @@ namespace our
                 }
             }
         }
-        void clear() {
+        void clear()
+        {
             // empty the bullets vector
             bulletsEntities.clear();
         }
