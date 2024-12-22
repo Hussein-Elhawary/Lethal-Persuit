@@ -1797,6 +1797,69 @@
             ]
           }
         ]
+      },///add car mirrored here
+      {
+        "name": "cupboard",//cupboard under ground
+        "position": [
+          -113,
+          -49.5,
+          -4
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          2,
+          2.5,
+          2
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cupboard",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0.7,
+              0,
+              0
+            ],
+            "size": [
+              0.5,
+              2,
+              2.7
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cupboard",//cupboard mirrored under ground
+        "position": [
+          -113,
+          -49.5,
+          4
+        ],
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          2,
+          2.5,
+          -2
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cupboard",
+            "material": "mtl"
+          }
+        ]
       }
     ]
   }
