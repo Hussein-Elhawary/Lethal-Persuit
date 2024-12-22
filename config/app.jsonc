@@ -11,7 +11,7 @@
   "scene": {
     "renderer": {
       "sky": "assets/textures/sky_aztec.jpg",
-      "postprocess": "assets/shaders/postprocess/dof.frag"
+      "postprocess": "assets/shaders/postprocess/vignette.frag"
     },
     "assets": {
       "shaders": {
@@ -82,7 +82,10 @@
         "ak-47": "assets/models/ak-47s/ak-47s.obj",
         "city": "assets/models/city/city.obj",
         "bullet": "assets/models/bullet/bullet2.obj",
-        "soldier": "assets/models/soldier/soldier.obj"
+        "soldier": "assets/models/soldier/soldier.obj",
+        "car": "assets/models/car/car.obj",
+        "cupboard": "assets/models/cupboard/cupboard.obj"
+
       },
       "samplers": {
         "default": {},
@@ -390,7 +393,7 @@
           },
           "ambientOcclusion": {
             "texture": "black",
-            "sampler": "repeating"
+            "sampler": "default"
           }
         }
       }
@@ -1320,7 +1323,7 @@
             "color": [1, 0, 0],
             "attenuation": {
               "constant": 1,
-              "linear": 0,
+              "linear": 0.1,
               "quadratic": 0
             },
             "direction": [0,-1,0],
@@ -1439,7 +1442,7 @@
             "center": [
               0,
               0,
-              0
+              1
             ],
             "size": [
               1,
@@ -1458,12 +1461,12 @@
           10
         ],
         "rotation": [
-          90,
-          0,
+          -90,
+          180,
           0
         ],
         "scale": [
-          10,
+          -10,
           10,
           1
         ],
@@ -1478,10 +1481,10 @@
             "center": [
               0,
               0,
-              0
+              1
             ],
             "size": [
-              1,
+              -1,
               0.05,
               10
             ]
@@ -1754,6 +1757,44 @@
             "type": "Mesh Renderer",
             "mesh": "plane",
             "material": "street"
+          }
+        ]
+      },
+      {
+        "name": "car",//car under ground
+        "position": [
+          -105,
+          -50,
+          -15
+        ],
+        "rotation": [
+          0,
+          -30,
+          0
+        ],
+        "scale": [
+          1.3,
+          1.3,
+          1.3
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "car",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              1,
+              1,
+              1
+            ]
           }
         ]
       }
