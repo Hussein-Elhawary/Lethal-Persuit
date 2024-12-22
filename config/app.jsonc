@@ -269,6 +269,70 @@
                         "texture":"redbrickdisp",
                         "sampler":"repeating"
                     }
+                },
+                "bloodwall":{
+                    "type":"LitTexturedMaterial",
+                    "shader":"lighted",
+                    "pipelineState":{
+                        "faceCulling":{
+                            "enabled": false
+                        },
+                        "depthTesting":{
+                            "enabled": true
+                        }
+                    },
+                    "albedo":{
+                        "texture":"bloodWall",
+                        "sampler":"repeating"
+                    },
+                    "emissive":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "roughness":{
+                        "texture":"white",
+                        "sampler":"default"
+                    },
+                    "specular":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "ambientOcclusion":{
+                        "texture":"black",
+                        "sampler":"repeating"
+                    }
+                },
+                "wooden":{
+                    "type":"LitTexturedMaterial",
+                    "shader":"lighted",
+                    "pipelineState":{
+                        "faceCulling":{
+                            "enabled": false
+                        },
+                        "depthTesting":{
+                            "enabled": true
+                        }
+                    },
+                    "albedo":{
+                        "texture":"wood",
+                        "sampler":"repeating"
+                    },
+                    "emissive":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "roughness":{
+                        "texture":"white",
+                        "sampler":"default"
+                    },
+                    "specular":{
+                        "texture":"black",
+                        "sampler":"default"
+                    },
+                    "ambientOcclusion":{
+                        "texture":"black",
+                        "sampler":"repeating"
+                    }
             }
 
             }
@@ -289,11 +353,7 @@
                         "type": "Collision",
                         "center": [0, 0, 0],
                         "size": [0.1, 1, 0.1]
-                    },
-                    {
-                        "type": "Health",
-                        "health": 5
-                      }
+                    }
                 ],
                 "children": [
                     {
@@ -677,7 +737,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "wooden"
                     },
                     {
                         "type": "Collision",
@@ -711,7 +771,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "wooden"
                     },
                     {
                         "type": "Collision",
@@ -745,7 +805,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "bloodwall"
                     },
                     {
                         "type": "Collision",
@@ -779,7 +839,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "bloodwall"
                     }
                 ]
             },
@@ -788,7 +848,7 @@
                 "position": [-100, -43, -10],
                 "rotation": [
                     0,
-                    90,
+                    -90,
                     0
                 ],
                 "scale": [
@@ -800,7 +860,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "redwall"
                     },
                     {
                         "type": "Collision",
@@ -822,7 +882,7 @@
                 "position": [-100, -43, 10],
                 "rotation": [
                     0,
-                    -90,
+                    90,
                     0
                 ],
                 "scale": [
@@ -834,7 +894,7 @@
                     {
                         "type": "Mesh Renderer",
                         "mesh": "plane",
-                        "material": "street"
+                        "material": "redwall"
                     },
                     {
                         "type": "Collision",
