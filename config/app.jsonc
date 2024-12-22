@@ -42,6 +42,10 @@
         "gunFlare": {
           "vs": "assets/shaders/gun-flare.vert",
           "fs": "assets/shaders/gun-flare.frag"
+        },
+        "wallMirror": {
+          "vs": "assets/shaders/wall-with-mirror.vert",
+          "fs": "assets/shaders/wall-with-mirror.frag"
         }
       },
       "textures": {
@@ -82,7 +86,11 @@
         "ak-47": "assets/models/ak-47s/ak-47s.obj",
         "city": "assets/models/city/city.obj",
         "bullet": "assets/models/bullet/bullet2.obj",
-        "soldier": "assets/models/soldier/soldier.obj"
+        "soldier": "assets/models/soldier/soldier.obj",
+        "mclaren": "assets/models/mclaren/mc.obj",
+        "cupboard": "assets/models/cupboard/cupboard.obj",
+        "mirroredcupboard":"assets/models/cupboard/cupboard_mirrored.obj"
+
       },
       "samplers": {
         "default": {},
@@ -350,8 +358,34 @@
           },
           "ambientOcclusion": {
             "texture": "black",
-            "sampler": "repeating"
+            "sampler": "default"
           }
+        },
+        "wallMirror": {
+          "type": "Ntextured",
+          "shader": "wallMirror",
+          "pipelineState": {
+            "faceCulling": {
+              "enabled": false
+            },
+            "depthTesting": {
+              "enabled": true
+            }
+          },
+          "tint": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "textures": [
+            "pavement1",
+            "pavement2"
+          ],
+          "samplers": [
+            "anisotropic",
+            "anisotropic"
+          ]
         }
       }
     },
@@ -1036,7 +1070,7 @@
             "color": [1, 0, 0],
             "attenuation": {
               "constant": 1,
-              "linear": 0,
+              "linear": 0.1,
               "quadratic": 0
             },
             "direction": [0, -1, 0],
@@ -1100,17 +1134,37 @@
           },
           {
             "type": "Collision",
-            "center": [0, 0, 0],
-            "size": [1, 0.05, 10]
+            "center": [
+              0,
+              0,
+              1
+            ],
+            "size": [
+              1,
+              0.05,
+              10
+            ]
           }
         ]
       },
       {
         "name": "Ground",
         //ground under mirrored
-        "position": [-110, -50, 10],
-        "rotation": [90, 0, 0],
-        "scale": [10, 10, 1],
+        "position": [
+          -110,
+          -50,
+          10
+        ],
+        "rotation": [
+          -90,
+          180,
+          0
+        ],
+        "scale": [
+          -10,
+          10,
+          1
+        ],
         "components": [
           {
             "type": "Mesh Renderer",
@@ -1119,8 +1173,56 @@
           },
           {
             "type": "Collision",
-            "center": [0, 0, 0],
-            "size": [1, 0.05, 10]
+            "center": [
+              0,
+              0,
+              1
+            ],
+            "size": [
+              -1,
+              0.05,
+              10
+            ]
+          }
+        ]
+      },
+      
+      {
+        "name": "wallMirror",
+        //wall with mirror under mirrored
+        "position": [
+          -110,
+          -43,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          10,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "wallMirror"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0.5
+            ],
+            "size": [
+              1,
+              1,
+              2
+            ]
           }
         ]
       },
@@ -1198,9 +1300,60 @@
       {
         "name": "nojumpwall",
         //wall right under ground
-        "position": [-120, -43, -10],
-        "rotation": [0, 90, 0],
-        "scale": [10, 7, 1],
+        "position": [
+          -120,
+          -43,
+          -13
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          7,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              0.125,
+              1,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall",
+        //rest of wall right under ground
+        "position": [
+          -120,
+          -40.5,
+          -3
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          3,
+          4.5,
+          1
+        ],
         "components": [
           {
             "type": "Mesh Renderer",
@@ -1217,9 +1370,60 @@
       {
         "name": "nojumpwall",
         //wall right under ground mirrored
-        "position": [-120, -43, 10],
-        "rotation": [0, -90, 0],
-        "scale": [10, 7, 1],
+        "position": [
+          -120,
+          -43,
+          13
+        ],
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          7,
+          7,
+          1
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "plane",
+            "material": "street"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              0.125,
+              1,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "name": "nojumpwall",
+        //rest of wall right mirrored under ground
+        "position": [
+          -120,
+          -40.5,
+          3
+        ],
+        "rotation": [
+          0,
+          -90,
+          0
+        ],
+        "scale": [
+          3,
+          4.5,
+          1
+        ],
         "components": [
           {
             "type": "Mesh Renderer",
@@ -1261,6 +1465,133 @@
           }
         ]
       },
+      {
+        "name": "mclaren",//car under ground
+        "position": [
+          -105,
+          -50,
+          -15
+        ],
+        "rotation": [
+          0,
+          -30,
+          0
+        ],
+        "scale": [
+          200,
+          200,
+          200
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "mclaren",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              0.021,
+              1,
+              0.021
+            ]
+          }
+        ]
+      },
+      {
+        "name": "mclaren",//car Mirrored under ground
+        "position": [
+          -105,
+          -50,
+          15
+        ],
+        "rotation": [
+          0,
+          30,
+          0
+        ],
+        "scale": [
+          200,
+          200,
+          -200
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "mclaren",
+            "material": "mtl"
+          }
+        ]
+      },
+      {
+        "name": "cupboard",//cupboard under ground
+        "position": [
+          -113,
+          -49.5,
+          -3.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          2,
+          2.5,
+          2
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "cupboard",
+            "material": "mtl"
+          },
+          {
+            "type": "Collision",
+            "center": [
+              0.7,
+              0,
+              0
+            ],
+            "size": [
+              0.5,
+              2,
+              2.7
+            ]
+          }
+        ]
+      },
+      {
+        "name": "mirroredcupboard",//cupboard mirrored under ground
+        "position": [
+          -113,
+          -49.5,
+          3.85
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          2,
+          2.5,
+          2
+        ],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "mirroredcupboard",
+            "material": "mtl"
+          }
+        ]
+      },
+      
       {
         "name": "Van",
         "components": [

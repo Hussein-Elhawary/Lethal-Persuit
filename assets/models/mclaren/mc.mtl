@@ -1,0 +1,222 @@
+# Blender 4.3.2 MTL File: 'None'
+# www.blender.org
+
+newmtl McLaren_720SSpiderRewardRecycled_2019BadgeA_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_BadgeA_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_BadgeA_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_BadgeA_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Base_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Carbon1_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd assets/textures/mclaren/common_carbon05_black_diff.png
+map_Bump -bm 1.000000 assets/textures/mclaren/common_carbon05_norm.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Coloured_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.048951 0.048951 0.048951
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl McLaren_720SSpiderRewardRecycled_2019EngineA_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_EngineA_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_EngineA_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_EngineA_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Grille1A_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Grille1A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Grille1A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Grille1A_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Grille2A_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Grille2A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Grille2A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Grille2A_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Grille3A_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Grille3A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Grille3A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Grille3A_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Grille4A_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Grille4A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Grille4A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Grille4A_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Grille5A_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Grille5A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Grille5A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Grille5A_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019InteriorA_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_InteriorA_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_InteriorA_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_InteriorA_Normal.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019LicensePlateDefaul_28d66ca
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl McLaren_720SSpiderRewardRecycled_2019LightA_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_LightA_Diffuse.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_LightA_Diffuse.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019LightEmissiveA_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.090909 0.090909 0.090909
+Ks 1.000000 1.000000 1.000000
+Ni 1.500000
+d 0.195804
+illum 6
+map_Ke assets/textures/mclaren/McLaren_720SSpider_2019_LightA_Emissive.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019ManufacturerPlateA_4be5c7d
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_ManufacturerPlateA_Diffuse.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_ManufacturerPlateA_Diffuse.png
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Paint_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.043470 0.275065 0.378000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl McLaren_720SSpiderRewardRecycled_2019SeatBelt_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.104895 0.104895 0.104895
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl McLaren_720SSpiderRewardRecycled_2019WindowInside_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.097902 0.097902 0.097902
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.097902
+illum 6
+
+newmtl McLaren_720SSpiderRewardRecycled_2019Window_Material
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.048951 0.048951 0.048951
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.181818
+illum 6
+
+newmtl McLaren_720SSpiderRewardRecycled_2019_Wheel1A_3D_3DWhee_3334c74
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd assets/textures/mclaren/McLaren_720SSpider_2019_Wheel1A_DiffuseAOSO.png
+map_d assets/textures/mclaren/McLaren_720SSpider_2019_Wheel1A_DiffuseAOSO.png
+map_Bump -bm 1.000000 assets/textures/mclaren/McLaren_720SSpider_2019_Wheel1A_Normal.png
+
+newmtl breaks:S:CalliperGloss_Material1
+Ns 119.999992
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

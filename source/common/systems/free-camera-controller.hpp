@@ -290,7 +290,7 @@ namespace our
                 controller->upSpeed = 0;
             }
             // updates Y position
-            // printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
+            printf("Camera Position: (%f, %f, %f)\n", position.x, position.y, position.z);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

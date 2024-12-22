@@ -2,13 +2,13 @@
 # www.blender.org
 
 newmtl body
-map_Kd assets/textures/cupboard/body_albdeo.jpg
+map_Kd assets/textures/cupboard/body_albedo.jpg
 map_Ka assets/textures/cupboard/body_AO.jpg
 map_Ks assets/textures/cupboard/body_metallic.jpg
 map_Pr assets/textures/cupboard/body_roughness.jpg
 
 newmtl doors
-map_Kd assets/textures/cupboard/doors_albdeo.jpg
+map_Kd assets/textures/cupboard/doors_albedo.jpg
 map_Ka assets/textures/cupboard/doors_AO.jpg
 map_Ks assets/textures/cupboard/doors_metallic.jpg
 map_Pr assets/textures/cupboard/doors_roughness.jpg
