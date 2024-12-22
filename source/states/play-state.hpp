@@ -9,6 +9,8 @@
 #include <asset-loader.hpp>
 #include <systems/collision.hpp>
 #include <systems/bullets.hpp>
+
+#include "systems/player.hpp"
 #include "systems/shooting.hpp"
 
 // This state shows how to use the ECS framework and deserialization.
@@ -21,6 +23,7 @@ class Playstate: public our::State {
     our::CollisionSystem collisionSystem;
     our::Shooting shooting;
     our::bulletsSystem bulletsSystem;
+    our::PlayerSystem playerSystem;
 
     void onInitialize() override {
         // First of all, we get the scene configuration from the app config
@@ -36,26 +39,27 @@ class Playstate: public our::State {
         // We initialize the camera controller system since it needs a pointer to the app
         cameraController.enter(getApp());
         collisionSystem.enter(getApp());
+        bulletsSystem.enter(getApp());
+        playerSystem.enter(getApp());
         shooting.enter(getApp(), config["world"]);
         // Then we initialize the renderer
         auto size = getApp()->getFrameBufferSize();
         renderer.initialize(size, config["renderer"]);
     }
 
-    void onDraw(double deltaTime) override {
+    void onDraw(const double deltaTime) override {
         // Here, we just run a bunch of systems to control the world logic
-        movementSystem. update(&world, (float)deltaTime);
-        //collisionSystem.update(&world, (float)deltaTime);
-        cameraController.update(&world, (float)deltaTime);
-        shooting.update(&world, (float)deltaTime, &bulletsSystem);
-        bulletsSystem.update(&world, (float)deltaTime);
+        movementSystem. update(&world, static_cast<float>(deltaTime));
+        cameraController.update(&world, static_cast<float>(deltaTime));
+        shooting.update(&world, static_cast<float>(deltaTime), &bulletsSystem);
+        bulletsSystem.update(&world, static_cast<float>(deltaTime));
+        playerSystem.update(&world, static_cast<float>(deltaTime));
         // And finally we use the renderer system to draw the scene
         renderer.render(&world);
 
         // Get a reference to the keyboard object
-        auto& keyboard = getApp()->getKeyboard();
 
-        if(keyboard.justPressed(GLFW_KEY_ESCAPE)){
+        if(const auto& keyboard = getApp()->getKeyboard(); keyboard.justPressed(GLFW_KEY_ESCAPE)){
             // If the escape  key is pressed in this frame, go to the play state
             getApp()->changeState("menu");
         }
@@ -70,6 +74,7 @@ class Playstate: public our::State {
         cameraController.exit();
         // Clear the world
         world.clear();
+        bulletsSystem.clear();
         // and we delete all the loaded assets to free memory on the RAM and the VRAM
         our::clearAllAssets();
     }

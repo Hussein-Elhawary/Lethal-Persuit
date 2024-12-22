@@ -50,6 +50,11 @@ namespace our {
                     if ((app->getMouse().justPressed(GLFW_MOUSE_BUTTON_LEFT) && weaponComponent->ownerName == "Player") ||
                         (weaponComponent->ownerName != "Player" &&
                             std::chrono::duration<float>(currentTime - weaponComponent->lastShootTime).count() > 1.0f)) {
+                        if (auto health = entity->parent->getComponent<HealthComponent>()) {
+                            if (health->health <= 0) {
+                                continue;
+                            }
+                        }
                         bulletEntity = world->add(); // create a new bullet entity and add it to the world
                         bulletEntity->deserializeBullet(*data); // fill the bullet entity with the data from the json
                         bulletsSystem->addBullet(bulletEntity); // add the bullet to the bullets system

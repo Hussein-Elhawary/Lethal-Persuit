@@ -3,7 +3,6 @@
 #include "../deserialize-utils.hpp"
 
 namespace our{
-
     void HealthComponent::deserialize(const nlohmann::json& data)
     {
         if (!data.is_object()) return;

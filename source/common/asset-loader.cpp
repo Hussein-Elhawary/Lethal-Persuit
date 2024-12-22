@@ -167,5 +167,7 @@ namespace our {
         AssetLoader<Mesh>::clear();
         AssetLoader<Material>::clear();
         AssetLoader<Object>::clear();
+        AssetLoader<std::vector<Mesh *> >::clear();
+        AssetLoader<Object>::clear();
     }
 }
