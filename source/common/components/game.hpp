@@ -8,7 +8,6 @@ namespace our {
         static std::chrono::time_point<std::chrono::system_clock> time;
         static bool died;
         static int numberOfEnemies;
-
     };
 } // our
 
