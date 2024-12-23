@@ -50,7 +50,7 @@ namespace our
             //printf("Entity: %s\n", entity->name.c_str());
             collisionSystem.setPlayer(entity);
             // printf("before ms_clicked\n");
-            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_2)) 
+            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_5)) 
             {
                 // printf("ms_clicked\n");
                 // if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked)
