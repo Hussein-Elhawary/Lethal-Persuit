@@ -50,7 +50,7 @@ namespace our
             //printf("Entity: %s\n", entity->name.c_str());
             collisionSystem.setPlayer(entity);
             // printf("before ms_clicked\n");
-            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_5)) 
+            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_2)) 
             {
                 // printf("ms_clicked\n");
                 // if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked)
@@ -283,8 +283,19 @@ namespace our
                         position.z = old_position.z;
                 }
             }
+            if (position.y > -51 && position.y < -40 && position.x < -123 && position.x > -127 && position.z < 0 && position.z > -5)
+            {
+                controller->upSpeed = 0;
+                position.y = position.y + 49.6;
+            }
+            
             // if under the map reset the position
             if(position.y < -100)
+            {
+                position.y = -49;
+                controller->upSpeed = 0;
+            }
+            if(position.y < -10 && position.y > -30)
             {
                 position.y = 2;
                 controller->upSpeed = 0;
