@@ -283,8 +283,19 @@ namespace our
                         position.z = old_position.z;
                 }
             }
+            if (position.y > -51 && position.y < -40 && position.x < -123 && position.x > -127 && position.z < 0 && position.z > -5)
+            {
+                controller->upSpeed = 0;
+                position.y = position.y + 49.6;
+            }
+            
             // if under the map reset the position
             if(position.y < -100)
+            {
+                position.y = -49;
+                controller->upSpeed = 0;
+            }
+            if(position.y < -10 && position.y > -30)
             {
                 position.y = 2;
                 controller->upSpeed = 0;
