@@ -286,7 +286,7 @@ namespace our
             if (position.y > -51 && position.y < -40 && position.x < -123 && position.x > -127 && position.z < 0 && position.z > -5)
             {
                 controller->upSpeed = 0;
-                position.y = position.y + 49.6;
+                position.y = position.y + 49.4;
             }
             
             // if under the map reset the position
