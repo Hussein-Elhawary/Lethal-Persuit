@@ -13,7 +13,7 @@ git clone https://github.com/Hussein-Elhawary/Lethal-Persuit.git
 
 3. **Build**
 ```bash
-cmake.exe -S . -B build && cmake.exe --build build --target GAME_APPLICATION -j 14
+cmake -S . -B build && cmake --build build --target GAME_APPLICATION -j 14
 ```
 
 4. **Run and enjoy**
