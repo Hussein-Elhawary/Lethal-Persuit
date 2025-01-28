@@ -7,16 +7,16 @@ lethal persuit is an fps game built using opengl. Goal of the game is to elimina
 git clone https://github.com/Hussein-Elhawary/Lethal-Persuit.git
 ```
 
-2. ## Prerequisites
+2. **Prerequisites**
 - `cmake >= 3.10.0`
 - C++17 compiler (`MSVC >= 19.15` or `GCC >= 9`)
 
-3. Build game
+3. **Build**
 ```bash
 cmake.exe -S . -B build && cmake.exe --build build --target GAME_APPLICATION -j 14
 ```
 
-4. Run and enjoy
+4. **Run and enjoy**
 ```bash
 .\bin\GAME_APPLICATION.exe        
 ```
