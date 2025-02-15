@@ -31,7 +31,11 @@ Lethal Persuit is an FPS game built using OpenGL. The goal of the game is to eli
 
 ## Screenshots
 
-(Add screenshots here)
+![image](https://github.com/user-attachments/assets/02d611aa-55ba-4a4c-abf2-a986345b71c0)
+![image](https://github.com/user-attachments/assets/a5d3e52a-52d7-4ed1-bc1b-0bd965fc92bc)
+![image](https://github.com/user-attachments/assets/38eee303-ddcf-408f-b0b4-ee6dbfb2614b)
+![image](https://github.com/user-attachments/assets/6d547409-20c4-4d86-aee7-80342fe6d0b3)
+
 
 ## Contributors
 
